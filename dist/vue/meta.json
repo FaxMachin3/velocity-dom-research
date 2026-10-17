@@ -1,0 +1,155 @@
+{
+  "inputs": {
+    "node_modules/@vue/shared/dist/shared.esm-bundler.js": {
+      "bytes": 24574,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": {
+      "bytes": 55728,
+      "imports": [
+        {
+          "path": "node_modules/@vue/shared/dist/shared.esm-bundler.js",
+          "kind": "import-statement",
+          "original": "@vue/shared"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": {
+      "bytes": 280921,
+      "imports": [
+        {
+          "path": "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js",
+          "kind": "import-statement",
+          "original": "@vue/reactivity"
+        },
+        {
+          "path": "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js",
+          "kind": "import-statement",
+          "original": "@vue/reactivity"
+        },
+        {
+          "path": "node_modules/@vue/shared/dist/shared.esm-bundler.js",
+          "kind": "import-statement",
+          "original": "@vue/shared"
+        },
+        {
+          "path": "node_modules/@vue/shared/dist/shared.esm-bundler.js",
+          "kind": "import-statement",
+          "original": "@vue/shared"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": {
+      "bytes": 66203,
+      "imports": [
+        {
+          "path": "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js",
+          "kind": "import-statement",
+          "original": "@vue/runtime-core"
+        },
+        {
+          "path": "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js",
+          "kind": "import-statement",
+          "original": "@vue/runtime-core"
+        },
+        {
+          "path": "node_modules/@vue/shared/dist/shared.esm-bundler.js",
+          "kind": "import-statement",
+          "original": "@vue/shared"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/vue/dist/vue.runtime.esm-bundler.js": {
+      "bytes": 580,
+      "imports": [
+        {
+          "path": "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js",
+          "kind": "import-statement",
+          "original": "@vue/runtime-dom"
+        },
+        {
+          "path": "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js",
+          "kind": "import-statement",
+          "original": "@vue/runtime-dom"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/adapters/vue.js": {
+      "bytes": 931,
+      "imports": [
+        {
+          "path": "node_modules/vue/dist/vue.runtime.esm-bundler.js",
+          "kind": "import-statement",
+          "original": "vue"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/model.js": {
+      "bytes": 1349,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/entry.js": {
+      "bytes": 1410,
+      "imports": [
+        {
+          "path": "src/adapters/vue.js",
+          "kind": "import-statement",
+          "original": "./adapters/vue.js"
+        },
+        {
+          "path": "src/model.js",
+          "kind": "import-statement",
+          "original": "./model.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/vue/app.js.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 571096
+    },
+    "dist/vue/app.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/entry.js",
+      "inputs": {
+        "node_modules/@vue/shared/dist/shared.esm-bundler.js": {
+          "bytesInOutput": 3461
+        },
+        "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": {
+          "bytesInOutput": 14054
+        },
+        "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": {
+          "bytesInOutput": 31268
+        },
+        "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": {
+          "bytesInOutput": 6163
+        },
+        "node_modules/vue/dist/vue.runtime.esm-bundler.js": {
+          "bytesInOutput": 0
+        },
+        "src/adapters/vue.js": {
+          "bytesInOutput": 750
+        },
+        "src/model.js": {
+          "bytesInOutput": 1073
+        },
+        "src/entry.js": {
+          "bytesInOutput": 1100
+        }
+      },
+      "bytes": 58732
+    }
+  }
+}

@@ -1,0 +1,227 @@
+{
+  "inputs": {
+    "node_modules/@lit/reactive-element/css-tag.js": {
+      "bytes": 1585,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@lit/reactive-element/reactive-element.js": {
+      "bytes": 6306,
+      "imports": [
+        {
+          "path": "node_modules/@lit/reactive-element/css-tag.js",
+          "kind": "import-statement",
+          "original": "./css-tag.js"
+        },
+        {
+          "path": "node_modules/@lit/reactive-element/css-tag.js",
+          "kind": "import-statement",
+          "original": "./css-tag.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/lit-html.js": {
+      "bytes": 7309,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/lit-element/lit-element.js": {
+      "bytes": 1124,
+      "imports": [
+        {
+          "path": "node_modules/@lit/reactive-element/reactive-element.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element"
+        },
+        {
+          "path": "node_modules/@lit/reactive-element/reactive-element.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element"
+        },
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "lit-html"
+        },
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "lit-html"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/is-server.js": {
+      "bytes": 162,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/lit/index.js": {
+      "bytes": 157,
+      "imports": [
+        {
+          "path": "node_modules/@lit/reactive-element/reactive-element.js",
+          "kind": "import-statement",
+          "original": "@lit/reactive-element"
+        },
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "lit-html"
+        },
+        {
+          "path": "node_modules/lit-element/lit-element.js",
+          "kind": "import-statement",
+          "original": "lit-element/lit-element.js"
+        },
+        {
+          "path": "node_modules/lit-html/is-server.js",
+          "kind": "import-statement",
+          "original": "lit-html/is-server.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directive.js": {
+      "bytes": 481,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directive-helpers.js": {
+      "bytes": 1272,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "./lit-html.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit-html/directives/repeat.js": {
+      "bytes": 1606,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/lit-html.js",
+          "kind": "import-statement",
+          "original": "../lit-html.js"
+        },
+        {
+          "path": "node_modules/lit-html/directive.js",
+          "kind": "import-statement",
+          "original": "../directive.js"
+        },
+        {
+          "path": "node_modules/lit-html/directive-helpers.js",
+          "kind": "import-statement",
+          "original": "../directive-helpers.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/lit/directives/repeat.js": {
+      "bytes": 79,
+      "imports": [
+        {
+          "path": "node_modules/lit-html/directives/repeat.js",
+          "kind": "import-statement",
+          "original": "lit-html/directives/repeat.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/adapters/lit.js": {
+      "bytes": 811,
+      "imports": [
+        {
+          "path": "node_modules/lit/index.js",
+          "kind": "import-statement",
+          "original": "lit"
+        },
+        {
+          "path": "node_modules/lit/directives/repeat.js",
+          "kind": "import-statement",
+          "original": "lit/directives/repeat.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/model.js": {
+      "bytes": 1349,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/entry.js": {
+      "bytes": 1410,
+      "imports": [
+        {
+          "path": "src/adapters/lit.js",
+          "kind": "import-statement",
+          "original": "./adapters/lit.js"
+        },
+        {
+          "path": "src/model.js",
+          "kind": "import-statement",
+          "original": "./model.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/lit/app.js.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 237855
+    },
+    "dist/lit/app.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/entry.js",
+      "inputs": {
+        "node_modules/@lit/reactive-element/css-tag.js": {
+          "bytesInOutput": 986
+        },
+        "node_modules/@lit/reactive-element/reactive-element.js": {
+          "bytesInOutput": 5886
+        },
+        "node_modules/lit-html/lit-html.js": {
+          "bytesInOutput": 7077
+        },
+        "node_modules/lit-element/lit-element.js": {
+          "bytesInOutput": 741
+        },
+        "node_modules/lit/index.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit-html/is-server.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/lit-html/directive.js": {
+          "bytesInOutput": 301
+        },
+        "node_modules/lit-html/directive-helpers.js": {
+          "bytesInOutput": 550
+        },
+        "node_modules/lit-html/directives/repeat.js": {
+          "bytesInOutput": 1189
+        },
+        "node_modules/lit/directives/repeat.js": {
+          "bytesInOutput": 0
+        },
+        "src/adapters/lit.js": {
+          "bytesInOutput": 633
+        },
+        "src/model.js": {
+          "bytesInOutput": 1068
+        },
+        "src/entry.js": {
+          "bytesInOutput": 1072
+        }
+      },
+      "bytes": 20211
+    }
+  }
+}

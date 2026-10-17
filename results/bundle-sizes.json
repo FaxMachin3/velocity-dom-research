@@ -1,0 +1,58 @@
+[
+  {
+    "framework": "velocity",
+    "jsBytes": 6484,
+    "gzipBytes": 2453,
+    "brotliBytes": 2233,
+    "buildMs": 79.56458099999998
+  },
+  {
+    "framework": "vanilla",
+    "jsBytes": 3798,
+    "gzipBytes": 1599,
+    "brotliBytes": 1420,
+    "buildMs": 13.466007999999988
+  },
+  {
+    "framework": "react",
+    "jsBytes": 226239,
+    "gzipBytes": 70245,
+    "brotliBytes": 60437,
+    "buildMs": 624.03846
+  },
+  {
+    "framework": "preact",
+    "jsBytes": 19466,
+    "gzipBytes": 8092,
+    "brotliBytes": 7374,
+    "buildMs": 49.54754100000014
+  },
+  {
+    "framework": "vue",
+    "jsBytes": 58732,
+    "gzipBytes": 23286,
+    "brotliBytes": 21212,
+    "buildMs": 135.07007599999997
+  },
+  {
+    "framework": "solid",
+    "jsBytes": 22252,
+    "gzipBytes": 8639,
+    "brotliBytes": 7864,
+    "buildMs": 334.21408999999994
+  },
+  {
+    "framework": "svelte",
+    "jsBytes": 56839,
+    "gzipBytes": 21419,
+    "brotliBytes": 19300,
+    "buildMs": 155.9167319999999
+  },
+  {
+    "framework": "lit",
+    "jsBytes": 20211,
+    "gzipBytes": 7847,
+    "brotliBytes": 7093,
+    "buildMs": 45.14242699999977
+  }
+]

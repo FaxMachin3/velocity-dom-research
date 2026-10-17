@@ -1,0 +1,14 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {signal,effect,batch,root,onCleanup,untrack,derived} from '../src/poc/reactivity.js';
+import {compile} from '../src/poc/compiler.js';
+test('dynamic dependencies detach',()=>{const a=signal(1),b=signal(2),toggle=signal(true);let runs=0,value;const stop=effect(()=>{runs++;value=toggle.get()?a.get():b.get();});toggle.set(false);a.set(7);assert.equal(runs,2);b.set(9);assert.equal(value,9);stop();b.set(10);assert.equal(runs,3);});
+test('batch observes consistent final values',()=>{const a=signal(1),b=signal(2);const seen=[];const stop=effect(()=>seen.push(a.get()+b.get()));batch(()=>{a.set(4);b.set(8);});assert.deepEqual(seen,[3,12]);stop();});
+test('nested owners and rerun cleanup',()=>{const a=signal(0);let cleanups=0,stop;root(dispose=>{stop=dispose;effect(()=>{a.get();onCleanup(()=>cleanups++);});});a.set(1);assert.equal(cleanups,1);stop();stop();assert.equal(cleanups,2);a.set(2);assert.equal(cleanups,2);});
+test('untrack and Object.is equality',()=>{const a=signal(NaN),b=signal(2);let runs=0;const stop=effect(()=>{runs++;a.get();untrack(()=>b.get());});a.set(NaN);b.set(3);assert.equal(runs,1);stop();});
+test('derived is fresh inside batch',()=>{const a=signal(2),v=derived(()=>a.get()*2);batch(()=>{a.set(3);assert.equal(v.get(),6);});});
+test('throwing effect releases subscriptions',()=>{const a=signal(0);assert.throws(()=>effect(()=>{a.get();throw Error('test');}));assert.doesNotThrow(()=>a.set(1));});
+test('compiler emits DOM operations and bindings',()=>{const r=compile('export const View = x => <button title={x.get()} onClick={()=>x.set(2)}>Value: {x.get()}</button>');assert.match(r.code,/document.createElement/);assert.match(r.code,/bindText/);assert.match(r.code,/bindProp/);assert.match(r.code,/listen/);assert.ok(r.map);});
+test('unsupported JSX fails loudly',()=>{assert.throws(()=>compile('const v = <Widget/>'));assert.throws(()=>compile('const v = <div {...props}/>'));assert.throws(()=>compile('const v = <>x</>'));});
+test('disposing an effect queued in a batch prevents its execution',()=>{const a=signal(0);let runs=0;const stop=effect(()=>{a.get();runs++;});batch(()=>{a.set(1);stop();});assert.equal(runs,1);});
+test('nested batching and exceptions restore the scheduler',()=>{const a=signal(0);let value;const stop=effect(()=>value=a.get());assert.throws(()=>batch(()=>{batch(()=>a.set(1));throw Error('fail');}));assert.equal(value,1);a.set(2);assert.equal(value,2);stop();});
+test('rerunning an effect disposes nested effects',()=>{const outer=signal(0),inner=signal(0);let childRuns=0;const stop=effect(()=>{outer.get();effect(()=>{inner.get();childRuns++;});});outer.set(1);inner.set(1);assert.equal(childRuns,3);stop();inner.set(2);assert.equal(childRuns,3);});

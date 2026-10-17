@@ -1,0 +1,147 @@
+{
+  "inputs": {
+    "node_modules/solid-js/dist/solid.js": {
+      "bytes": 52464,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/solid-js/web/dist/web.js": {
+      "bytes": 30969,
+      "imports": [
+        {
+          "path": "node_modules/solid-js/dist/solid.js",
+          "kind": "import-statement",
+          "original": "solid-js"
+        },
+        {
+          "path": "node_modules/solid-js/dist/solid.js",
+          "kind": "import-statement",
+          "original": "solid-js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/solid-js/store/dist/store.js": {
+      "bytes": 16361,
+      "imports": [
+        {
+          "path": "node_modules/solid-js/dist/solid.js",
+          "kind": "import-statement",
+          "original": "solid-js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/adapters/solid.jsx": {
+      "bytes": 2865,
+      "imports": [
+        {
+          "path": "node_modules/solid-js/web/dist/web.js",
+          "kind": "import-statement",
+          "original": "solid-js/web"
+        },
+        {
+          "path": "node_modules/solid-js/web/dist/web.js",
+          "kind": "import-statement",
+          "original": "solid-js/web"
+        },
+        {
+          "path": "node_modules/solid-js/web/dist/web.js",
+          "kind": "import-statement",
+          "original": "solid-js/web"
+        },
+        {
+          "path": "node_modules/solid-js/web/dist/web.js",
+          "kind": "import-statement",
+          "original": "solid-js/web"
+        },
+        {
+          "path": "node_modules/solid-js/web/dist/web.js",
+          "kind": "import-statement",
+          "original": "solid-js/web"
+        },
+        {
+          "path": "node_modules/solid-js/web/dist/web.js",
+          "kind": "import-statement",
+          "original": "solid-js/web"
+        },
+        {
+          "path": "node_modules/solid-js/web/dist/web.js",
+          "kind": "import-statement",
+          "original": "solid-js/web"
+        },
+        {
+          "path": "node_modules/solid-js/web/dist/web.js",
+          "kind": "import-statement",
+          "original": "solid-js/web"
+        },
+        {
+          "path": "node_modules/solid-js/dist/solid.js",
+          "kind": "import-statement",
+          "original": "solid-js"
+        },
+        {
+          "path": "node_modules/solid-js/store/dist/store.js",
+          "kind": "import-statement",
+          "original": "solid-js/store"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/model.js": {
+      "bytes": 1349,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/entry.js": {
+      "bytes": 1413,
+      "imports": [
+        {
+          "path": "src/adapters/solid.jsx",
+          "kind": "import-statement",
+          "original": "./adapters/solid.jsx"
+        },
+        {
+          "path": "src/model.js",
+          "kind": "import-statement",
+          "original": "./model.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/solid/app.js.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 152182
+    },
+    "dist/solid/app.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/entry.js",
+      "inputs": {
+        "node_modules/solid-js/dist/solid.js": {
+          "bytesInOutput": 8163
+        },
+        "node_modules/solid-js/web/dist/web.js": {
+          "bytesInOutput": 5663
+        },
+        "node_modules/solid-js/store/dist/store.js": {
+          "bytesInOutput": 5112
+        },
+        "src/adapters/solid.jsx": {
+          "bytesInOutput": 1136
+        },
+        "src/model.js": {
+          "bytesInOutput": 1073
+        },
+        "src/entry.js": {
+          "bytesInOutput": 1072
+        }
+      },
+      "bytes": 22252
+    }
+  }
+}

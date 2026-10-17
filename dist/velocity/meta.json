@@ -1,0 +1,112 @@
+{
+  "inputs": {
+    "src/poc/reactivity.js": {
+      "bytes": 2846,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/poc/dom.js": {
+      "bytes": 2119,
+      "imports": [
+        {
+          "path": "src/poc/reactivity.js",
+          "kind": "import-statement",
+          "original": "./reactivity.js"
+        },
+        {
+          "path": "src/poc/reactivity.js",
+          "kind": "import-statement",
+          "original": "./reactivity.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/poc/views.jsx": {
+      "bytes": 2338,
+      "imports": [
+        {
+          "path": "src/poc/dom.js",
+          "kind": "import-statement",
+          "original": "./dom.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/adapters/velocity.js": {
+      "bytes": 1505,
+      "imports": [
+        {
+          "path": "src/poc/reactivity.js",
+          "kind": "import-statement",
+          "original": "../poc/reactivity.js"
+        },
+        {
+          "path": "src/poc/dom.js",
+          "kind": "import-statement",
+          "original": "../poc/dom.js"
+        },
+        {
+          "path": "src/poc/views.jsx",
+          "kind": "import-statement",
+          "original": "../poc/views.jsx"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/model.js": {
+      "bytes": 1349,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/entry.js": {
+      "bytes": 1415,
+      "imports": [
+        {
+          "path": "src/adapters/velocity.js",
+          "kind": "import-statement",
+          "original": "./adapters/velocity.js"
+        },
+        {
+          "path": "src/model.js",
+          "kind": "import-statement",
+          "original": "./model.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/velocity/app.js.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 23337
+    },
+    "dist/velocity/app.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/entry.js",
+      "inputs": {
+        "src/poc/reactivity.js": {
+          "bytesInOutput": 1366
+        },
+        "src/poc/dom.js": {
+          "bytesInOutput": 884
+        },
+        "src/poc/views.jsx": {
+          "bytesInOutput": 1302
+        },
+        "src/adapters/velocity.js": {
+          "bytesInOutput": 771
+        },
+        "src/model.js": {
+          "bytesInOutput": 1066
+        },
+        "src/entry.js": {
+          "bytesInOutput": 1062
+        }
+      },
+      "bytes": 6484
+    }
+  }
+}

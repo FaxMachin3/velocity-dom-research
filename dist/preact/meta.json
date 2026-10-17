@@ -1,0 +1,122 @@
+{
+  "inputs": {
+    "node_modules/preact/dist/preact.mjs": {
+      "bytes": 11897,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/preact/hooks/dist/hooks.mjs": {
+      "bytes": 3667,
+      "imports": [
+        {
+          "path": "node_modules/preact/dist/preact.mjs",
+          "kind": "import-statement",
+          "original": "preact"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/preact/compat/dist/compat.mjs": {
+      "bytes": 9754,
+      "imports": [
+        {
+          "path": "node_modules/preact/dist/preact.mjs",
+          "kind": "import-statement",
+          "original": "preact"
+        },
+        {
+          "path": "node_modules/preact/dist/preact.mjs",
+          "kind": "import-statement",
+          "original": "preact"
+        },
+        {
+          "path": "node_modules/preact/hooks/dist/hooks.mjs",
+          "kind": "import-statement",
+          "original": "preact/hooks"
+        },
+        {
+          "path": "node_modules/preact/hooks/dist/hooks.mjs",
+          "kind": "import-statement",
+          "original": "preact/hooks"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/adapters/preact.jsx": {
+      "bytes": 1098,
+      "imports": [
+        {
+          "path": "node_modules/preact/dist/preact.mjs",
+          "kind": "import-statement",
+          "original": "preact"
+        },
+        {
+          "path": "node_modules/preact/hooks/dist/hooks.mjs",
+          "kind": "import-statement",
+          "original": "preact/hooks"
+        },
+        {
+          "path": "node_modules/preact/compat/dist/compat.mjs",
+          "kind": "import-statement",
+          "original": "preact/compat"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/model.js": {
+      "bytes": 1349,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/entry.js": {
+      "bytes": 1414,
+      "imports": [
+        {
+          "path": "src/adapters/preact.jsx",
+          "kind": "import-statement",
+          "original": "./adapters/preact.jsx"
+        },
+        {
+          "path": "src/model.js",
+          "kind": "import-statement",
+          "original": "./model.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/preact/app.js.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 170395
+    },
+    "dist/preact/app.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/entry.js",
+      "inputs": {
+        "node_modules/preact/dist/preact.mjs": {
+          "bytesInOutput": 10825
+        },
+        "node_modules/preact/hooks/dist/hooks.mjs": {
+          "bytesInOutput": 2308
+        },
+        "node_modules/preact/compat/dist/compat.mjs": {
+          "bytesInOutput": 3312
+        },
+        "src/adapters/preact.jsx": {
+          "bytesInOutput": 843
+        },
+        "src/model.js": {
+          "bytesInOutput": 1073
+        },
+        "src/entry.js": {
+          "bytesInOutput": 1072
+        }
+      },
+      "bytes": 19466
+    }
+  }
+}

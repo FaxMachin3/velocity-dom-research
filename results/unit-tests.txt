@@ -1,0 +1,26 @@
+
+> velocity-poc@0.1.0 test
+> node --test tests/*.test.mjs
+
+✔ replacement uses disjoint keys (6.813964ms)
+✔ sparse updates preserve unchanged object references (1.22407ms)
+✔ compiler emits safe text bindings, not HTML injection (20.558263ms)
+✔ dynamic dependencies detach (1.908699ms)
+✔ batch observes consistent final values (1.093153ms)
+✔ nested owners and rerun cleanup (0.435195ms)
+✔ untrack and Object.is equality (0.266341ms)
+✔ derived is fresh inside batch (0.224958ms)
+✔ throwing effect releases subscriptions (0.627804ms)
+✔ compiler emits DOM operations and bindings (24.752138ms)
+✔ unsupported JSX fails loudly (2.827762ms)
+✔ disposing an effect queued in a batch prevents its execution (0.461914ms)
+✔ nested batching and exceptions restore the scheduler (0.636702ms)
+✔ rerunning an effect disposes nested effects (0.465149ms)
+ℹ tests 14
+ℹ suites 0
+ℹ pass 14
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 347.525378
