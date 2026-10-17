@@ -1,5 +1,13 @@
 # Velocity: compiled DOM rendering research
 
+## Current release: v0.2.0
+
+The current experiment adds JavaScript and Rust/WebAssembly keyed-list planners with the same hash/probing algorithm and shared DOM renderer. Ten adapters are now included. Read [Rust/Wasm architecture](RUST_WASM.md), [reproduction instructions](REPRODUCE_V02.md), and [current findings](../results/RUST_WASM_FINDINGS.md).
+
+The supplied v0.2 runs contain 1,400 normal-profile and 560 throttled-profile operation samples, with no recorded failures. The matched planners are effectively tied at 1k/10k rows in the supplied planner-only run; Wasm's median is approximately 12.3% lower at 100k. Full UI results are mixed, so Wasm remains optional. These are observations from one environment, not independent performance validation. New renderer improvements shared by both variants cannot be attributed to Rust.
+
+Historical discussion below describes v0.1. Its measurements are preserved under results/v0.1 and at the v0.1.0 Git tag. Do not pool them with the current experiment.
+
 ## Research question
 
 What are the bundle-size, update, construction, and disposal tradeoffs of a small compiled-DOM runtime with fine-grained reactive bindings?

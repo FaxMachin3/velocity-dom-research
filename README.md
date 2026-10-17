@@ -1,110 +1,45 @@
-# Velocity v0.1: compiled DOM proof of concept
+# Velocity v0.2: Rust/Wasm experiment
 
-**Experimental research preview.** APIs and conclusions may change. This release is intended for inspection, reproduction, and methodological feedback. It is not peer reviewed or independently validated.
+**Experimental research preview.** APIs and conclusions may change. No peer review or independent performance validation is claimed. See the [research overview](docs/RESEARCH.md), [contribution guidance](CONTRIBUTING.md), and [v0.2.0 release notes](docs/RELEASE-v0.2.0.md). This project is unrelated to the Velocity animation library.
 
-Start with the [research overview](docs/RESEARCH.md), [contribution guidance](CONTRIBUTING.md), and [baseline release notes](docs/RELEASE-v0.1.0.md). The repository name distinguishes this experiment from the unrelated Velocity animation library.
+This version adds a real Rust-compiled WebAssembly keyed-list planner, a matching JavaScript planner, and a shared DOM renderer. Read **docs/RUST_WASM.md** and **results/RUST_WASM_FINDINGS.md** first. It is an experimental hybrid, not a complete Rust UI framework or a claim of universal speed leadership.
 
-A small experimental UI runtime, a restricted JSX-to-DOM compiler, and a reproducible browser benchmark repository comparing eight implementations. **This is research code, not a production framework or a claim of universal superiority.**
-
-## Quick start
-
-Requires Node.js 22+ and npm. Tested dependency versions are pinned in package-lock.json.
+Quick start (Node 22+, Rust via rustup):
 
 ```sh
 npm ci
-npx playwright install --with-deps chromium firefox
-npm test
+rustup toolchain install 1.85.0 --profile minimal --target wasm32-unknown-unknown
 npm run build
+npm run test:rust
+npm test
+npx playwright install chromium
 npm run check
 npm run bench
+npm run bench:planner
 npm run report
+npm run serve
 ```
 
-Read **results/FINDINGS.md** for the conclusions and **results/REPORT.md** for the included measured results, **docs/METHODOLOGY.md** for interpretation, and **docs/ARCHITECTURE.md** for the POC implementation.
+Open http://127.0.0.1:4173/explorer.html. The prebuilt `dist/` works without Rust or npm using `python3 -m http.server 4173 --directory dist --bind 127.0.0.1`.
 
-Open `results/report.html` directly for an offline report. The `dist/` directory contains prebuilt browser fixtures. Use `npm run serve`, then visit http://127.0.0.1:4173/explorer.html for interactive controls, or http://127.0.0.1:4173 for fixture links. Do not open fixture HTML using file:// because it loads ES modules.
+The 10 adapters include original Velocity, `velocity-js` (new planner/renderer control), `velocity-wasm` (same renderer with Rust planner), vanilla, React, Preact, Vue, Solid, Svelte, and Lit. v0.1 raw runs are preserved under `results/v0.1/`; do not combine them with v0.2 measurements as one experiment.
 
-## Inspect the prebuilt demo without installing Node dependencies
+## Repository guide
 
-```sh
-python3 -m http.server 4173 --directory dist --bind 127.0.0.1
-```
+- `rust/planner/`: Rust source, locked Cargo project and native tests.
+- `src/planner/`: equivalent JS planner and Wasm bridge.
+- `src/adapters/hybrid.js`: shared renderer for the paired controls.
+- `src/poc/`: original signals, keyed DOM runtime and restricted JSX compiler.
+- `bench/`: browser correctness, full UI timing, planner timing and report generation.
+- `tests/`: Node tests including actual Wasm execution against a reference oracle.
+- `dist/`: prebuilt fixtures and explorer; `generated/`: compiled JSX, Wasm and provenance.
+- `results/RUST_WASM_FINDINGS.md`: current findings; `results/report.html`: full comparison report.
+- `docs/RUST_WASM.md`: architecture, limitations and next-stage plan.
+- `docs/REPRODUCE_V02.md`: measured commands and environment notes.
+- `docs/V01_README.md`: historical POC usage and design background.
 
-Open http://127.0.0.1:4173/explorer.html. This serves the included prebuilt fixtures; it does not run the automated benchmark suite.
+Run `npm run findings` after both CPU profiles and the planner benchmark to regenerate the focused findings. Run `python3 scripts/manifests.py` and `python3 scripts/archive.py` to package an updated checkout. Rust build artifacts and node_modules are excluded.
 
-## Additional runs
+## Scope
 
-```sh
-# Short smoke run (not sufficient for performance claims)
-SAMPLES=3 WARMUPS=1 npm run bench
-
-# More repetitions
-SAMPLES=30 WARMUPS=5 npm run bench
-
-# Chromium CPU throttling: a synthetic stress profile, not a real mobile device
-CPU_RATE=4 SAMPLES=15 npm run bench
-
-# Firefox
-BROWSER=firefox npm run check
-BROWSER=firefox SAMPLES=15 npm run bench
-
-# Optional WebKit (not necessarily measured in supplied results)
-npx playwright install --with-deps webkit
-BROWSER=webkit npm run check
-BROWSER=webkit npm run bench
-
-# Focused comparison
-FRAMEWORKS=velocity,solid,vanilla SAMPLES=30 npm run bench
-```
-
-Environment-variable syntax above is POSIX shell; use `$env:SAMPLES="30"` in PowerShell. Each engine/CPU profile overwrites its own `results/run-ENGINE-cpuRATE.json`; copy a run first if you want to retain it. `npm run report` combines all matching run files.
-
-## Included implementations
-
-- **Velocity:** new reactive core + restricted compile-time JSX lowering + keyed DOM reconciliation.
-- **Vanilla:** explicit handwritten DOM baseline.
-- **React:** memoized rows and dashboard cells; explicit synchronous commit barrier.
-- **Preact:** memoized rows and cells.
-- **Vue:** shallow state and keyed component/render functions.
-- **Solid:** compiler-generated DOM + keyed store reconciliation.
-- **Svelte:** compiled Svelte components using runes.
-- **Lit:** lit-html templates and keyed `repeat` (not a LitElement component benchmark).
-
-This is a concrete representative set, not every framework in existence. Angular, Qwik, Marko, Astro, Leptos, Dioxus, and Flutter are not implemented in this version. SSR/startup architectures and custom graphics systems need distinct fair workload contracts rather than being forced into this DOM-only suite.
-
-## Benchmark families
-
-Fourteen operation workloads cover creation, replacement, append, sparse update, selection, keyed movement, removal, clearing, filtering, sorting, real synthetic DOM input/click event dispatch, and 128-cell dashboard updates. Additional suites capture localhost startup, 120-frame dashboard traces, Chromium post-GC lifecycle observations, and compressed bundle sizes.
-
-All measured operation samples receive an untimed DOM-output assertion. Dedicated correctness tests additionally check key identity, mixed action sequences, escaping, disposal, and remounting. These do not certify full browser behavior, IME handling, screen-reader support, or production readiness.
-
-## Package contents
-
-- `src/poc/`: reactive runtime, DOM bindings, JSX compiler, authored views.
-- `src/adapters/`: all competing implementations.
-- `src/model.js`: common deterministic data and state transformations.
-- `bench/`: runner, correctness checks, report generation.
-- `tests/`: semantic and compiler unit tests.
-- `generated/`: readable compiler output and source map.
-- `dist/`: prebuilt fixtures and source maps.
-- `results/`: raw runs, correctness results, JSON/CSV summaries, and report.
-- `docs/`: architecture, methodology, limitations, roadmap, sources.
-
-## Why no Rust/Wasm yet?
-
-The first hypothesis concerns DOM execution and compilation, not numeric kernels. This POC deliberately uses a JavaScript compiler implementation so runtime and semantics can be inspected and changed quickly. It includes **no Rust compiler and no Wasm acceleration**. A Rust compiler port would improve the development toolchain, not automatically improve generated UI performance. Worker/Wasm kernels are a later, separately measured experiment.
-
-## Reproducibility and licensing
-
-The source is MIT licensed. Dependencies retain their own licenses. `npm ci` installs exact locked versions. Source maps are included for inspection; do not publish them blindly for applications containing proprietary source. No dependencies or browsers are bundled in the archive. Full browser installation requires network access and system dependencies.
-
-### Custom browser executable
-
-If Playwright's browser download is unavailable, the runner accepts an explicitly selected executable:
-
-```sh
-BROWSER_EXECUTABLE=/absolute/path/to/chromium npm run check
-BROWSER_EXECUTABLE=/absolute/path/to/chromium npm run bench
-```
-
-The supplied Chromium results use the Linux Chromium executable distributed by `@sparticuz/chromium`; see raw run metadata for its browser version. This is not the standard Playwright Chromium download. Reproduce on your own browser before drawing deployment conclusions. `SERVERLESS_CHROMIUM=1` is also supported where that package's normal extraction works. The package is a harness dependency, not part of any app bundle.
+This version has a restricted compiler and experimental runtime; it does not implement routing, SSR/hydration, a production component model, arbitrary keys, concurrent rendering, or a Rust-based JSX compiler. Wasm is a measured optional path. Its internal pointer ABI is for trusted generated code, not a hardened public interface. See the architecture document before reusing it.

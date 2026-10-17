@@ -1,8 +1,16 @@
 {
-  "timestamp": "2026-10-16T21:00:25.469Z",
+  "timestamp": "2026-10-17T06:53:20.522Z",
   "results": [
     {
       "framework": "velocity",
+      "status": "passed"
+    },
+    {
+      "framework": "velocity-js",
+      "status": "passed"
+    },
+    {
+      "framework": "velocity-wasm",
       "status": "passed"
     },
     {

@@ -20,3 +20,5 @@ Dependencies retain their original licenses. Install with npm ci to obtain their
 | solid-js | 1.9.17 | MIT | Comparison implementation |
 | svelte | 5.57.2 | MIT | Comparison implementation |
 | vue | 3.5.44 | MIT | Comparison implementation |
+
+Rust 1.85.0 standard-library/compiler runtime code linked into planner.wasm retains its upstream licensing. Rust's MIT/Apache licenses and COPYRIGHT inventory are included under docs/licenses/rust/. The crate itself has no external Cargo dependencies.

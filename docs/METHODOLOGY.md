@@ -1,3 +1,5 @@
+> v0.2 adds velocity-js and velocity-wasm. See RUST_WASM.md for the paired-control design, Wasm transfer/startup costs and memory-accounting limits. The measurement primitives below remain applicable.
+
 # Benchmark methodology
 
 ## Contract

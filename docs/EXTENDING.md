@@ -1,3 +1,5 @@
+> v0.2: register adapters in both bench/config.mjs and scripts/build.mjs, add an explorer option, and include any additional binary assets in scripts/artifact-hash.mjs. See RUST_WASM.md for the new paired-control adapters.
+
 # Adding a framework or workload
 
 ## New adapter

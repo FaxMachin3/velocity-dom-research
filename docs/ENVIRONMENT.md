@@ -1,3 +1,5 @@
+> Historical v0.1 environment notes. See REPRODUCE_V02.md and raw v0.2 run metadata for the current execution.
+
 # Execution environment
 
 The included runs were produced in a shared Linux container, using a headless browser, localhost serving, and a 1280x900 viewport. Exact dependency versions, CPU description, browser version, timestamps, repetitions, and profile settings are in each raw run's `meta` object.

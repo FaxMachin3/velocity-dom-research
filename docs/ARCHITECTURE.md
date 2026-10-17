@@ -1,3 +1,5 @@
+> Historical v0.1 architecture. For the v0.2 Rust/Wasm and matched-control additions, see RUST_WASM.md.
+
 # Architecture and API
 
 ## Compilation

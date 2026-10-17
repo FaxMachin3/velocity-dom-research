@@ -1,4 +1,4 @@
-export const frameworks=['velocity','vanilla','react','preact','vue','solid','svelte','lit'];
+export const frameworks=['velocity','velocity-js','velocity-wasm','vanilla','react','preact','vue','solid','svelte','lit'];
 export const scenarios=[
  {name:'create-1000',initial:0,action:'create',arg:1000},
  {name:'create-5000',initial:0,action:'create',arg:5000},

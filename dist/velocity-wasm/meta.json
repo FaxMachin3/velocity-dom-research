@@ -1,0 +1,82 @@
+{
+  "inputs": {
+    "src/planner/wasm.js": {
+      "bytes": 1059,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/adapters/hybrid.js": {
+      "bytes": 2788,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/adapters/velocity-wasm.js": {
+      "bytes": 167,
+      "imports": [
+        {
+          "path": "src/planner/wasm.js",
+          "kind": "import-statement",
+          "original": "../planner/wasm.js"
+        },
+        {
+          "path": "src/adapters/hybrid.js",
+          "kind": "import-statement",
+          "original": "./hybrid.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/model.js": {
+      "bytes": 1349,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/entry.js": {
+      "bytes": 1420,
+      "imports": [
+        {
+          "path": "src/adapters/velocity-wasm.js",
+          "kind": "import-statement",
+          "original": "./adapters/velocity-wasm.js"
+        },
+        {
+          "path": "src/model.js",
+          "kind": "import-statement",
+          "original": "./model.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/velocity-wasm/app.js.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 14094
+    },
+    "dist/velocity-wasm/app.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/entry.js",
+      "inputs": {
+        "src/planner/wasm.js": {
+          "bytesInOutput": 695
+        },
+        "src/adapters/hybrid.js": {
+          "bytesInOutput": 1992
+        },
+        "src/adapters/velocity-wasm.js": {
+          "bytesInOutput": 24
+        },
+        "src/model.js": {
+          "bytesInOutput": 1066
+        },
+        "src/entry.js": {
+          "bytesInOutput": 1062
+        }
+      },
+      "bytes": 4872
+    }
+  }
+}

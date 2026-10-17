@@ -1,0 +1,82 @@
+{
+  "inputs": {
+    "src/planner/js.js": {
+      "bytes": 737,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/adapters/hybrid.js": {
+      "bytes": 2788,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/adapters/velocity-js.js": {
+      "bytes": 165,
+      "imports": [
+        {
+          "path": "src/planner/js.js",
+          "kind": "import-statement",
+          "original": "../planner/js.js"
+        },
+        {
+          "path": "src/adapters/hybrid.js",
+          "kind": "import-statement",
+          "original": "./hybrid.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/model.js": {
+      "bytes": 1349,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/entry.js": {
+      "bytes": 1418,
+      "imports": [
+        {
+          "path": "src/adapters/velocity-js.js",
+          "kind": "import-statement",
+          "original": "./adapters/velocity-js.js"
+        },
+        {
+          "path": "src/model.js",
+          "kind": "import-statement",
+          "original": "./model.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/velocity-js/app.js.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 13781
+    },
+    "dist/velocity-js/app.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/entry.js",
+      "inputs": {
+        "src/planner/js.js": {
+          "bytesInOutput": 506
+        },
+        "src/adapters/hybrid.js": {
+          "bytesInOutput": 1992
+        },
+        "src/adapters/velocity-js.js": {
+          "bytesInOutput": 24
+        },
+        "src/model.js": {
+          "bytesInOutput": 1066
+        },
+        "src/entry.js": {
+          "bytesInOutput": 1062
+        }
+      },
+      "bytes": 4683
+    }
+  }
+}

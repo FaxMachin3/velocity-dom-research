@@ -1,3 +1,4 @@
+import {artifactHash} from '../scripts/artifact-hash.mjs';
 import {launch} from './browser.mjs';
 import {serve} from '../scripts/server.mjs';
 import {frameworks,scenarios} from './config.mjs';
@@ -28,7 +29,7 @@ try{
  await page.evaluate(()=>window.bench.destroy());assert.equal(await page.locator('#app').evaluate(n=>n.childElementCount),0);
  for(let i=0;i<5;i++){await page.evaluate(()=>window.bench.reset(100));await page.evaluate(()=>window.bench.act('tick'));}
  assert.deepEqual(errors,[]);
- results.push({framework:f,bundleSha256:createHash('sha256').update(await readFile(`dist/${f}/app.js`)).digest('hex'),status:'passed',scenarios:scenarios.length,sequenceSteps:10,identity:true,disposal:true});console.log('PASS',f);
+ results.push({framework:f,bundleSha256:await artifactHash(f),status:'passed',scenarios:scenarios.length,sequenceSteps:10,identity:true,disposal:true});console.log('PASS',f);
 }catch(e){results.push({framework:f,status:'failed',error:e.stack});console.error('FAIL',f,e.message.slice(0,1000));}
 await page.close();}
 }finally{await browser.close();await new Promise(r=>server.close(r));await mkdir('results',{recursive:true});await writeFile(`results/correctness-${engine}.json`,JSON.stringify({engine,timestamp:new Date().toISOString(),results},null,2));}

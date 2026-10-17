@@ -1,3 +1,5 @@
+> The Rust/Wasm planner experiment is now implemented in v0.2. See RUST_WASM.md for the updated staged plan and decision gates. The roadmap below is the original v0.1 proposal.
+
 # Next experiments
 
 1. Have maintainers review adapter choices; add compiled Vue SFC and React Compiler variants rather than replacing baseline results invisibly.

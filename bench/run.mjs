@@ -1,3 +1,4 @@
+import {artifactHash} from '../scripts/artifact-hash.mjs';
 import {launch} from './browser.mjs';
 import {serve} from '../scripts/server.mjs';
 import {frameworks,scenarios,shuffle} from './config.mjs';
@@ -10,7 +11,7 @@ const selected=process.env.FRAMEWORKS?process.env.FRAMEWORKS.split(','):framewor
 for(const f of selected)if(!frameworks.includes(f))throw Error('Unknown framework '+f);
 if(cpuRate!==1 && engine!=='chromium')throw Error('CPU throttling supported only for Chromium');
 const correctness=JSON.parse(await readFile(`results/correctness-${engine}.json`,'utf8'));
-for(const f of selected){const hash=createHash('sha256').update(await readFile(`dist/${f}/app.js`)).digest('hex');if(!correctness.results.some(r=>r.framework===f&&r.status==='passed'&&r.bundleSha256===hash))throw Error('Correctness gate missing or stale for '+f+'; run npm run check again');}
+for(const f of selected){const hash=await artifactHash(f);if(!correctness.results.some(r=>r.framework===f&&r.status==='passed'&&r.bundleSha256===hash))throw Error('Correctness gate missing or stale for '+f+'; run npm run check again');}
 const server=await serve(0),port=server.address().port;
 const browser=await launch(engine);
 const pkg=JSON.parse(await readFile('package.json','utf8'));

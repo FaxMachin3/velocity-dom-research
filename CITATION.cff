@@ -5,7 +5,7 @@ title: "Velocity: Experimental compiled-DOM runtime and benchmark study"
 authors:
   - family-names: Raj
     given-names: Subham
-version: 0.1.0
+version: 0.2.0
 license: MIT
 repository-code: "https://github.com/FaxMachin3/velocity-dom-research"
-abstract: "A restricted JSX-to-DOM compiler, fine-grained reactive runtime, and reproducible comparison of eight browser UI implementations. Experimental research preview; no peer review or independent validation claimed."
+abstract: "A restricted JSX-to-DOM compiler, reactive runtime, and ten browser UI implementations, including matched JavaScript and Rust/WebAssembly keyed-list planners. Experimental research preview; no peer review or independent performance validation claimed."

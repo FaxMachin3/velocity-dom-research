@@ -6,7 +6,7 @@ export function serve(port=4173){
  const root=path.resolve('dist');
  const server=http.createServer(async(req,res)=>{
   try{const url=new URL(req.url,'http://localhost');let file=decodeURIComponent(url.pathname);if(file.endsWith('/'))file+='index.html';const resolved=path.resolve(root,'.'+file);if(!resolved.startsWith(root+path.sep))throw new Error('invalid path');
-   const data=await readFile(resolved);res.writeHead(200,{'Content-Type':resolved.endsWith('.js')?'text/javascript':resolved.endsWith('.css')?'text/css':resolved.endsWith('.html')?'text/html':'application/json','Cache-Control':'no-store'});res.end(data);
+   const data=await readFile(resolved);res.writeHead(200,{'Content-Type':resolved.endsWith('.wasm')?'application/wasm':resolved.endsWith('.js')?'text/javascript':resolved.endsWith('.css')?'text/css':resolved.endsWith('.html')?'text/html':'application/json','Cache-Control':'no-store'});res.end(data);
   }catch{res.writeHead(404);res.end('Not found');}
  });
  return new Promise(resolve=>server.listen(port,'127.0.0.1',()=>resolve(server)));

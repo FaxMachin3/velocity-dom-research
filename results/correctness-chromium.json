@@ -1,10 +1,28 @@
 {
   "engine": "chromium",
-  "timestamp": "2026-10-16T21:00:22.050Z",
+  "timestamp": "2026-10-17T06:40:52.018Z",
   "results": [
     {
       "framework": "velocity",
       "bundleSha256": "7268ffe64e98dd0920285045cdccc6efcbb8825764e0925d4b18538347b262e7",
+      "status": "passed",
+      "scenarios": 14,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "velocity-js",
+      "bundleSha256": "9125870df94db2b6a3daab4ec370b0a5554525a149686598d1b7573a33d988d0",
+      "status": "passed",
+      "scenarios": 14,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "velocity-wasm",
+      "bundleSha256": "463ed6bfce439bbcfbe8b55120c3db4c6b50a11bcbcd939974d1ac904826305c",
       "status": "passed",
       "scenarios": 14,
       "sequenceSteps": 10,
