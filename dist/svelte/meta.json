@@ -3580,7 +3580,7 @@
       "format": "esm"
     },
     "src/model.js": {
-      "bytes": 1349,
+      "bytes": 1827,
       "imports": [],
       "format": "esm"
     },
@@ -3606,7 +3606,7 @@
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 495626
+      "bytes": 496780
     },
     "dist/svelte/app.js": {
       "imports": [],
@@ -3764,13 +3764,13 @@
           "bytesInOutput": 155
         },
         "src/model.js": {
-          "bytesInOutput": 1073
+          "bytesInOutput": 1481
         },
         "src/entry.js": {
           "bytesInOutput": 1100
         }
       },
-      "bytes": 56839
+      "bytes": 57247
     }
   }
 }

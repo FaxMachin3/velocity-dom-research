@@ -1,6 +1,6 @@
 {
   "name": "velocity-poc",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Experimental compiled DOM runtime and reproducible multi-framework browser benchmarks",
   "directories": {
     "doc": "docs",
@@ -13,12 +13,15 @@
     "check": "node bench/check.mjs",
     "bench": "node bench/run.mjs",
     "report": "node bench/report.mjs",
-    "verify": "npm run build && npm run test:rust && npm test && npm run check",
+    "verify": "npm run build && npm run test:rust && npm test && npm run check && npm run check:stress && npm run check:explorer",
     "check:explorer": "node bench/explorer-check.mjs",
     "build:wasm": "node scripts/build-wasm.mjs",
     "test:rust": "cargo test --manifest-path rust/planner/Cargo.toml --locked",
     "bench:planner": "node bench/planner.mjs",
-    "findings": "node scripts/wasm-findings.mjs"
+    "findings": "node scripts/release-report.mjs",
+    "check:stress": "node bench/stress.mjs",
+    "bench:deep": "node bench/deep.mjs",
+    "report:release": "node scripts/release-report.mjs"
   },
   "keywords": [],
   "author": "",

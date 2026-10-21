@@ -1,5 +1,5 @@
 
-> velocity-poc@0.2.0 test:rust
+> velocity-poc@0.3.0 test:rust
 > cargo test --manifest-path rust/planner/Cargo.toml --locked
 
 

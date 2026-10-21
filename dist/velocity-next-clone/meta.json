@@ -1,0 +1,110 @@
+{
+  "inputs": {
+    "src/planner/js.js": {
+      "bytes": 737,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/poc/lis.js": {
+      "bytes": 622,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/poc/keyed-list-clone.js": {
+      "bytes": 2745,
+      "imports": [
+        {
+          "path": "src/poc/lis.js",
+          "kind": "import-statement",
+          "original": "./lis.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/adapters/optimized-clone.js": {
+      "bytes": 2491,
+      "imports": [
+        {
+          "path": "src/poc/keyed-list-clone.js",
+          "kind": "import-statement",
+          "original": "../poc/keyed-list-clone.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/adapters/velocity-next-clone.js": {
+      "bytes": 170,
+      "imports": [
+        {
+          "path": "src/planner/js.js",
+          "kind": "import-statement",
+          "original": "../planner/js.js"
+        },
+        {
+          "path": "src/adapters/optimized-clone.js",
+          "kind": "import-statement",
+          "original": "./optimized-clone.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/model.js": {
+      "bytes": 1827,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/entry.js": {
+      "bytes": 1426,
+      "imports": [
+        {
+          "path": "src/adapters/velocity-next-clone.js",
+          "kind": "import-statement",
+          "original": "./adapters/velocity-next-clone.js"
+        },
+        {
+          "path": "src/model.js",
+          "kind": "import-statement",
+          "original": "./model.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/velocity-next-clone/app.js.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 21252
+    },
+    "dist/velocity-next-clone/app.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/entry.js",
+      "inputs": {
+        "src/planner/js.js": {
+          "bytesInOutput": 506
+        },
+        "src/poc/lis.js": {
+          "bytesInOutput": 298
+        },
+        "src/poc/keyed-list-clone.js": {
+          "bytesInOutput": 1337
+        },
+        "src/adapters/optimized-clone.js": {
+          "bytesInOutput": 1728
+        },
+        "src/adapters/velocity-next-clone.js": {
+          "bytesInOutput": 24
+        },
+        "src/model.js": {
+          "bytesInOutput": 1474
+        },
+        "src/entry.js": {
+          "bytesInOutput": 1062
+        }
+      },
+      "bytes": 6462
+    }
+  }
+}

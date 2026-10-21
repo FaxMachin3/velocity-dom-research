@@ -1,6 +1,12 @@
 # Velocity: compiled DOM rendering research
 
-## Current release: v0.2.0
+## Current release: v0.3.0
+
+Adds prefix/suffix fast paths, longest-increasing-subsequence movement, retained text-node updates, whole-list clearing, and focus restoration. Thirteen adapters and twenty workloads are included. The optimized fixture is hand-specialized; the JSX compiler does not generate it. See [release decisions](../results/DECISION.md), [protocol](V03_EXPERIMENT_PROTOCOL.md), and [limitations](V03_LIMITATIONS.md).
+
+The supplied three final batches contain 10,400 validated operations with no recorded output failures. Reorder gains repeat across both normal batches and the throttled batch; replacement and some throttled workloads regress. These separate author-run batches are not external independent reproduction. The Wasm planner remains optional and is skipped by some fast paths. Historical v0.2 results are preserved under results/v0.2 and its Git tag. Do not pool historical measurements with current batches.
+
+## Historical release: v0.2.0
 
 The current experiment adds JavaScript and Rust/WebAssembly keyed-list planners with the same hash/probing algorithm and shared DOM renderer. Ten adapters are now included. Read [Rust/Wasm architecture](RUST_WASM.md), [reproduction instructions](REPRODUCE_V02.md), and [current findings](../results/RUST_WASM_FINDINGS.md).
 

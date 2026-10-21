@@ -1,0 +1,132 @@
+[
+  {
+    "framework": "velocity-next-clone",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 6462,
+    "jsBytes": 6462,
+    "gzipBytes": 2689,
+    "brotliBytes": 2431,
+    "buildMs": 22.866848000000005
+  },
+  {
+    "framework": "velocity-next",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 7325,
+    "jsBytes": 7325,
+    "gzipBytes": 3097,
+    "brotliBytes": 2793,
+    "buildMs": 13.355728999999997
+  },
+  {
+    "framework": "velocity-next-wasm",
+    "wasmBytes": 19742,
+    "wasmGzipBytes": 8101,
+    "totalBytes": 27256,
+    "jsBytes": 7514,
+    "gzipBytes": 3216,
+    "brotliBytes": 2882,
+    "buildMs": 13.92999500000002
+  },
+  {
+    "framework": "velocity",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 6892,
+    "jsBytes": 6892,
+    "gzipBytes": 2596,
+    "brotliBytes": 2364,
+    "buildMs": 31.658952
+  },
+  {
+    "framework": "velocity-js",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 5091,
+    "jsBytes": 5091,
+    "gzipBytes": 2104,
+    "brotliBytes": 1889,
+    "buildMs": 10.300190000000043
+  },
+  {
+    "framework": "velocity-wasm",
+    "wasmBytes": 19742,
+    "wasmGzipBytes": 8101,
+    "totalBytes": 25022,
+    "jsBytes": 5280,
+    "gzipBytes": 2201,
+    "brotliBytes": 1964,
+    "buildMs": 31.394137
+  },
+  {
+    "framework": "vanilla",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 4206,
+    "jsBytes": 4206,
+    "gzipBytes": 1746,
+    "brotliBytes": 1559,
+    "buildMs": 7.88069900000005
+  },
+  {
+    "framework": "react",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 226647,
+    "jsBytes": 226647,
+    "gzipBytes": 70394,
+    "brotliBytes": 60538,
+    "buildMs": 387.303729
+  },
+  {
+    "framework": "preact",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 19874,
+    "jsBytes": 19874,
+    "gzipBytes": 8246,
+    "brotliBytes": 7521,
+    "buildMs": 32.159257000000025
+  },
+  {
+    "framework": "vue",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 59140,
+    "jsBytes": 59140,
+    "gzipBytes": 23424,
+    "brotliBytes": 21315,
+    "buildMs": 109.636841
+  },
+  {
+    "framework": "solid",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 22660,
+    "jsBytes": 22660,
+    "gzipBytes": 8783,
+    "brotliBytes": 8030,
+    "buildMs": 154.05073700000003
+  },
+  {
+    "framework": "svelte",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 57247,
+    "jsBytes": 57247,
+    "gzipBytes": 21567,
+    "brotliBytes": 19434,
+    "buildMs": 106.54176299999995
+  },
+  {
+    "framework": "lit",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 20619,
+    "jsBytes": 20619,
+    "gzipBytes": 7993,
+    "brotliBytes": 7215,
+    "buildMs": 30.185608000000002
+  }
+]

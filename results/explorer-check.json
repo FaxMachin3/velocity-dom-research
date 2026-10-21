@@ -1,6 +1,18 @@
 {
-  "timestamp": "2026-10-17T06:53:20.522Z",
+  "timestamp": "2026-10-17T09:22:09.727Z",
   "results": [
+    {
+      "framework": "velocity-next-clone",
+      "status": "passed"
+    },
+    {
+      "framework": "velocity-next",
+      "status": "passed"
+    },
+    {
+      "framework": "velocity-next-wasm",
+      "status": "passed"
+    },
     {
       "framework": "velocity",
       "status": "passed"

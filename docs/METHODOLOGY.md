@@ -1,3 +1,5 @@
+> v0.3 retains these measurement primitives but adds six workloads and independent frozen-build replication. See V03_EXPERIMENT_PROTOCOL.md. The gate-provenance paragraph below describes v0.1; v0.3 validates current JS/Wasm fingerprints before every timing run.
+
 > v0.2 adds velocity-js and velocity-wasm. See RUST_WASM.md for the paired-control design, Wasm transfer/startup costs and memory-accounting limits. The measurement primitives below remain applicable.
 
 # Benchmark methodology

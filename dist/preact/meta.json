@@ -64,7 +64,7 @@
       "format": "esm"
     },
     "src/model.js": {
-      "bytes": 1349,
+      "bytes": 1827,
       "imports": [],
       "format": "esm"
     },
@@ -90,7 +90,7 @@
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 170395
+      "bytes": 171547
     },
     "dist/preact/app.js": {
       "imports": [],
@@ -110,13 +110,13 @@
           "bytesInOutput": 843
         },
         "src/model.js": {
-          "bytesInOutput": 1073
+          "bytesInOutput": 1481
         },
         "src/entry.js": {
           "bytesInOutput": 1072
         }
       },
-      "bytes": 19466
+      "bytes": 19874
     }
   }
 }

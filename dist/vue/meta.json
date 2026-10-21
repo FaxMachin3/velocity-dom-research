@@ -91,7 +91,7 @@
       "format": "esm"
     },
     "src/model.js": {
-      "bytes": 1349,
+      "bytes": 1827,
       "imports": [],
       "format": "esm"
     },
@@ -117,7 +117,7 @@
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 571096
+      "bytes": 572246
     },
     "dist/vue/app.js": {
       "imports": [],
@@ -143,13 +143,13 @@
           "bytesInOutput": 750
         },
         "src/model.js": {
-          "bytesInOutput": 1073
+          "bytesInOutput": 1481
         },
         "src/entry.js": {
           "bytesInOutput": 1100
         }
       },
-      "bytes": 58732
+      "bytes": 59140
     }
   }
 }

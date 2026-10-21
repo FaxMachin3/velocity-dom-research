@@ -7,7 +7,7 @@ try {
  const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
  await page.goto(`http://127.0.0.1:${server.address().port}/explorer.html`);
  for(const name of frameworks){
-  if(name!=='velocity')await page.selectOption('#framework',name);
+  await page.selectOption('#framework',name);
   const frame=await (await page.$('#fixture')).contentFrame();
   await frame.waitForURL(`**/${name}/`);await frame.waitForFunction(()=>window.ready);
   await page.locator('[data-action="create"][data-arg="1000"]').click();

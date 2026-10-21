@@ -6,7 +6,7 @@ import {compile} from '../src/poc/compiler.js';
 import {readFile,writeFile,mkdir,rm} from 'node:fs/promises';
 import path from 'node:path';
 import {gzipSync,brotliCompressSync} from 'node:zlib';
-export const frameworks=['velocity','velocity-js','velocity-wasm','vanilla','react','preact','vue','solid','svelte','lit'];
+export const frameworks=['velocity-next-clone','velocity-next','velocity-next-wasm','velocity','velocity-js','velocity-wasm','vanilla','react','preact','vue','solid','svelte','lit'];
 await rm('dist',{recursive:true,force:true});await mkdir('dist',{recursive:true});await mkdir('generated',{recursive:true});
 const entry=await readFile('src/entry.js','utf8');
 const sizes=[];
@@ -21,8 +21,8 @@ for(const framework of frameworks){
  }}];
  const result=await build({stdin:{contents:entry.replace('ADAPTER','./adapters/'+adapter),resolveDir:path.resolve('src'),sourcefile:'entry.js'},bundle:true,minify:true,sourcemap:true,format:'esm',target:'es2022',outfile:`dist/${framework}/app.js`,metafile:true,conditions:['browser','production'],define:{'process.env.NODE_ENV':'"production"',__VUE_OPTIONS_API__:'false',__VUE_PROD_DEVTOOLS__:'false',__VUE_PROD_HYDRATION_MISMATCH_DETAILS__:'false'},jsxFactory:framework==='preact'?'h':'React.createElement',plugins,logLevel:'warning'});
  await writeFile(`dist/${framework}/index.html`,`<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${framework} benchmark</title><link rel="stylesheet" href="/style.css"><body><div id="app"></div><script type="module" src="./app.js"></script></body></html>`);
- if(framework==='velocity-wasm')await writeFile(`dist/${framework}/planner.wasm`,await readFile('generated/planner.wasm'));
- const bytes=await readFile(`dist/${framework}/app.js`);const wasm=framework==='velocity-wasm'?await readFile('generated/planner.wasm'):Buffer.alloc(0);sizes.push({framework,wasmBytes:wasm.length,wasmGzipBytes:wasm.length?gzipSync(wasm).length:0,totalBytes:bytes.length+wasm.length,jsBytes:bytes.length,gzipBytes:gzipSync(bytes).length,brotliBytes:brotliCompressSync(bytes).length,buildMs:performance.now()-start});
+ if(framework.endsWith('wasm'))await writeFile(`dist/${framework}/planner.wasm`,await readFile('generated/planner.wasm'));
+ const bytes=await readFile(`dist/${framework}/app.js`);const wasm=framework.endsWith('wasm')?await readFile('generated/planner.wasm'):Buffer.alloc(0);sizes.push({framework,wasmBytes:wasm.length,wasmGzipBytes:wasm.length?gzipSync(wasm).length:0,totalBytes:bytes.length+wasm.length,jsBytes:bytes.length,gzipBytes:gzipSync(bytes).length,brotliBytes:brotliCompressSync(bytes).length,buildMs:performance.now()-start});
  await writeFile(`dist/${framework}/meta.json`,JSON.stringify(result.metafile,null,2));
  console.log('Built',framework,sizes.at(-1).jsBytes,'bytes');
 }
@@ -34,3 +34,4 @@ await writeFile('dist/explorer.html',await readFile('src/explorer.html','utf8'))
 
 await build({stdin:{contents:"export {createPlanner as js} from './planner/js.js';export {createPlanner as wasm} from './planner/wasm.js';",resolveDir:path.resolve('src')},bundle:true,minify:true,format:'esm',target:'es2022',outfile:'dist/planners.js'});
 await writeFile('dist/planner.wasm',await readFile('generated/planner.wasm'));
+await build({stdin:{contents:"import {mountOptimized} from './adapters/optimized.js';import {createPlanner as js} from './planner/js.js';import {createPlanner as wasm} from './planner/wasm.js';export const mountJS=(...a)=>mountOptimized(js,...a);export const mountWasm=(...a)=>mountOptimized(wasm,...a);",resolveDir:path.resolve('src')},bundle:true,minify:true,format:'esm',target:'es2022',outfile:'dist/testing.js'});

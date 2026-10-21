@@ -1,5 +1,11 @@
-export const frameworks=['velocity','velocity-js','velocity-wasm','vanilla','react','preact','vue','solid','svelte','lit'];
+export const frameworks=['velocity-next-clone','velocity-next','velocity-next-wasm','velocity','velocity-js','velocity-wasm','vanilla','react','preact','vue','solid','svelte','lit'];
 export const scenarios=[
+ {name:'create-10000',initial:0,action:'create',arg:10000},
+ {name:'update-all',initial:1000,action:'update-all'},
+ {name:'reverse-1000',initial:1000,action:'reverse'},
+ {name:'rotate-1000',initial:1000,action:'rotate'},
+ {name:'shuffle-1000',initial:1000,action:'shuffle'},
+ {name:'noop-1000',initial:1000,action:'noop'},
  {name:'create-1000',initial:0,action:'create',arg:1000},
  {name:'create-5000',initial:0,action:'create',arg:5000},
  {name:'replace-1000',initial:1000,action:'replace',arg:1000},

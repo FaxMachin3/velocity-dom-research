@@ -1,3 +1,3 @@
 # Current findings
 
-See [RUST_WASM_FINDINGS.md](RUST_WASM_FINDINGS.md) for v0.2. Original v0.1 findings are preserved under [v0.1/FINDINGS.md](v0.1/FINDINGS.md).
+See RELEASE.md and release.html for v0.3. Earlier findings are preserved under v0.1/ and v0.2/.

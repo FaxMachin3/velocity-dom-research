@@ -27,7 +27,7 @@
       "format": "esm"
     },
     "src/model.js": {
-      "bytes": 1349,
+      "bytes": 1827,
       "imports": [],
       "format": "esm"
     },
@@ -53,7 +53,7 @@
       "imports": [],
       "exports": [],
       "inputs": {},
-      "bytes": 13781
+      "bytes": 14941
     },
     "dist/velocity-js/app.js": {
       "imports": [],
@@ -70,13 +70,13 @@
           "bytesInOutput": 24
         },
         "src/model.js": {
-          "bytesInOutput": 1066
+          "bytesInOutput": 1474
         },
         "src/entry.js": {
           "bytesInOutput": 1062
         }
       },
-      "bytes": 4683
+      "bytes": 5091
     }
   }
 }

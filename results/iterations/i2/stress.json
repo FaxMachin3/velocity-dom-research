@@ -1,0 +1,16 @@
+[
+  {
+    "variant": "js",
+    "randomizedUpdates": 605,
+    "swapMoves": 2,
+    "focus": true,
+    "remounts": 100
+  },
+  {
+    "variant": "wasm",
+    "randomizedUpdates": 605,
+    "swapMoves": 2,
+    "focus": true,
+    "remounts": 100
+  }
+]

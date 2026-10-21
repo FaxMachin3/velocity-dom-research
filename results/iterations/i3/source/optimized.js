@@ -1,0 +1,33 @@
+import {keyedList} from '../poc/keyed-list.js';
+export function mountOptimized(createPlanner,host,initial,dispatch){
+ const main=document.createElement('main');
+ main.innerHTML='<p data-count></p><label>Search<input aria-label="Search"></label><output></output><section class="dashboard"></section><table><tbody></tbody></table>';
+ const template=document.createElement('template');template.innerHTML='<tr><td> </td><td><button> </button></td><td> </td></tr>';
+ const count=main.querySelector('p'),countText=document.createTextNode('');count.append(countText);
+ const input=main.querySelector('input'),output=main.querySelector('output'),outputText=document.createTextNode('');output.append(outputText);
+ const body=main.querySelector('tbody'),section=main.querySelector('section');
+ const cells=initial.cells.map(()=>{const node=document.createElement('span');node.className='cell';const text=document.createTextNode('');node.append(text);section.append(node);return text;});
+ let selected=initial.selected,previous;
+ const list=keyedList(body,createPlanner(),row=>{
+  const node=template.content.firstChild.cloneNode(true),idCell=node.firstChild,labelCell=idCell.nextSibling,valueCell=labelCell.nextSibling,button=labelCell.firstChild;
+  node.dataset.id=row.id;idCell.firstChild.data=row.id;
+  button.firstChild.data=row.label;valueCell.firstChild.data=row.value;
+  if(row.id===selected)node.className='selected';
+  return {node,label:button.firstChild,value:valueCell.firstChild,row};
+ },(entry,row)=>{
+  if(entry.row!==row){if(entry.row.label!==row.label)entry.label.data=row.label;if(entry.row.value!==row.value)entry.value.data=row.value;entry.row=row;}
+ });
+ body.onclick=e=>{let button=e.target;if(button.nodeName!=='BUTTON')button=button.closest?.('button');if(button&&button.parentNode?.parentNode?.parentNode===body)dispatch('select',Number(button.parentNode.parentNode.dataset.id));};
+ input.oninput=e=>dispatch('text',e.target.value);
+ function update(next){
+  const oldSelected=selected;selected=next.selected;
+  list.update(next.rows);
+  if(oldSelected!==selected){const old=list.get(oldSelected),fresh=list.get(selected);if(old)old.node.className='';if(fresh)fresh.node.className='selected';}
+  if(previous?.rows.length!==next.rows.length)countText.data=next.rows.length;
+  if(previous?.text!==next.text){if(input.value!==next.text)input.value=next.text;outputText.data=next.text;}
+  if(previous?.cells!==next.cells)for(let i=0;i<next.cells.length;i++)if(previous?.cells[i]!==next.cells[i])cells[i].data=next.cells[i];
+  previous=next;
+ }
+ update(initial);host.append(main);
+ return {update,flush:()=>Promise.resolve(),destroy(){list.destroy();input.oninput=null;body.onclick=null;previous=null;host.replaceChildren();}};
+}
