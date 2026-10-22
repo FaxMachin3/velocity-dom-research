@@ -1,0 +1,54 @@
+[
+  {
+    "framework": "velocity-next-clone",
+    "unchanged": true
+  },
+  {
+    "framework": "velocity-next",
+    "unchanged": true
+  },
+  {
+    "framework": "velocity-next-wasm",
+    "unchanged": true
+  },
+  {
+    "framework": "velocity",
+    "unchanged": true
+  },
+  {
+    "framework": "velocity-js",
+    "unchanged": true
+  },
+  {
+    "framework": "velocity-wasm",
+    "unchanged": true
+  },
+  {
+    "framework": "vanilla",
+    "unchanged": true
+  },
+  {
+    "framework": "react",
+    "unchanged": true
+  },
+  {
+    "framework": "preact",
+    "unchanged": true
+  },
+  {
+    "framework": "vue",
+    "unchanged": true
+  },
+  {
+    "framework": "solid",
+    "unchanged": true
+  },
+  {
+    "framework": "svelte",
+    "unchanged": true
+  },
+  {
+    "framework": "lit",
+    "unchanged": true
+  }
+]

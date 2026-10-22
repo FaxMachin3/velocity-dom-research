@@ -1,7 +1,25 @@
 {
   "engine": "chromium",
-  "timestamp": "2026-10-17T08:06:21.730Z",
+  "timestamp": "2026-10-21T19:56:45.343Z",
   "results": [
+    {
+      "framework": "velocity-direct-sibling",
+      "bundleSha256": "b1ea249fe12c67c745dd5a23390647a13545d6455976ef28f3babca7012bec0c",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "bundleSha256": "e399fc585984d3c3229d8fbb9c67262860c3fd398398cdec6e18c187068cb244",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
     {
       "framework": "velocity-next-clone",
       "bundleSha256": "f8370aba8610ae99959c1eccb8055818a0c9ef8195902ccfc5108f410c3d3cab",
@@ -113,6 +131,15 @@
     {
       "framework": "lit",
       "bundleSha256": "59f97fbf3ad13fd923d4c1bd044f122b00ac0f9846b60304eff05878a63a79a0",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "velocity-compiled",
+      "bundleSha256": "f41d33ef6aa7ee64c6575957243d7841b588082254aa4cc42741f071d08c7654",
       "status": "passed",
       "scenarios": 20,
       "sequenceSteps": 10,

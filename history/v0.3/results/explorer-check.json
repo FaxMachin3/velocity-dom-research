@@ -1,0 +1,57 @@
+{
+  "timestamp": "2026-10-17T09:22:09.727Z",
+  "results": [
+    {
+      "framework": "velocity-next-clone",
+      "status": "passed"
+    },
+    {
+      "framework": "velocity-next",
+      "status": "passed"
+    },
+    {
+      "framework": "velocity-next-wasm",
+      "status": "passed"
+    },
+    {
+      "framework": "velocity",
+      "status": "passed"
+    },
+    {
+      "framework": "velocity-js",
+      "status": "passed"
+    },
+    {
+      "framework": "velocity-wasm",
+      "status": "passed"
+    },
+    {
+      "framework": "vanilla",
+      "status": "passed"
+    },
+    {
+      "framework": "react",
+      "status": "passed"
+    },
+    {
+      "framework": "preact",
+      "status": "passed"
+    },
+    {
+      "framework": "vue",
+      "status": "passed"
+    },
+    {
+      "framework": "solid",
+      "status": "passed"
+    },
+    {
+      "framework": "svelte",
+      "status": "passed"
+    },
+    {
+      "framework": "lit",
+      "status": "passed"
+    }
+  ]
+}

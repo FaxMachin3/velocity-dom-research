@@ -3,10 +3,11 @@ import {build} from 'esbuild';
 import {transformAsync} from '@babel/core';
 import {compile as svelteCompile,compileModule} from 'svelte/compiler';
 import {compile} from '../src/poc/compiler.js';
+import {compileTemplate} from '../src/poc/template-compiler.js';
 import {readFile,writeFile,mkdir,rm} from 'node:fs/promises';
 import path from 'node:path';
 import {gzipSync,brotliCompressSync} from 'node:zlib';
-export const frameworks=['velocity-next-clone','velocity-next','velocity-next-wasm','velocity','velocity-js','velocity-wasm','vanilla','react','preact','vue','solid','svelte','lit'];
+export const frameworks=['velocity-direct-sibling','velocity-delegated-index','velocity-compiled','velocity-next-clone','velocity-next','velocity-next-wasm','velocity','velocity-js','velocity-wasm','vanilla','react','preact','vue','solid','svelte','lit'];
 await rm('dist',{recursive:true,force:true});await mkdir('dist',{recursive:true});await mkdir('generated',{recursive:true});
 const entry=await readFile('src/entry.js','utf8');
 const sizes=[];
@@ -14,6 +15,7 @@ for(const framework of frameworks){
  const start=performance.now();
  const adapter=framework==='svelte'?'svelte.svelte.js':['react','preact','solid'].includes(framework)?framework+'.jsx':framework+'.js';
  const plugins=[{name:'compile',setup(b){
+  b.onLoad({filter:/\.view\.jsx$/},async args=>{const r=compileTemplate(await readFile(args.path,'utf8'),args.path);await writeFile('generated/'+path.basename(args.path)+'.js',r.code);return {contents:r.code,loader:'js'};});
   b.onLoad({filter:/views\.jsx$/},async args=>{const result=compile(await readFile(args.path,'utf8'),args.path);await writeFile('generated/views.js',result.code);await writeFile('generated/views.js.map',JSON.stringify(result.map));return {contents:result.code,loader:'js'};});
   b.onLoad({filter:/solid\.jsx$/},async args=>{const r=await transformAsync(await readFile(args.path,'utf8'),{filename:args.path,presets:[['babel-preset-solid',{generate:'dom',hydratable:false}]]});return {contents:r.code,loader:'js'};});
   b.onLoad({filter:/\.svelte$/},async args=>({contents:svelteCompile(await readFile(args.path,'utf8'),{filename:args.path,generate:'client',dev:false}).js.code,loader:'js'}));
@@ -35,3 +37,10 @@ await writeFile('dist/explorer.html',await readFile('src/explorer.html','utf8'))
 await build({stdin:{contents:"export {createPlanner as js} from './planner/js.js';export {createPlanner as wasm} from './planner/wasm.js';",resolveDir:path.resolve('src')},bundle:true,minify:true,format:'esm',target:'es2022',outfile:'dist/planners.js'});
 await writeFile('dist/planner.wasm',await readFile('generated/planner.wasm'));
 await build({stdin:{contents:"import {mountOptimized} from './adapters/optimized.js';import {createPlanner as js} from './planner/js.js';import {createPlanner as wasm} from './planner/wasm.js';export const mountJS=(...a)=>mountOptimized(js,...a);export const mountWasm=(...a)=>mountOptimized(wasm,...a);",resolveDir:path.resolve('src')},bundle:true,minify:true,format:'esm',target:'es2022',outfile:'dist/testing.js'});
+
+await build({entryPoints:['src/runtime/template.js'],bundle:true,format:'esm',outfile:'dist/runtime.js'});
+await build({entryPoints:['src/views/examples.view.jsx'],bundle:true,format:'esm',outfile:'dist/examples.js',plugins:[{name:'public-templates',setup(b){b.onLoad({filter:/\.view\.jsx$/},async args=>({contents:compileTemplate(await readFile(args.path,'utf8'),args.path).code,loader:'js'}));}}]});
+
+await build({stdin:{contents:"export {mount} from './adapters/velocity-compiled.js';",resolveDir:path.resolve('src')},bundle:true,format:'esm',outfile:'dist/compiled-testing.js',plugins:[{name:'public-templates',setup(b){b.onLoad({filter:/\.view\.jsx$/},async args=>({contents:compileTemplate(await readFile(args.path,'utf8'),args.path).code,loader:'js'}));}}]});
+
+await writeFile('dist/examples.html',await readFile('src/examples.html','utf8'));

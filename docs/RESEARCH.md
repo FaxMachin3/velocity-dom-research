@@ -1,6 +1,12 @@
 # Velocity: compiled DOM rendering research
 
-## Current release: v0.3.0
+## Current release: v0.4.0
+
+Connects a public static-template compiler to owned keyed blocks, including finite-number/string keys, multi-node ranges, explicit cleanup, nested lists, and component setup. The new compiled benchmark uses this API rather than a hand-specialized table renderer. See [API](V04_API.md), [status](V04_STATUS.md), and [release decision](../results/v04/DECISION.md).
+
+The supplied campaign contains 6,030 measured observations: controlled fresh/warmed ablations, two normal validation batches, and three compiled-only application workloads. These are author-run batches, not external independent reproduction. The compiled runtime adds functionality and material creation/disposal/context-update overhead versus the preserved v0.3 speed control. It is not a universal speed improvement. No new Rust kernel or compiled-Wasm path is added. Historical v0.3 evidence is under history/v0.3/results and its Git tag; older releases remain separate.
+
+## Historical release: v0.3.0
 
 Adds prefix/suffix fast paths, longest-increasing-subsequence movement, retained text-node updates, whole-list clearing, and focus restoration. Thirteen adapters and twenty workloads are included. The optimized fixture is hand-specialized; the JSX compiler does not generate it. See [release decisions](../results/DECISION.md), [protocol](V03_EXPERIMENT_PROTOCOL.md), and [limitations](V03_LIMITATIONS.md).
 

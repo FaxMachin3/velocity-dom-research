@@ -1,0 +1,7 @@
+{
+  "browser": "153.0.8010.0",
+  "checks": 7,
+  "randomizedRangeUpdates": 1000,
+  "remounts": 100,
+  "status": "passed"
+}

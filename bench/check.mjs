@@ -8,9 +8,10 @@ import assert from 'node:assert/strict';
 import {mkdir,writeFile,readFile} from 'node:fs/promises';
 import {createHash} from 'node:crypto';
 const engine=process.env.BROWSER||'chromium';const server=await serve(0),port=server.address().port;
-const browser=await launch(engine);const results=[];
+const browser=await launch(engine);const results=[];const selected=process.env.FRAMEWORKS?process.env.FRAMEWORKS.split(','):frameworks;for(const f of selected)if(!frameworks.includes(f))throw Error('Unknown framework '+f);
+if(process.env.FRAMEWORKS){try{const previous=JSON.parse(await readFile(`results/correctness-${engine}.json`));for(const r of previous.results)if(!selected.includes(r.framework)&&frameworks.includes(r.framework)&&r.status==='passed'&&r.bundleSha256===await artifactHash(r.framework))results.push(r);}catch{}}
 try{
-for(const f of frameworks){const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
+for(const f of selected){const page=await browser.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
 try{
  await page.goto(`http://127.0.0.1:${port}/${f}/`);await page.waitForFunction(()=>window.ready);
  for(const s of scenarios){await page.evaluate(n=>window.bench.reset(n),s.initial);await perform(page,s);await assertScenario(page,s);}

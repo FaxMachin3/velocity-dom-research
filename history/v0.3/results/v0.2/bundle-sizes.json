@@ -1,0 +1,102 @@
+[
+  {
+    "framework": "velocity",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 6484,
+    "jsBytes": 6484,
+    "gzipBytes": 2453,
+    "brotliBytes": 2233,
+    "buildMs": 37.17151000000001
+  },
+  {
+    "framework": "velocity-js",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 4683,
+    "jsBytes": 4683,
+    "gzipBytes": 1966,
+    "brotliBytes": 1762,
+    "buildMs": 10.483339
+  },
+  {
+    "framework": "velocity-wasm",
+    "wasmBytes": 19742,
+    "wasmGzipBytes": 8101,
+    "totalBytes": 24614,
+    "jsBytes": 4872,
+    "gzipBytes": 2054,
+    "brotliBytes": 1829,
+    "buildMs": 11.302644999999984
+  },
+  {
+    "framework": "vanilla",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 3798,
+    "jsBytes": 3798,
+    "gzipBytes": 1599,
+    "brotliBytes": 1420,
+    "buildMs": 7.877275999999938
+  },
+  {
+    "framework": "react",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 226239,
+    "jsBytes": 226239,
+    "gzipBytes": 70245,
+    "brotliBytes": 60437,
+    "buildMs": 351.75583500000005
+  },
+  {
+    "framework": "preact",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 19466,
+    "jsBytes": 19466,
+    "gzipBytes": 8092,
+    "brotliBytes": 7374,
+    "buildMs": 29.46801700000003
+  },
+  {
+    "framework": "vue",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 58732,
+    "jsBytes": 58732,
+    "gzipBytes": 23286,
+    "brotliBytes": 21212,
+    "buildMs": 100.49487299999998
+  },
+  {
+    "framework": "solid",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 22252,
+    "jsBytes": 22252,
+    "gzipBytes": 8639,
+    "brotliBytes": 7864,
+    "buildMs": 146.21454199999994
+  },
+  {
+    "framework": "svelte",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 56839,
+    "jsBytes": 56839,
+    "gzipBytes": 21419,
+    "brotliBytes": 19300,
+    "buildMs": 113.22304800000006
+  },
+  {
+    "framework": "lit",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 20211,
+    "jsBytes": 20211,
+    "gzipBytes": 7847,
+    "brotliBytes": 7093,
+    "buildMs": 29.589680000000044
+  }
+]

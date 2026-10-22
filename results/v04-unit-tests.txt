@@ -1,0 +1,33 @@
+
+> velocity-poc@0.4.0 test
+> node --test tests/*.test.mjs
+
+✔ replacement uses disjoint keys (2.141124ms)
+✔ sparse updates preserve unchanged object references (0.53295ms)
+✔ compiler emits safe text bindings, not HTML injection (16.757892ms)
+✔ LIS membership matches independent quadratic length oracle (20.089712ms)
+✔ Rust/Wasm and JavaScript planner match independent Map oracle through resizing (102.383305ms)
+✔ dynamic dependencies detach (4.731472ms)
+✔ batch observes consistent final values (0.73931ms)
+✔ nested owners and rerun cleanup (0.29292ms)
+✔ untrack and Object.is equality (0.224337ms)
+✔ derived is fresh inside batch (0.137837ms)
+✔ throwing effect releases subscriptions (0.319089ms)
+✔ compiler emits DOM operations and bindings (17.313235ms)
+✔ unsupported JSX fails loudly (2.324408ms)
+✔ disposing an effect queued in a batch prevents its execution (0.316305ms)
+✔ nested batching and exceptions restore the scheduler (0.560101ms)
+✔ rerunning an effect disposes nested effects (0.172199ms)
+✔ compiled templates keep untrusted dynamic text out of HTML (17.637813ms)
+✔ compiler supports multi-node views (2.830399ms)
+✔ list syntax requires explicit identity and view (1.306982ms)
+✔ unsupported directives fail at compilation (0.794191ms)
+✔ reserved marker cannot collide with author markup (0.869084ms)
+ℹ tests 21
+ℹ suites 0
+ℹ pass 21
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 216.985224

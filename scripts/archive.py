@@ -3,7 +3,7 @@
 from pathlib import Path
 import zipfile, hashlib
 root = Path(__file__).resolve().parents[1]
-out = root.parent / 'velocity-poc-v0.3.0.zip'
+out = root.parent / 'velocity-poc-v0.4.0.zip'
 with zipfile.ZipFile(out, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as z:
     for path in sorted(root.rglob('*')):
         relative = path.relative_to(root)

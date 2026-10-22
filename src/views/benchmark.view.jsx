@@ -1,0 +1,4 @@
+// Public templates: p is the current props object in dynamic expressions.
+export const Row = <tr data-id={p.row.id} className={p.selected?'selected':''}><td>{p.row.id}</td><td><button onClick={()=>p.choose(p.row.id)}>{p.row.label}</button></td><td>{p.row.value}</td></tr>;
+export const Cell = <span className="cell">{p}</span>;
+export const App = <main><p data-count="">{p.state.rows.length}</p><label>Search<input aria-label="Search" value={p.state.text} onInput={e=>p.text(e.target.value)}/></label><output>{p.state.text}</output><section className="dashboard" v-list={p.state.cells} v-view={Cell} v-key={(x,i)=>i}/><table><tbody v-list={p.state.rows} v-view={Row} v-key={row=>row.id} v-context={p.selection} v-props={(row,ctx)=>({row,selected:row.id===ctx.selected,choose:ctx.choose})}/></table></main>;

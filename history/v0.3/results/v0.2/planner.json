@@ -1,0 +1,1064 @@
+{
+  "meta": {
+    "timestamp": "2026-10-17T06:53:18.087Z",
+    "browser": "153.0.8010.0",
+    "wasmBuild": {
+      "rustc": "rustc 1.85.0 (4d91de4e4 2025-02-17)",
+      "sha256": "5fb3f741f338bf1a31a1230d07befbb69944738faab63cfa5738e763b0c15b54",
+      "bytes": 19742
+    },
+    "description": "Whole planner call including JS-to-Wasm ID copying, reusable buffers, no DOM. Alternating order, 5 warmup/25 measured rounds."
+  },
+  "samples": [
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 0,
+      "iterations": 100,
+      "ms": 0.01099999999627471
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 0,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 1,
+      "iterations": 100,
+      "ms": 0.003999999985098839
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 1,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 2,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 2,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 3,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 3,
+      "iterations": 100,
+      "ms": 0.003999999985098839
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 4,
+      "iterations": 100,
+      "ms": 0.005
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 4,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 5,
+      "iterations": 100,
+      "ms": 0.0030000000074505806
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 5,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 6,
+      "iterations": 100,
+      "ms": 0.005
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 6,
+      "iterations": 100,
+      "ms": 0.003999999985098839
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 7,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 7,
+      "iterations": 100,
+      "ms": 0.005
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 8,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 8,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 9,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 9,
+      "iterations": 100,
+      "ms": 0.003999999985098839
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 10,
+      "iterations": 100,
+      "ms": 0.003999999985098839
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 10,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 11,
+      "iterations": 100,
+      "ms": 0.0030000000074505806
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 11,
+      "iterations": 100,
+      "ms": 0.005
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 12,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 12,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 13,
+      "iterations": 100,
+      "ms": 0.002999999988824129
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 13,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 14,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 14,
+      "iterations": 100,
+      "ms": 0.0030000000074505806
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 15,
+      "iterations": 100,
+      "ms": 0.005
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 15,
+      "iterations": 100,
+      "ms": 0.003999999985098839
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 16,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 16,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 17,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 17,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 18,
+      "iterations": 100,
+      "ms": 0.003999999985098839
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 18,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 19,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 19,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 20,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 20,
+      "iterations": 100,
+      "ms": 0.003999999985098839
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 21,
+      "iterations": 100,
+      "ms": 0.005
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 21,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 22,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 22,
+      "iterations": 100,
+      "ms": 0.005
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 23,
+      "iterations": 100,
+      "ms": 0.0030000000074505806
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 23,
+      "iterations": 100,
+      "ms": 0.003999999985098839
+    },
+    {
+      "name": "wasm",
+      "n": 1000,
+      "round": 24,
+      "iterations": 100,
+      "ms": 0.005
+    },
+    {
+      "name": "js",
+      "n": 1000,
+      "round": 24,
+      "iterations": 100,
+      "ms": 0.00400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 0,
+      "iterations": 100,
+      "ms": 0.04900000000372529
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 0,
+      "iterations": 100,
+      "ms": 0.04899999998509884
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 1,
+      "iterations": 100,
+      "ms": 0.04699999999254942
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 1,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 2,
+      "iterations": 100,
+      "ms": 0.04699999999254942
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 2,
+      "iterations": 100,
+      "ms": 0.04699999999254942
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 3,
+      "iterations": 100,
+      "ms": 0.04600000001490116
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 3,
+      "iterations": 100,
+      "ms": 0.04799999998882413
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 4,
+      "iterations": 100,
+      "ms": 0.05100000001490116
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 4,
+      "iterations": 100,
+      "ms": 0.04699999999254942
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 5,
+      "iterations": 100,
+      "ms": 0.04700000001117587
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 5,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 6,
+      "iterations": 100,
+      "ms": 0.04700000001117587
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 6,
+      "iterations": 100,
+      "ms": 0.04699999999254942
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 7,
+      "iterations": 100,
+      "ms": 0.04600000001490116
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 7,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 8,
+      "iterations": 100,
+      "ms": 0.04699999999254942
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 8,
+      "iterations": 100,
+      "ms": 0.045
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 9,
+      "iterations": 100,
+      "ms": 0.04900000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 9,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 10,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 10,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 11,
+      "iterations": 100,
+      "ms": 0.04900000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 11,
+      "iterations": 100,
+      "ms": 0.04699999999254942
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 12,
+      "iterations": 100,
+      "ms": 0.04800000000745058
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 12,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 13,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 13,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 14,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 14,
+      "iterations": 100,
+      "ms": 0.045
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 15,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 15,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 16,
+      "iterations": 100,
+      "ms": 0.04700000001117587
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 16,
+      "iterations": 100,
+      "ms": 0.04699999999254942
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 17,
+      "iterations": 100,
+      "ms": 0.04799999998882413
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 17,
+      "iterations": 100,
+      "ms": 0.045
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 18,
+      "iterations": 100,
+      "ms": 0.04699999999254942
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 18,
+      "iterations": 100,
+      "ms": 0.045
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 19,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 19,
+      "iterations": 100,
+      "ms": 0.04600000001490116
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 20,
+      "iterations": 100,
+      "ms": 0.04699999999254942
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 20,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 21,
+      "iterations": 100,
+      "ms": 0.04800000000745058
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 21,
+      "iterations": 100,
+      "ms": 0.04900000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 22,
+      "iterations": 100,
+      "ms": 0.04699999999254942
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 22,
+      "iterations": 100,
+      "ms": 0.04700000001117587
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 23,
+      "iterations": 100,
+      "ms": 0.04799999998882413
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 23,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "wasm",
+      "n": 10000,
+      "round": 24,
+      "iterations": 100,
+      "ms": 0.04599999999627471
+    },
+    {
+      "name": "js",
+      "n": 10000,
+      "round": 24,
+      "iterations": 100,
+      "ms": 0.04700000001117587
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 0,
+      "iterations": 10,
+      "ms": 0.590000000037253
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 0,
+      "iterations": 10,
+      "ms": 0.6400000000372529
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 1,
+      "iterations": 10,
+      "ms": 0.6400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 1,
+      "iterations": 10,
+      "ms": 0.5599999999627471
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 2,
+      "iterations": 10,
+      "ms": 0.5599999999627471
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 2,
+      "iterations": 10,
+      "ms": 0.65
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 3,
+      "iterations": 10,
+      "ms": 0.6400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 3,
+      "iterations": 10,
+      "ms": 0.5700000001117587
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 4,
+      "iterations": 10,
+      "ms": 0.5599999999627471
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 4,
+      "iterations": 10,
+      "ms": 0.9200000001117588
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 5,
+      "iterations": 10,
+      "ms": 0.7199999999254942
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 5,
+      "iterations": 10,
+      "ms": 0.5599999999627471
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 6,
+      "iterations": 10,
+      "ms": 0.55
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 6,
+      "iterations": 10,
+      "ms": 0.6299999998882413
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 7,
+      "iterations": 10,
+      "ms": 0.6299999998882413
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 7,
+      "iterations": 10,
+      "ms": 0.5699999999254942
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 8,
+      "iterations": 10,
+      "ms": 0.5699999999254942
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 8,
+      "iterations": 10,
+      "ms": 0.659999999962747
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 9,
+      "iterations": 10,
+      "ms": 0.6699999999254942
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 9,
+      "iterations": 10,
+      "ms": 0.5800000000745058
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 10,
+      "iterations": 10,
+      "ms": 0.55
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 10,
+      "iterations": 10,
+      "ms": 0.65
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 11,
+      "iterations": 10,
+      "ms": 0.6299999998882413
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 11,
+      "iterations": 10,
+      "ms": 0.5700000001117587
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 12,
+      "iterations": 10,
+      "ms": 0.6400000000372529
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 12,
+      "iterations": 10,
+      "ms": 0.6400000000372529
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 13,
+      "iterations": 10,
+      "ms": 0.6300000000745059
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 13,
+      "iterations": 10,
+      "ms": 0.5599999999627471
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 14,
+      "iterations": 10,
+      "ms": 0.55
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 14,
+      "iterations": 10,
+      "ms": 0.6400000000372529
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 15,
+      "iterations": 10,
+      "ms": 0.65
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 15,
+      "iterations": 10,
+      "ms": 0.5700000001117587
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 16,
+      "iterations": 10,
+      "ms": 0.5599999999627471
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 16,
+      "iterations": 10,
+      "ms": 0.65
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 17,
+      "iterations": 10,
+      "ms": 0.65
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 17,
+      "iterations": 10,
+      "ms": 0.590000000037253
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 18,
+      "iterations": 10,
+      "ms": 0.5799999998882412
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 18,
+      "iterations": 10,
+      "ms": 0.6399999998509884
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 19,
+      "iterations": 10,
+      "ms": 0.6400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 19,
+      "iterations": 10,
+      "ms": 0.8300000000745058
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 20,
+      "iterations": 10,
+      "ms": 0.6100000001490116
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 20,
+      "iterations": 10,
+      "ms": 0.95
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 21,
+      "iterations": 10,
+      "ms": 0.6400000000372529
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 21,
+      "iterations": 10,
+      "ms": 0.5700000001117587
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 22,
+      "iterations": 10,
+      "ms": 0.85
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 22,
+      "iterations": 10,
+      "ms": 0.6900000000372529
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 23,
+      "iterations": 10,
+      "ms": 1.1200000001117587
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 23,
+      "iterations": 10,
+      "ms": 0.5700000001117587
+    },
+    {
+      "name": "wasm",
+      "n": 100000,
+      "round": 24,
+      "iterations": 10,
+      "ms": 0.8099999999627471
+    },
+    {
+      "name": "js",
+      "n": 100000,
+      "round": 24,
+      "iterations": 10,
+      "ms": 0.6800000000745058
+    }
+  ]
+}

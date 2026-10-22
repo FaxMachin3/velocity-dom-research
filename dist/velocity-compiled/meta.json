@@ -1,0 +1,121 @@
+{
+  "inputs": {
+    "src/poc/lis.js": {
+      "bytes": 622,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/runtime/list.js": {
+      "bytes": 3871,
+      "imports": [
+        {
+          "path": "src/poc/lis.js",
+          "kind": "import-statement",
+          "original": "../poc/lis.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/runtime/template.js": {
+      "bytes": 3668,
+      "imports": [
+        {
+          "path": "src/runtime/list.js",
+          "kind": "import-statement",
+          "original": "./list.js"
+        },
+        {
+          "path": "src/runtime/list.js",
+          "kind": "import-statement",
+          "original": "./list.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/views/benchmark.view.jsx": {
+      "bytes": 1744,
+      "imports": [
+        {
+          "path": "src/runtime/template.js",
+          "kind": "import-statement",
+          "original": "../runtime/template.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/adapters/velocity-compiled.js": {
+      "bytes": 513,
+      "imports": [
+        {
+          "path": "src/views/benchmark.view.jsx",
+          "kind": "import-statement",
+          "original": "../views/benchmark.view.jsx"
+        },
+        {
+          "path": "src/runtime/template.js",
+          "kind": "import-statement",
+          "original": "../runtime/template.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/model.js": {
+      "bytes": 1827,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/entry.js": {
+      "bytes": 1424,
+      "imports": [
+        {
+          "path": "src/adapters/velocity-compiled.js",
+          "kind": "import-statement",
+          "original": "./adapters/velocity-compiled.js"
+        },
+        {
+          "path": "src/model.js",
+          "kind": "import-statement",
+          "original": "./model.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/velocity-compiled/app.js.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 28600
+    },
+    "dist/velocity-compiled/app.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/entry.js",
+      "inputs": {
+        "src/poc/lis.js": {
+          "bytesInOutput": 298
+        },
+        "src/runtime/list.js": {
+          "bytesInOutput": 2272
+        },
+        "src/runtime/template.js": {
+          "bytesInOutput": 2391
+        },
+        "src/views/benchmark.view.jsx": {
+          "bytesInOutput": 1162
+        },
+        "src/adapters/velocity-compiled.js": {
+          "bytesInOutput": 239
+        },
+        "src/model.js": {
+          "bytesInOutput": 1474
+        },
+        "src/entry.js": {
+          "bytesInOutput": 1062
+        }
+      },
+      "bytes": 8931
+    }
+  }
+}

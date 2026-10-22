@@ -1,0 +1,47 @@
+[
+  {
+    "framework": "velocity-next-clone",
+    "diagnosticOnly": true,
+    "spanMs": 36.292,
+    "eventDurationsMs": {
+      "UpdateLayoutTree": 6.234,
+      "Layout": 20.907
+    }
+  },
+  {
+    "framework": "velocity-next",
+    "diagnosticOnly": true,
+    "spanMs": 37.177,
+    "eventDurationsMs": {
+      "UpdateLayoutTree": 6.725,
+      "Layout": 21.832
+    }
+  },
+  {
+    "framework": "velocity-direct-sibling",
+    "diagnosticOnly": true,
+    "spanMs": 57.657,
+    "eventDurationsMs": {
+      "UpdateLayoutTree": 8.507,
+      "Layout": 38.292
+    }
+  },
+  {
+    "framework": "velocity-delegated-index",
+    "diagnosticOnly": true,
+    "spanMs": 35.465,
+    "eventDurationsMs": {
+      "UpdateLayoutTree": 6.381,
+      "Layout": 21.16
+    }
+  },
+  {
+    "framework": "velocity-compiled",
+    "diagnosticOnly": true,
+    "spanMs": 43.732,
+    "eventDurationsMs": {
+      "UpdateLayoutTree": 6.821,
+      "Layout": 25.382
+    }
+  }
+]

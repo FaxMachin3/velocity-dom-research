@@ -1,0 +1,110 @@
+{
+  "inputs": {
+    "src/planner/js.js": {
+      "bytes": 737,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/poc/lis.js": {
+      "bytes": 622,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/poc/keyed-list.js": {
+      "bytes": 2745,
+      "imports": [
+        {
+          "path": "src/poc/lis.js",
+          "kind": "import-statement",
+          "original": "./lis.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/adapters/ablation-direct-sibling.js": {
+      "bytes": 2557,
+      "imports": [
+        {
+          "path": "src/poc/keyed-list.js",
+          "kind": "import-statement",
+          "original": "../poc/keyed-list.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/adapters/velocity-direct-sibling.js": {
+      "bytes": 178,
+      "imports": [
+        {
+          "path": "src/planner/js.js",
+          "kind": "import-statement",
+          "original": "../planner/js.js"
+        },
+        {
+          "path": "src/adapters/ablation-direct-sibling.js",
+          "kind": "import-statement",
+          "original": "./ablation-direct-sibling.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/model.js": {
+      "bytes": 1827,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/entry.js": {
+      "bytes": 1430,
+      "imports": [
+        {
+          "path": "src/adapters/velocity-direct-sibling.js",
+          "kind": "import-statement",
+          "original": "./adapters/velocity-direct-sibling.js"
+        },
+        {
+          "path": "src/model.js",
+          "kind": "import-statement",
+          "original": "./model.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/velocity-direct-sibling/app.js.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 21377
+    },
+    "dist/velocity-direct-sibling/app.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/entry.js",
+      "inputs": {
+        "src/planner/js.js": {
+          "bytesInOutput": 506
+        },
+        "src/poc/lis.js": {
+          "bytesInOutput": 298
+        },
+        "src/poc/keyed-list.js": {
+          "bytesInOutput": 1337
+        },
+        "src/adapters/ablation-direct-sibling.js": {
+          "bytesInOutput": 1742
+        },
+        "src/adapters/velocity-direct-sibling.js": {
+          "bytesInOutput": 24
+        },
+        "src/model.js": {
+          "bytesInOutput": 1474
+        },
+        "src/entry.js": {
+          "bytesInOutput": 1062
+        }
+      },
+      "bytes": 6476
+    }
+  }
+}

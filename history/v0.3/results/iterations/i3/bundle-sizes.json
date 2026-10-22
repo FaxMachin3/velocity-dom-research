@@ -1,0 +1,132 @@
+[
+  {
+    "framework": "velocity-next-clone",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 6462,
+    "jsBytes": 6462,
+    "gzipBytes": 2689,
+    "brotliBytes": 2431,
+    "buildMs": 19.921965999999998
+  },
+  {
+    "framework": "velocity-next",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 6624,
+    "jsBytes": 6624,
+    "gzipBytes": 2765,
+    "brotliBytes": 2491,
+    "buildMs": 12.985279999999989
+  },
+  {
+    "framework": "velocity-next-wasm",
+    "wasmBytes": 19742,
+    "wasmGzipBytes": 8101,
+    "totalBytes": 26555,
+    "jsBytes": 6813,
+    "gzipBytes": 2882,
+    "brotliBytes": 2586,
+    "buildMs": 14.015034000000014
+  },
+  {
+    "framework": "velocity",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 6892,
+    "jsBytes": 6892,
+    "gzipBytes": 2596,
+    "brotliBytes": 2364,
+    "buildMs": 32.01255599999996
+  },
+  {
+    "framework": "velocity-js",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 5091,
+    "jsBytes": 5091,
+    "gzipBytes": 2104,
+    "brotliBytes": 1889,
+    "buildMs": 9.537149
+  },
+  {
+    "framework": "velocity-wasm",
+    "wasmBytes": 19742,
+    "wasmGzipBytes": 8101,
+    "totalBytes": 25022,
+    "jsBytes": 5280,
+    "gzipBytes": 2201,
+    "brotliBytes": 1964,
+    "buildMs": 10.017092000000048
+  },
+  {
+    "framework": "vanilla",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 4206,
+    "jsBytes": 4206,
+    "gzipBytes": 1746,
+    "brotliBytes": 1559,
+    "buildMs": 8.125237999999968
+  },
+  {
+    "framework": "react",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 226647,
+    "jsBytes": 226647,
+    "gzipBytes": 70394,
+    "brotliBytes": 60538,
+    "buildMs": 352.35147500000005
+  },
+  {
+    "framework": "preact",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 19874,
+    "jsBytes": 19874,
+    "gzipBytes": 8246,
+    "brotliBytes": 7521,
+    "buildMs": 26.697257000000036
+  },
+  {
+    "framework": "vue",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 59140,
+    "jsBytes": 59140,
+    "gzipBytes": 23424,
+    "brotliBytes": 21315,
+    "buildMs": 101.81844000000012
+  },
+  {
+    "framework": "solid",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 22660,
+    "jsBytes": 22660,
+    "gzipBytes": 8783,
+    "brotliBytes": 8030,
+    "buildMs": 145.79053900000008
+  },
+  {
+    "framework": "svelte",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 57247,
+    "jsBytes": 57247,
+    "gzipBytes": 21567,
+    "brotliBytes": 19434,
+    "buildMs": 109.86376799999994
+  },
+  {
+    "framework": "lit",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 20619,
+    "jsBytes": 20619,
+    "gzipBytes": 7993,
+    "brotliBytes": 7215,
+    "buildMs": 28.821101
+  }
+]

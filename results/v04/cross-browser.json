@@ -1,0 +1,10 @@
+{
+  "chromium": "passed",
+  "firefox": {
+    "download": "succeeded",
+    "runtimeCheck": "timeout",
+    "timeoutSeconds": 80,
+    "exitCode": 124
+  },
+  "webkit": "not tested"
+}

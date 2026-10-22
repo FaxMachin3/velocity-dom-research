@@ -1,5 +1,35 @@
 [
   {
+    "framework": "velocity-direct-sibling",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 6476,
+    "jsBytes": 6476,
+    "gzipBytes": 2709,
+    "brotliBytes": 2468,
+    "buildMs": 27.787941000000046
+  },
+  {
+    "framework": "velocity-delegated-index",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 6625,
+    "jsBytes": 6625,
+    "gzipBytes": 2761,
+    "brotliBytes": 2481,
+    "buildMs": 16.162068999999974
+  },
+  {
+    "framework": "velocity-compiled",
+    "wasmBytes": 0,
+    "wasmGzipBytes": 0,
+    "totalBytes": 8931,
+    "jsBytes": 8931,
+    "gzipBytes": 3769,
+    "brotliBytes": 3384,
+    "buildMs": 43.34236299999998
+  },
+  {
     "framework": "velocity-next-clone",
     "wasmBytes": 0,
     "wasmGzipBytes": 0,
@@ -7,7 +37,7 @@
     "jsBytes": 6462,
     "gzipBytes": 2689,
     "brotliBytes": 2431,
-    "buildMs": 19.921965999999998
+    "buildMs": 17.56410799999992
   },
   {
     "framework": "velocity-next",
@@ -17,7 +47,7 @@
     "jsBytes": 6624,
     "gzipBytes": 2765,
     "brotliBytes": 2491,
-    "buildMs": 12.985279999999989
+    "buildMs": 14.602166000000011
   },
   {
     "framework": "velocity-next-wasm",
@@ -27,7 +57,7 @@
     "jsBytes": 6813,
     "gzipBytes": 2882,
     "brotliBytes": 2586,
-    "buildMs": 14.015034000000014
+    "buildMs": 16.255448
   },
   {
     "framework": "velocity",
@@ -37,7 +67,7 @@
     "jsBytes": 6892,
     "gzipBytes": 2596,
     "brotliBytes": 2364,
-    "buildMs": 32.01255599999996
+    "buildMs": 26.1652949999999
   },
   {
     "framework": "velocity-js",
@@ -47,7 +77,7 @@
     "jsBytes": 5091,
     "gzipBytes": 2104,
     "brotliBytes": 1889,
-    "buildMs": 9.537149
+    "buildMs": 12.283334999999965
   },
   {
     "framework": "velocity-wasm",
@@ -57,7 +87,7 @@
     "jsBytes": 5280,
     "gzipBytes": 2201,
     "brotliBytes": 1964,
-    "buildMs": 10.017092000000048
+    "buildMs": 12.623240999999894
   },
   {
     "framework": "vanilla",
@@ -67,7 +97,7 @@
     "jsBytes": 4206,
     "gzipBytes": 1746,
     "brotliBytes": 1559,
-    "buildMs": 8.125237999999968
+    "buildMs": 10.907005000000026
   },
   {
     "framework": "react",
@@ -77,7 +107,7 @@
     "jsBytes": 226647,
     "gzipBytes": 70394,
     "brotliBytes": 60538,
-    "buildMs": 352.35147500000005
+    "buildMs": 520.376785
   },
   {
     "framework": "preact",
@@ -87,7 +117,7 @@
     "jsBytes": 19874,
     "gzipBytes": 8246,
     "brotliBytes": 7521,
-    "buildMs": 26.697257000000036
+    "buildMs": 34.472802
   },
   {
     "framework": "vue",
@@ -97,7 +127,7 @@
     "jsBytes": 59140,
     "gzipBytes": 23424,
     "brotliBytes": 21315,
-    "buildMs": 101.81844000000012
+    "buildMs": 148.20228899999984
   },
   {
     "framework": "solid",
@@ -107,7 +137,7 @@
     "jsBytes": 22660,
     "gzipBytes": 8783,
     "brotliBytes": 8030,
-    "buildMs": 145.79053900000008
+    "buildMs": 243.056603
   },
   {
     "framework": "svelte",
@@ -117,7 +147,7 @@
     "jsBytes": 57247,
     "gzipBytes": 21567,
     "brotliBytes": 19434,
-    "buildMs": 109.86376799999994
+    "buildMs": 172.15072099999998
   },
   {
     "framework": "lit",
@@ -127,6 +157,6 @@
     "jsBytes": 20619,
     "gzipBytes": 7993,
     "brotliBytes": 7215,
-    "buildMs": 28.821101
+    "buildMs": 42.33180100000004
   }
 ]

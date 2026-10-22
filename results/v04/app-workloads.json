@@ -1,0 +1,550 @@
+{
+  "meta": {
+    "browser": "153.0.8010.0",
+    "samplesPerCase": 30,
+    "warmups": 3,
+    "scope": "Compiled runtime only; fresh mount per sample, not a framework ranking"
+  },
+  "samples": [
+    {
+      "scenario": "form-250-edit",
+      "round": 0,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.7999999970197678
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 1,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 1.199999999254942
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 2,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 1
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 3,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 1
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 4,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 1
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 5,
+      "commitMs": 0.20000000298023224,
+      "commitLayoutMs": 1.1000000014901161
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 6,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.8999999985098839
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 7,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.8999999985098839
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 8,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.8999999985098839
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 9,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.7999999970197678
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 10,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.8999999985098839
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 11,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 1
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 12,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.9000000022351742
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 13,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.8000000007450581
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 14,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.8999999985098839
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 15,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.8999999985098839
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 16,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.8999999985098839
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 17,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.8999999985098839
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 18,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.8999999985098839
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 19,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.6999999992549419
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 20,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.8999999985098839
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 21,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 1.300000000745058
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 22,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.6999999992549419
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 23,
+      "commitMs": 0.20000000298023224,
+      "commitLayoutMs": 1.1000000014901161
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 24,
+      "commitMs": 0,
+      "commitLayoutMs": 0.9000000022351742
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 25,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.7999999970197678
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 26,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 1
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 27,
+      "commitMs": 0.29999999701976776,
+      "commitLayoutMs": 1
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 28,
+      "commitMs": 0.20000000298023224,
+      "commitLayoutMs": 1
+    },
+    {
+      "scenario": "form-250-edit",
+      "round": 29,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.8000000007450581
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 0,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.30000000074505806
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 1,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.29999999701976776
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 2,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.5
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 3,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.19999999925494194
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 4,
+      "commitMs": 0,
+      "commitLayoutMs": 0.5
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 5,
+      "commitMs": 0,
+      "commitLayoutMs": 0.20000000298023224
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 6,
+      "commitMs": 0,
+      "commitLayoutMs": 0.19999999925494194
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 7,
+      "commitMs": 0,
+      "commitLayoutMs": 0.30000000074505806
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 8,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.4000000022351742
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 9,
+      "commitMs": 0,
+      "commitLayoutMs": 0.3999999985098839
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 10,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.3999999985098839
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 11,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.3999999985098839
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 12,
+      "commitMs": 0,
+      "commitLayoutMs": 0.30000000074505806
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 13,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.29999999701976776
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 14,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.30000000074505806
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 15,
+      "commitMs": 0,
+      "commitLayoutMs": 0.30000000074505806
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 16,
+      "commitMs": 0,
+      "commitLayoutMs": 0.19999999925494194
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 17,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.30000000074505806
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 18,
+      "commitMs": 0,
+      "commitLayoutMs": 0.30000000074505806
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 19,
+      "commitMs": 0,
+      "commitLayoutMs": 0.19999999925494194
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 20,
+      "commitMs": 0,
+      "commitLayoutMs": 0.3999999985098839
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 21,
+      "commitMs": 0,
+      "commitLayoutMs": 0.19999999925494194
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 22,
+      "commitMs": 0,
+      "commitLayoutMs": 0.29999999701976776
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 23,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.30000000074505806
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 24,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.30000000074505806
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 25,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.30000000074505806
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 26,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.20000000298023224
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 27,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.30000000074505806
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 28,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.30000000074505806
+    },
+    {
+      "scenario": "tree-80x20-leaf-edit",
+      "round": 29,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.30000000074505806
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 0,
+      "commitMs": 3.900000002235174,
+      "commitLayoutMs": 17.200000002980232
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 1,
+      "commitMs": 5.199999999254942,
+      "commitLayoutMs": 24
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 2,
+      "commitMs": 5.199999999254942,
+      "commitLayoutMs": 17.699999999254942
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 3,
+      "commitMs": 3.899999998509884,
+      "commitLayoutMs": 18.699999999254942
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 4,
+      "commitMs": 3.5,
+      "commitLayoutMs": 16.5
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 5,
+      "commitMs": 4.900000002235174,
+      "commitLayoutMs": 19.5
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 6,
+      "commitMs": 5.699999999254942,
+      "commitLayoutMs": 19
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 7,
+      "commitMs": 5.100000001490116,
+      "commitLayoutMs": 17.100000001490116
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 8,
+      "commitMs": 4.600000001490116,
+      "commitLayoutMs": 17.700000002980232
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 9,
+      "commitMs": 4.900000002235174,
+      "commitLayoutMs": 19.600000001490116
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 10,
+      "commitMs": 3.599999997764826,
+      "commitLayoutMs": 16.599999997764826
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 11,
+      "commitMs": 4.900000002235174,
+      "commitLayoutMs": 17.400000002235174
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 12,
+      "commitMs": 3.600000001490116,
+      "commitLayoutMs": 18.199999999254942
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 13,
+      "commitMs": 4.599999997764826,
+      "commitLayoutMs": 19.199999999254942
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 14,
+      "commitMs": 3.5,
+      "commitLayoutMs": 17.5
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 15,
+      "commitMs": 4.800000000745058,
+      "commitLayoutMs": 18.399999998509884
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 16,
+      "commitMs": 3.899999998509884,
+      "commitLayoutMs": 15.899999998509884
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 17,
+      "commitMs": 4.700000002980232,
+      "commitLayoutMs": 19.900000002235174
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 18,
+      "commitMs": 4.100000001490116,
+      "commitLayoutMs": 19.600000001490116
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 19,
+      "commitMs": 4.900000002235174,
+      "commitLayoutMs": 18.5
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 20,
+      "commitMs": 3.699999999254942,
+      "commitLayoutMs": 16.600000001490116
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 21,
+      "commitMs": 3.199999999254942,
+      "commitLayoutMs": 15.099999997764826
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 22,
+      "commitMs": 2.900000002235174,
+      "commitLayoutMs": 13.600000001490116
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 23,
+      "commitMs": 4.800000000745058,
+      "commitLayoutMs": 17.800000000745058
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 24,
+      "commitMs": 3.900000002235174,
+      "commitLayoutMs": 16.100000001490116
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 25,
+      "commitMs": 4.199999999254942,
+      "commitLayoutMs": 18.699999999254942
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 26,
+      "commitMs": 4.300000000745058,
+      "commitLayoutMs": 20.199999999254942
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 27,
+      "commitMs": 4.300000000745058,
+      "commitLayoutMs": 15.199999999254942
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 28,
+      "commitMs": 4.699999999254942,
+      "commitLayoutMs": 19.899999998509884
+    },
+    {
+      "scenario": "range-1000-reverse",
+      "round": 29,
+      "commitMs": 6,
+      "commitLayoutMs": 19.599999997764826
+    }
+  ]
+}

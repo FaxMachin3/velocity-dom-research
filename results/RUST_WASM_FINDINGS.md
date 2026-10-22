@@ -1,3 +1,5 @@
-# Historical Rust/Wasm findings
+# Current release evidence
 
-The v0.2 findings are preserved in [v0.2/RUST_WASM_FINDINGS.md](v0.2/RUST_WASM_FINDINGS.md). Current v0.3 evidence is in [RELEASE.md](RELEASE.md), [REPORT.md](REPORT.md) and [release.html](release.html). Do not attribute cross-session timing changes to Rust.
+See [v04/DECISION.md](v04/DECISION.md) and [v04/REPORT.md](v04/REPORT.md) for v0.4, or open [v04/report.html](v04/report.html).
+
+The previous v0.3 report is preserved under `history/v0.3/results/` at the repository root. Legacy result files outside v04 remain historical and are not v0.4 measurements.

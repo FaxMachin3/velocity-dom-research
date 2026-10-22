@@ -1,0 +1,114 @@
+{
+  "engine": "chromium",
+  "timestamp": "2026-10-17T07:53:04.637Z",
+  "results": [
+    {
+      "framework": "velocity-next",
+      "bundleSha256": "f8370aba8610ae99959c1eccb8055818a0c9ef8195902ccfc5108f410c3d3cab",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "velocity-next-wasm",
+      "bundleSha256": "9ec48383f3ecc044c5fb17e4a28adb2d49eec51891eeb45fbefca600fe62c7a1",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "velocity",
+      "bundleSha256": "88ab0f2c8253913a50800469b9926bb7bdb9bd4db75d56777ebbd167d0caf8a2",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "velocity-js",
+      "bundleSha256": "d903816044f2e7c7002dfbf53562eeeadd003e75c1895a11b8d1d0420ac313b7",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "velocity-wasm",
+      "bundleSha256": "fe4bd192ddae61dbd0d4a897370f20a125dc2afc25f264d946b46caf0c038145",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "vanilla",
+      "bundleSha256": "e39888dc01bf8921124406c66fc94acf4e7f8b6a00039dc4a95f5479892612be",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "react",
+      "bundleSha256": "beb60ba123ba963f2c835bf125c7eb8a7be9313f3bbcb142fdf3219421f15230",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "preact",
+      "bundleSha256": "3506f97753754cd1ed3b501cab6744286eb6e54926f99675885686347a626bbc",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "vue",
+      "bundleSha256": "cddeeb66435e4046dcd38ee8ae4b0ad9bee7cb5e1877e3e81203fdd270829de3",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "solid",
+      "bundleSha256": "9e064fd728578549a00e2ffc6a4662ed0e8cfb38b948480e4b7be45bbda48be7",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "svelte",
+      "bundleSha256": "998e853f6946a22dcce335bbeb490b3ed8fbe2684e73283bc2c4e402c39f2655",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    },
+    {
+      "framework": "lit",
+      "bundleSha256": "59f97fbf3ad13fd923d4c1bd044f122b00ac0f9846b60304eff05878a63a79a0",
+      "status": "passed",
+      "scenarios": 20,
+      "sequenceSteps": 10,
+      "identity": true,
+      "disposal": true
+    }
+  ]
+}

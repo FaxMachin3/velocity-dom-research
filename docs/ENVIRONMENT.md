@@ -1,4 +1,4 @@
-> Historical v0.1 environment notes. See REPRODUCE_V02.md and raw v0.2 run metadata for the current execution.
+> Historical v0.1 environment notes. For v0.4 use V04_PROTOCOL.md, V04_STATUS.md and results/v04/*/run-chromium-cpu1.json metadata. Older release notes below are not the current run record.
 
 # Execution environment
 

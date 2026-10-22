@@ -1,6 +1,18 @@
 {
-  "timestamp": "2026-10-17T09:22:09.727Z",
+  "timestamp": "2026-10-21T20:31:46.033Z",
   "results": [
+    {
+      "framework": "velocity-direct-sibling",
+      "status": "passed"
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "status": "passed"
+    },
+    {
+      "framework": "velocity-compiled",
+      "status": "passed"
+    },
     {
       "framework": "velocity-next-clone",
       "status": "passed"

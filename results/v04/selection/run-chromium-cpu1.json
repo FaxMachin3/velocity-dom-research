@@ -1,0 +1,2328 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "timestamp": "2026-10-21T19:58:46.969Z",
+    "engine": "chromium",
+    "browserVersion": "153.0.8010.0",
+    "samples": 3,
+    "warmups": 1,
+    "cpuRate": 1,
+    "headless": true,
+    "serverlessChromium": false,
+    "customExecutable": true,
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "platform": "linux",
+    "arch": "x64",
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "logicalCpus": 9,
+    "node": "v24.19.0",
+    "dependencies": {
+      "@babel/core": "7.29.7",
+      "@babel/generator": "8.0.6",
+      "@babel/parser": "8.0.7",
+      "@babel/traverse": "8.0.7",
+      "@babel/types": "8.0.6",
+      "@sparticuz/chromium": "153.0.0",
+      "babel-preset-solid": "1.9.16",
+      "esbuild": "0.28.2",
+      "lit": "3.3.3",
+      "playwright": "1.58.2",
+      "preact": "11.0.1",
+      "react": "19.3.1",
+      "react-dom": "19.3.1",
+      "solid-js": "1.9.17",
+      "svelte": "5.57.2",
+      "vue": "3.5.44"
+    },
+    "seed": 1729,
+    "artifactHashes": {
+      "velocity-compiled": "f41d33ef6aa7ee64c6575957243d7841b588082254aa4cc42741f071d08c7654",
+      "velocity-next": "c773efe44f1ae667163d8afcee970052a7abdce7401c445b9796d0b414036582",
+      "vanilla": "e39888dc01bf8921124406c66fc94acf4e7f8b6a00039dc4a95f5479892612be"
+    },
+    "notes": [
+      "Localhost, uncompressed delivery, no network throttling.",
+      "Commit+layout is forced-layout wall time; frame opportunity is a double-rAF proxy, not confirmed paint or INP.",
+      "Shared host and headless browser; exploratory, not product rankings."
+    ],
+    "completedAt": "2026-10-21T19:59:40.008Z"
+  },
+  "samples": [
+    {
+      "framework": "velocity-next",
+      "scenario": "rotate-1000",
+      "round": 0,
+      "commitMs": 1.800000000745058,
+      "commitLayoutMs": 6.5,
+      "frameOpportunityMs": 27.5,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "select-row",
+      "round": 0,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.19999999925494194,
+      "frameOpportunityMs": 30.5,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "update-all",
+      "round": 0,
+      "commitMs": 2,
+      "commitLayoutMs": 39.19999999925494,
+      "frameOpportunityMs": 50.29999999701977,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "noop-1000",
+      "round": 0,
+      "commitMs": 0,
+      "commitLayoutMs": 0,
+      "frameOpportunityMs": 27.400000002235174,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "clear-5000",
+      "round": 0,
+      "commitMs": 18.399999998509884,
+      "commitLayoutMs": 18.5,
+      "frameOpportunityMs": 21.199999999254942,
+      "height": 265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "dashboard-tick",
+      "round": 0,
+      "commitMs": 0,
+      "commitLayoutMs": 0.6999999992549419,
+      "frameOpportunityMs": 23.400000002235174,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 0,
+      "commitMs": 4.400000002235174,
+      "commitLayoutMs": 43,
+      "frameOpportunityMs": 54.400000002235174,
+      "height": 50265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "remove-row",
+      "round": 0,
+      "commitMs": 0.5999999977648258,
+      "commitLayoutMs": 4,
+      "frameOpportunityMs": 31.199999999254942,
+      "height": 25240
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "create-5000",
+      "round": 0,
+      "commitMs": 20,
+      "commitLayoutMs": 224.59999999776483,
+      "frameOpportunityMs": 272.30000000074506,
+      "height": 125265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "create-10000",
+      "round": 0,
+      "commitMs": 31,
+      "commitLayoutMs": 398.9000000022352,
+      "frameOpportunityMs": 492.9000000022352,
+      "height": 250265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "reverse-1000",
+      "round": 0,
+      "commitMs": 7.600000001490116,
+      "commitLayoutMs": 36.19999999925494,
+      "frameOpportunityMs": 44.30000000074506,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "sort-1000",
+      "round": 0,
+      "commitMs": 9.300000000745058,
+      "commitLayoutMs": 48.5,
+      "frameOpportunityMs": 61.69999999925494,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "create-1000",
+      "round": 0,
+      "commitMs": 3.2999999970197678,
+      "commitLayoutMs": 32.599999997764826,
+      "frameOpportunityMs": 42.29999999701977,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "filter-half",
+      "round": 0,
+      "commitMs": 7.5,
+      "commitLayoutMs": 11.399999998509884,
+      "frameOpportunityMs": 30.800000000745058,
+      "height": 12765
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 0,
+      "commitMs": 8,
+      "commitLayoutMs": 40.19999999925494,
+      "frameOpportunityMs": 48.80000000074506,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "input-event",
+      "round": 0,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.5999999977648258,
+      "frameOpportunityMs": 31.899999998509884,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "swap-rows",
+      "round": 0,
+      "commitMs": 0.3999999985098839,
+      "commitLayoutMs": 4.300000000745058,
+      "frameOpportunityMs": 31.800000000745058,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "update-10pct",
+      "round": 0,
+      "commitMs": 0.6999999992549419,
+      "commitLayoutMs": 9.800000000745058,
+      "frameOpportunityMs": 30.199999999254942,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 0,
+      "commitMs": 6.5,
+      "commitLayoutMs": 39.5,
+      "frameOpportunityMs": 54.19999999925494,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "click-event",
+      "round": 0,
+      "commitMs": 0.4000000022351742,
+      "commitLayoutMs": 0.5,
+      "frameOpportunityMs": 31.800000000745058,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "rotate-1000",
+      "round": 0,
+      "commitMs": 1.3999999985098839,
+      "commitLayoutMs": 5.600000001490116,
+      "frameOpportunityMs": 30,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "select-row",
+      "round": 0,
+      "commitMs": 0.6000000014901161,
+      "commitLayoutMs": 0.8000000007450581,
+      "frameOpportunityMs": 31,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "update-all",
+      "round": 0,
+      "commitMs": 2.699999999254942,
+      "commitLayoutMs": 28.400000002235174,
+      "frameOpportunityMs": 36.80000000074506,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "noop-1000",
+      "round": 0,
+      "commitMs": 0,
+      "commitLayoutMs": 0.09999999776482582,
+      "frameOpportunityMs": 30.199999999254942,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "clear-5000",
+      "round": 0,
+      "commitMs": 27.399999998509884,
+      "commitLayoutMs": 27.599999997764826,
+      "frameOpportunityMs": 31.300000000745058,
+      "height": 265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "dashboard-tick",
+      "round": 0,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 1.1000000014901161,
+      "frameOpportunityMs": 28.100000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "append-1000",
+      "round": 0,
+      "commitMs": 8.5,
+      "commitLayoutMs": 48.30000000074506,
+      "frameOpportunityMs": 58.899999998509884,
+      "height": 50265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "remove-row",
+      "round": 0,
+      "commitMs": 0.5,
+      "commitLayoutMs": 3.699999999254942,
+      "frameOpportunityMs": 31.599999997764826,
+      "height": 25240
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "create-5000",
+      "round": 0,
+      "commitMs": 31.400000002235174,
+      "commitLayoutMs": 220.69999999925494,
+      "frameOpportunityMs": 267.1000000014901,
+      "height": 125265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "create-10000",
+      "round": 0,
+      "commitMs": 73.90000000223517,
+      "commitLayoutMs": 504.6000000014901,
+      "frameOpportunityMs": 614.5,
+      "height": 250265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "reverse-1000",
+      "round": 0,
+      "commitMs": 8.099999997764826,
+      "commitLayoutMs": 44.19999999925494,
+      "frameOpportunityMs": 56.099999997764826,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "sort-1000",
+      "round": 0,
+      "commitMs": 10,
+      "commitLayoutMs": 45.80000000074506,
+      "frameOpportunityMs": 57.099999997764826,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "create-1000",
+      "round": 0,
+      "commitMs": 6.399999998509884,
+      "commitLayoutMs": 48.599999997764826,
+      "frameOpportunityMs": 58.69999999925494,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "filter-half",
+      "round": 0,
+      "commitMs": 4.5,
+      "commitLayoutMs": 7.5,
+      "frameOpportunityMs": 31.300000000745058,
+      "height": 12765
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "replace-1000",
+      "round": 0,
+      "commitMs": 11.700000002980232,
+      "commitLayoutMs": 42.600000001490116,
+      "frameOpportunityMs": 49.900000002235174,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "input-event",
+      "round": 0,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 0.6000000014901161,
+      "frameOpportunityMs": 31.899999998509884,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "swap-rows",
+      "round": 0,
+      "commitMs": 0.5,
+      "commitLayoutMs": 4.399999998509884,
+      "frameOpportunityMs": 21.5,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "update-10pct",
+      "round": 0,
+      "commitMs": 0.6000000014901161,
+      "commitLayoutMs": 6,
+      "frameOpportunityMs": 31.900000002235174,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "shuffle-1000",
+      "round": 0,
+      "commitMs": 8.199999999254942,
+      "commitLayoutMs": 44.19999999925494,
+      "frameOpportunityMs": 54.399999998509884,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "click-event",
+      "round": 0,
+      "commitMs": 1.6000000014901161,
+      "commitLayoutMs": 1.699999999254942,
+      "frameOpportunityMs": 22.199999999254942,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "rotate-1000",
+      "round": 0,
+      "commitMs": 8,
+      "commitLayoutMs": 45.899999998509884,
+      "frameOpportunityMs": 60.100000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "select-row",
+      "round": 0,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.30000000074505806,
+      "frameOpportunityMs": 32,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "update-all",
+      "round": 0,
+      "commitMs": 10.600000001490116,
+      "commitLayoutMs": 35,
+      "frameOpportunityMs": 43.600000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "noop-1000",
+      "round": 0,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.10000000149011612,
+      "frameOpportunityMs": 30.600000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "clear-5000",
+      "round": 0,
+      "commitMs": 31.399999998509884,
+      "commitLayoutMs": 31.600000001490116,
+      "frameOpportunityMs": 32.5,
+      "height": 265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "dashboard-tick",
+      "round": 0,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 1.0999999977648258,
+      "frameOpportunityMs": 28.300000000745058,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "append-1000",
+      "round": 0,
+      "commitMs": 5.399999998509884,
+      "commitLayoutMs": 43.399999998509884,
+      "frameOpportunityMs": 52,
+      "height": 50265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "remove-row",
+      "round": 0,
+      "commitMs": 0.6999999992549419,
+      "commitLayoutMs": 4.300000000745058,
+      "frameOpportunityMs": 30.300000000745058,
+      "height": 25240
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "create-5000",
+      "round": 0,
+      "commitMs": 17.199999999254942,
+      "commitLayoutMs": 185.90000000223517,
+      "frameOpportunityMs": 229.30000000074506,
+      "height": 125265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "create-10000",
+      "round": 0,
+      "commitMs": 39,
+      "commitLayoutMs": 445.1000000014901,
+      "frameOpportunityMs": 534.9000000022352,
+      "height": 250265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "reverse-1000",
+      "round": 0,
+      "commitMs": 8,
+      "commitLayoutMs": 43.30000000074506,
+      "frameOpportunityMs": 57.099999997764826,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "sort-1000",
+      "round": 0,
+      "commitMs": 7.300000000745058,
+      "commitLayoutMs": 40.19999999925494,
+      "frameOpportunityMs": 49.100000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "create-1000",
+      "round": 0,
+      "commitMs": 5.300000000745058,
+      "commitLayoutMs": 40,
+      "frameOpportunityMs": 51.400000002235174,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "filter-half",
+      "round": 0,
+      "commitMs": 3.399999998509884,
+      "commitLayoutMs": 5.600000001490116,
+      "frameOpportunityMs": 32,
+      "height": 12765
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "replace-1000",
+      "round": 0,
+      "commitMs": 10.5,
+      "commitLayoutMs": 48.80000000074506,
+      "frameOpportunityMs": 57.80000000074506,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "input-event",
+      "round": 0,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 0.6000000014901161,
+      "frameOpportunityMs": 31.800000000745058,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "swap-rows",
+      "round": 0,
+      "commitMs": 5.400000002235174,
+      "commitLayoutMs": 35,
+      "frameOpportunityMs": 42.100000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "update-10pct",
+      "round": 0,
+      "commitMs": 1,
+      "commitLayoutMs": 6.199999999254942,
+      "frameOpportunityMs": 14.900000002235174,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "shuffle-1000",
+      "round": 0,
+      "commitMs": 6.100000001490116,
+      "commitLayoutMs": 32.19999999925494,
+      "frameOpportunityMs": 39.69999999925494,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "click-event",
+      "round": 0,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 0.3999999985098839,
+      "frameOpportunityMs": 31.899999998509884,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "shuffle-1000",
+      "round": 1,
+      "commitMs": 8.5,
+      "commitLayoutMs": 44.19999999925494,
+      "frameOpportunityMs": 54.30000000074506,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "update-10pct",
+      "round": 1,
+      "commitMs": 0.7000000029802322,
+      "commitLayoutMs": 9,
+      "frameOpportunityMs": 30.900000002235174,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "create-1000",
+      "round": 1,
+      "commitMs": 7.599999997764826,
+      "commitLayoutMs": 37.5,
+      "frameOpportunityMs": 44.899999998509884,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "sort-1000",
+      "round": 1,
+      "commitMs": 6.700000002980232,
+      "commitLayoutMs": 45.400000002235174,
+      "frameOpportunityMs": 54.5,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "reverse-1000",
+      "round": 1,
+      "commitMs": 6.600000001490116,
+      "commitLayoutMs": 37,
+      "frameOpportunityMs": 46.30000000074506,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "update-all",
+      "round": 1,
+      "commitMs": 2.800000000745058,
+      "commitLayoutMs": 22.199999999254942,
+      "frameOpportunityMs": 33.19999999925494,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "create-10000",
+      "round": 1,
+      "commitMs": 76.89999999850988,
+      "commitLayoutMs": 456,
+      "frameOpportunityMs": 534.0999999977648,
+      "height": 250265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "click-event",
+      "round": 1,
+      "commitMs": 0.8000000007450581,
+      "commitLayoutMs": 0.9000000022351742,
+      "frameOpportunityMs": 31.5,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "clear-5000",
+      "round": 1,
+      "commitMs": 21.400000002235174,
+      "commitLayoutMs": 21.5,
+      "frameOpportunityMs": 27.400000002235174,
+      "height": 265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "remove-row",
+      "round": 1,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 4,
+      "frameOpportunityMs": 31.899999998509884,
+      "height": 25240
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "append-1000",
+      "round": 1,
+      "commitMs": 7.200000002980232,
+      "commitLayoutMs": 43.100000001490116,
+      "frameOpportunityMs": 52.600000001490116,
+      "height": 50265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "filter-half",
+      "round": 1,
+      "commitMs": 3.699999999254942,
+      "commitLayoutMs": 5.5,
+      "frameOpportunityMs": 30.300000000745058,
+      "height": 12765
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "swap-rows",
+      "round": 1,
+      "commitMs": 0.8000000007450581,
+      "commitLayoutMs": 3.899999998509884,
+      "frameOpportunityMs": 31.699999999254942,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "noop-1000",
+      "round": 1,
+      "commitMs": 0,
+      "commitLayoutMs": 0,
+      "frameOpportunityMs": 31.799999997019768,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "dashboard-tick",
+      "round": 1,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.7999999970197678,
+      "frameOpportunityMs": 14.799999997019768,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "create-5000",
+      "round": 1,
+      "commitMs": 26.200000002980232,
+      "commitLayoutMs": 212.80000000074506,
+      "frameOpportunityMs": 249.5,
+      "height": 125265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "replace-1000",
+      "round": 1,
+      "commitMs": 9.599999997764826,
+      "commitLayoutMs": 37.099999997764826,
+      "frameOpportunityMs": 45.599999997764826,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "input-event",
+      "round": 1,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 0.6999999992549419,
+      "frameOpportunityMs": 30.099999997764826,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "select-row",
+      "round": 1,
+      "commitMs": 0.6999999992549419,
+      "commitLayoutMs": 0.8000000007450581,
+      "frameOpportunityMs": 32,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "rotate-1000",
+      "round": 1,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 3.5,
+      "frameOpportunityMs": 64.30000000074506,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "shuffle-1000",
+      "round": 1,
+      "commitMs": 7.399999998509884,
+      "commitLayoutMs": 40.69999999925494,
+      "frameOpportunityMs": 51,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "update-10pct",
+      "round": 1,
+      "commitMs": 1.2999999970197678,
+      "commitLayoutMs": 7.099999997764826,
+      "frameOpportunityMs": 31.5,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "create-1000",
+      "round": 1,
+      "commitMs": 4.199999999254942,
+      "commitLayoutMs": 34.79999999701977,
+      "frameOpportunityMs": 42.79999999701977,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "sort-1000",
+      "round": 1,
+      "commitMs": 8.399999998509884,
+      "commitLayoutMs": 49.899999998509884,
+      "frameOpportunityMs": 59,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "reverse-1000",
+      "round": 1,
+      "commitMs": 6,
+      "commitLayoutMs": 34.600000001490116,
+      "frameOpportunityMs": 44.400000002235174,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "update-all",
+      "round": 1,
+      "commitMs": 3.699999999254942,
+      "commitLayoutMs": 35,
+      "frameOpportunityMs": 49.900000002235174,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "create-10000",
+      "round": 1,
+      "commitMs": 38.600000001490116,
+      "commitLayoutMs": 475.19999999925494,
+      "frameOpportunityMs": 562.1000000014901,
+      "height": 250265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "click-event",
+      "round": 1,
+      "commitMs": 0.3999999985098839,
+      "commitLayoutMs": 0.5,
+      "frameOpportunityMs": 32,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "clear-5000",
+      "round": 1,
+      "commitMs": 24.5,
+      "commitLayoutMs": 24.599999997764826,
+      "frameOpportunityMs": 30.799999997019768,
+      "height": 265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "remove-row",
+      "round": 1,
+      "commitMs": 0.6000000014901161,
+      "commitLayoutMs": 4.400000002235174,
+      "frameOpportunityMs": 14.600000001490116,
+      "height": 25240
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "append-1000",
+      "round": 1,
+      "commitMs": 5.799999997019768,
+      "commitLayoutMs": 50.099999997764826,
+      "frameOpportunityMs": 61.099999997764826,
+      "height": 50265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "filter-half",
+      "round": 1,
+      "commitMs": 2.5,
+      "commitLayoutMs": 4.399999998509884,
+      "frameOpportunityMs": 30.899999998509884,
+      "height": 12765
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "swap-rows",
+      "round": 1,
+      "commitMs": 5.800000000745058,
+      "commitLayoutMs": 32.5,
+      "frameOpportunityMs": 41.69999999925494,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "noop-1000",
+      "round": 1,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.09999999776482582,
+      "frameOpportunityMs": 32.19999999925494,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "dashboard-tick",
+      "round": 1,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 0.8999999985098839,
+      "frameOpportunityMs": 30.100000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "create-5000",
+      "round": 1,
+      "commitMs": 17,
+      "commitLayoutMs": 192.19999999925494,
+      "frameOpportunityMs": 233,
+      "height": 125265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "replace-1000",
+      "round": 1,
+      "commitMs": 8.599999997764826,
+      "commitLayoutMs": 38.19999999925494,
+      "frameOpportunityMs": 47.899999998509884,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "input-event",
+      "round": 1,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.6000000014901161,
+      "frameOpportunityMs": 31.5,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "select-row",
+      "round": 1,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.20000000298023224,
+      "frameOpportunityMs": 30.200000002980232,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "rotate-1000",
+      "round": 1,
+      "commitMs": 5.100000001490116,
+      "commitLayoutMs": 40.100000001490116,
+      "frameOpportunityMs": 50.30000000074506,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 1,
+      "commitMs": 7,
+      "commitLayoutMs": 38.900000002235174,
+      "frameOpportunityMs": 47.20000000298023,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "update-10pct",
+      "round": 1,
+      "commitMs": 0.5999999977648258,
+      "commitLayoutMs": 6.699999999254942,
+      "frameOpportunityMs": 26.299999997019768,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "create-1000",
+      "round": 1,
+      "commitMs": 3.7999999970197678,
+      "commitLayoutMs": 35.5,
+      "frameOpportunityMs": 44.899999998509884,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "sort-1000",
+      "round": 1,
+      "commitMs": 5.800000000745058,
+      "commitLayoutMs": 37.80000000074506,
+      "frameOpportunityMs": 48,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "reverse-1000",
+      "round": 1,
+      "commitMs": 6,
+      "commitLayoutMs": 42.30000000074506,
+      "frameOpportunityMs": 51,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "update-all",
+      "round": 1,
+      "commitMs": 1.3999999985098839,
+      "commitLayoutMs": 19.600000001490116,
+      "frameOpportunityMs": 26,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "create-10000",
+      "round": 1,
+      "commitMs": 31.899999998509884,
+      "commitLayoutMs": 463.69999999925494,
+      "frameOpportunityMs": 557.3999999985099,
+      "height": 250265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "click-event",
+      "round": 1,
+      "commitMs": 0.4000000022351742,
+      "commitLayoutMs": 0.5,
+      "frameOpportunityMs": 31.100000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "clear-5000",
+      "round": 1,
+      "commitMs": 20.900000002235174,
+      "commitLayoutMs": 21,
+      "frameOpportunityMs": 30.400000002235174,
+      "height": 265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "remove-row",
+      "round": 1,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 3.100000001490116,
+      "frameOpportunityMs": 28.600000001490116,
+      "height": 25240
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 1,
+      "commitMs": 4.699999999254942,
+      "commitLayoutMs": 49.69999999925494,
+      "frameOpportunityMs": 59.099999997764826,
+      "height": 50265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "filter-half",
+      "round": 1,
+      "commitMs": 3.899999998509884,
+      "commitLayoutMs": 6.399999998509884,
+      "frameOpportunityMs": 31.5,
+      "height": 12765
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "swap-rows",
+      "round": 1,
+      "commitMs": 0.5999999977648258,
+      "commitLayoutMs": 4.199999999254942,
+      "frameOpportunityMs": 22.599999997764826,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "noop-1000",
+      "round": 1,
+      "commitMs": 0,
+      "commitLayoutMs": 0,
+      "frameOpportunityMs": 31.100000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "dashboard-tick",
+      "round": 1,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.9000000022351742,
+      "frameOpportunityMs": 20.900000002235174,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "create-5000",
+      "round": 1,
+      "commitMs": 16.800000000745058,
+      "commitLayoutMs": 189.10000000149012,
+      "frameOpportunityMs": 238,
+      "height": 125265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 1,
+      "commitMs": 7.199999999254942,
+      "commitLayoutMs": 36.600000001490116,
+      "frameOpportunityMs": 44.600000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "input-event",
+      "round": 1,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.5,
+      "frameOpportunityMs": 32,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "select-row",
+      "round": 1,
+      "commitMs": 0.10000000149011612,
+      "commitLayoutMs": 0.10000000149011612,
+      "frameOpportunityMs": 31.800000000745058,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "rotate-1000",
+      "round": 1,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 3.600000001490116,
+      "frameOpportunityMs": 31.699999999254942,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "update-10pct",
+      "round": 2,
+      "commitMs": 0.6999999992549419,
+      "commitLayoutMs": 9.300000000745058,
+      "frameOpportunityMs": 30.699999999254942,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "rotate-1000",
+      "round": 2,
+      "commitMs": 0.8000000007450581,
+      "commitLayoutMs": 4.699999999254942,
+      "frameOpportunityMs": 31.399999998509884,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "reverse-1000",
+      "round": 2,
+      "commitMs": 7.299999997019768,
+      "commitLayoutMs": 35.19999999925494,
+      "frameOpportunityMs": 44.099999997764826,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 2,
+      "commitMs": 4.199999999254942,
+      "commitLayoutMs": 40.899999998509884,
+      "frameOpportunityMs": 49.899999998509884,
+      "height": 50265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "update-all",
+      "round": 2,
+      "commitMs": 2.199999999254942,
+      "commitLayoutMs": 26.899999998509884,
+      "frameOpportunityMs": 37.80000000074506,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "create-5000",
+      "round": 2,
+      "commitMs": 16.400000002235174,
+      "commitLayoutMs": 187.90000000223517,
+      "frameOpportunityMs": 226.10000000149012,
+      "height": 125265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "select-row",
+      "round": 2,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.09999999776482582,
+      "frameOpportunityMs": 32,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "clear-5000",
+      "round": 2,
+      "commitMs": 18.800000000745058,
+      "commitLayoutMs": 19.100000001490116,
+      "frameOpportunityMs": 30.100000001490116,
+      "height": 265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "dashboard-tick",
+      "round": 2,
+      "commitMs": 0,
+      "commitLayoutMs": 0.5999999977648258,
+      "frameOpportunityMs": 28.299999997019768,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "input-event",
+      "round": 2,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 0.6000000014901161,
+      "frameOpportunityMs": 22.5,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "swap-rows",
+      "round": 2,
+      "commitMs": 0.8999999985098839,
+      "commitLayoutMs": 4.899999998509884,
+      "frameOpportunityMs": 27.600000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "create-10000",
+      "round": 2,
+      "commitMs": 36.600000001490116,
+      "commitLayoutMs": 405.5,
+      "frameOpportunityMs": 484.70000000298023,
+      "height": 250265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "click-event",
+      "round": 2,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 0.4000000022351742,
+      "frameOpportunityMs": 29.400000002235174,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "filter-half",
+      "round": 2,
+      "commitMs": 3.400000002235174,
+      "commitLayoutMs": 5.600000001490116,
+      "frameOpportunityMs": 23,
+      "height": 12765
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "remove-row",
+      "round": 2,
+      "commitMs": 0.5,
+      "commitLayoutMs": 3.2000000029802322,
+      "frameOpportunityMs": 32,
+      "height": 25240
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "sort-1000",
+      "round": 2,
+      "commitMs": 5.900000002235174,
+      "commitLayoutMs": 37.5,
+      "frameOpportunityMs": 46.5,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 2,
+      "commitMs": 6.899999998509884,
+      "commitLayoutMs": 36.5,
+      "frameOpportunityMs": 45.69999999925494,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "create-1000",
+      "round": 2,
+      "commitMs": 3.699999999254942,
+      "commitLayoutMs": 33.399999998509884,
+      "frameOpportunityMs": 41.899999998509884,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "noop-1000",
+      "round": 2,
+      "commitMs": 0,
+      "commitLayoutMs": 0,
+      "frameOpportunityMs": 32.099999997764826,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 2,
+      "commitMs": 7.699999999254942,
+      "commitLayoutMs": 40.19999999925494,
+      "frameOpportunityMs": 49.100000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "update-10pct",
+      "round": 2,
+      "commitMs": 1.5,
+      "commitLayoutMs": 7.199999999254942,
+      "frameOpportunityMs": 31.399999998509884,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "rotate-1000",
+      "round": 2,
+      "commitMs": 5.700000002980232,
+      "commitLayoutMs": 42.70000000298023,
+      "frameOpportunityMs": 50.20000000298023,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "reverse-1000",
+      "round": 2,
+      "commitMs": 6.900000002235174,
+      "commitLayoutMs": 37.100000001490116,
+      "frameOpportunityMs": 44.80000000074506,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "append-1000",
+      "round": 2,
+      "commitMs": 5.600000001490116,
+      "commitLayoutMs": 49.69999999925494,
+      "frameOpportunityMs": 59.80000000074506,
+      "height": 50265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "update-all",
+      "round": 2,
+      "commitMs": 3.400000002235174,
+      "commitLayoutMs": 22.5,
+      "frameOpportunityMs": 31.200000002980232,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "create-5000",
+      "round": 2,
+      "commitMs": 23.800000000745058,
+      "commitLayoutMs": 208.5,
+      "frameOpportunityMs": 248.19999999925494,
+      "height": 125265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "select-row",
+      "round": 2,
+      "commitMs": 0.20000000298023224,
+      "commitLayoutMs": 0.30000000074505806,
+      "frameOpportunityMs": 32.20000000298023,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "clear-5000",
+      "round": 2,
+      "commitMs": 33.900000002235174,
+      "commitLayoutMs": 34.100000001490116,
+      "frameOpportunityMs": 35.5,
+      "height": 265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "dashboard-tick",
+      "round": 2,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 0.6999999992549419,
+      "frameOpportunityMs": 26.5,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "input-event",
+      "round": 2,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 0.6999999992549419,
+      "frameOpportunityMs": 31.399999998509884,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "swap-rows",
+      "round": 2,
+      "commitMs": 7.299999997019768,
+      "commitLayoutMs": 39.099999997764826,
+      "frameOpportunityMs": 53.599999997764826,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "create-10000",
+      "round": 2,
+      "commitMs": 41.099999997764826,
+      "commitLayoutMs": 472.80000000074506,
+      "frameOpportunityMs": 555.6999999992549,
+      "height": 250265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "click-event",
+      "round": 2,
+      "commitMs": 0.5,
+      "commitLayoutMs": 0.5,
+      "frameOpportunityMs": 31.100000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "filter-half",
+      "round": 2,
+      "commitMs": 3.399999998509884,
+      "commitLayoutMs": 5.800000000745058,
+      "frameOpportunityMs": 31.899999998509884,
+      "height": 12765
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "remove-row",
+      "round": 2,
+      "commitMs": 0.6999999992549419,
+      "commitLayoutMs": 5.400000002235174,
+      "frameOpportunityMs": 31.699999999254942,
+      "height": 25240
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "sort-1000",
+      "round": 2,
+      "commitMs": 7.899999998509884,
+      "commitLayoutMs": 38.19999999925494,
+      "frameOpportunityMs": 47.099999997764826,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "shuffle-1000",
+      "round": 2,
+      "commitMs": 7.400000002235174,
+      "commitLayoutMs": 35.100000001490116,
+      "frameOpportunityMs": 42,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "create-1000",
+      "round": 2,
+      "commitMs": 3.900000002235174,
+      "commitLayoutMs": 29.100000001490116,
+      "frameOpportunityMs": 35.600000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "noop-1000",
+      "round": 2,
+      "commitMs": 0,
+      "commitLayoutMs": 0,
+      "frameOpportunityMs": 24.5,
+      "height": 25265
+    },
+    {
+      "framework": "vanilla",
+      "scenario": "replace-1000",
+      "round": 2,
+      "commitMs": 8.399999998509884,
+      "commitLayoutMs": 38.80000000074506,
+      "frameOpportunityMs": 46.5,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "update-10pct",
+      "round": 2,
+      "commitMs": 0.8999999985098839,
+      "commitLayoutMs": 7.899999998509884,
+      "frameOpportunityMs": 31.599999997764826,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "rotate-1000",
+      "round": 2,
+      "commitMs": 1,
+      "commitLayoutMs": 4.800000000745058,
+      "frameOpportunityMs": 31.600000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "reverse-1000",
+      "round": 2,
+      "commitMs": 5.900000002235174,
+      "commitLayoutMs": 34,
+      "frameOpportunityMs": 42,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "append-1000",
+      "round": 2,
+      "commitMs": 14.899999998509884,
+      "commitLayoutMs": 54,
+      "frameOpportunityMs": 63.899999998509884,
+      "height": 50265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "update-all",
+      "round": 2,
+      "commitMs": 1.9000000022351742,
+      "commitLayoutMs": 23.300000000745058,
+      "frameOpportunityMs": 35.100000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "create-5000",
+      "round": 2,
+      "commitMs": 47.20000000298023,
+      "commitLayoutMs": 224.20000000298023,
+      "frameOpportunityMs": 270.20000000298023,
+      "height": 125265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "select-row",
+      "round": 2,
+      "commitMs": 0.5,
+      "commitLayoutMs": 0.6000000014901161,
+      "frameOpportunityMs": 31.600000001490116,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "clear-5000",
+      "round": 2,
+      "commitMs": 26.600000001490116,
+      "commitLayoutMs": 26.699999999254942,
+      "frameOpportunityMs": 31.100000001490116,
+      "height": 265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "dashboard-tick",
+      "round": 2,
+      "commitMs": 0.19999999925494194,
+      "commitLayoutMs": 1,
+      "frameOpportunityMs": 23.799999997019768,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "input-event",
+      "round": 2,
+      "commitMs": 0.3999999985098839,
+      "commitLayoutMs": 0.8000000007450581,
+      "frameOpportunityMs": 31.800000000745058,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "swap-rows",
+      "round": 2,
+      "commitMs": 1,
+      "commitLayoutMs": 4.399999998509884,
+      "frameOpportunityMs": 30.799999997019768,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "create-10000",
+      "round": 2,
+      "commitMs": 121.19999999925494,
+      "commitLayoutMs": 460.19999999925494,
+      "frameOpportunityMs": 534.6000000014901,
+      "height": 250265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "click-event",
+      "round": 2,
+      "commitMs": 1.199999999254942,
+      "commitLayoutMs": 1.3999999985098839,
+      "frameOpportunityMs": 30.800000000745058,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "filter-half",
+      "round": 2,
+      "commitMs": 4.5,
+      "commitLayoutMs": 7.100000001490116,
+      "frameOpportunityMs": 32,
+      "height": 12765
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "remove-row",
+      "round": 2,
+      "commitMs": 0.30000000074505806,
+      "commitLayoutMs": 3.199999999254942,
+      "frameOpportunityMs": 31.900000002235174,
+      "height": 25240
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "sort-1000",
+      "round": 2,
+      "commitMs": 6.400000002235174,
+      "commitLayoutMs": 34.70000000298023,
+      "frameOpportunityMs": 43,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "shuffle-1000",
+      "round": 2,
+      "commitMs": 6.600000001490116,
+      "commitLayoutMs": 32.5,
+      "frameOpportunityMs": 40.80000000074506,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "create-1000",
+      "round": 2,
+      "commitMs": 9.100000001490116,
+      "commitLayoutMs": 35.20000000298023,
+      "frameOpportunityMs": 42,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "noop-1000",
+      "round": 2,
+      "commitMs": 0.09999999776482582,
+      "commitLayoutMs": 0.09999999776482582,
+      "frameOpportunityMs": 31.899999998509884,
+      "height": 25265
+    },
+    {
+      "framework": "velocity-compiled",
+      "scenario": "replace-1000",
+      "round": 2,
+      "commitMs": 19.699999999254942,
+      "commitLayoutMs": 53.100000001490116,
+      "frameOpportunityMs": 62.100000001490116,
+      "height": 25265
+    }
+  ],
+  "startup": [
+    {
+      "framework": "velocity-next",
+      "round": 0,
+      "readyMs": 19.099999997764826,
+      "navigation": {
+        "name": "http://127.0.0.1:37781/velocity-next/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 29.299999997019768,
+        "navigationId": 4930,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.19999999925494194,
+        "domainLookupStart": 0.6999999992549419,
+        "domainLookupEnd": 0.8999999985098839,
+        "connectStart": 0.8999999985098839,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.8999999985098839,
+        "requestStart": 1,
+        "responseStart": 2.699999999254942,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 2.699999999254942,
+        "responseEnd": 3.5,
+        "transferSize": 585,
+        "encodedBodySize": 285,
+        "decodedBodySize": 285,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 10.699999999254942,
+        "domContentLoadedEventStart": 19.099999997764826,
+        "domContentLoadedEventEnd": 19.299999997019768,
+        "domComplete": 29.299999997019768,
+        "loadEventStart": 29.299999997019768,
+        "loadEventEnd": 29.299999997019768,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "name": "/style.css",
+          "encodedBodySize": 439,
+          "decodedBodySize": 439,
+          "duration": 7.100000001490116
+        },
+        {
+          "name": "/velocity-next/app.js",
+          "encodedBodySize": 6624,
+          "decodedBodySize": 6624,
+          "duration": 7.5
+        }
+      ]
+    },
+    {
+      "framework": "velocity-compiled",
+      "round": 0,
+      "readyMs": 18.600000001490116,
+      "navigation": {
+        "name": "http://127.0.0.1:37781/velocity-compiled/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 22.900000002235174,
+        "navigationId": 8200,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.20000000298023224,
+        "domainLookupStart": 0.8000000007450581,
+        "domainLookupEnd": 0.8000000007450581,
+        "connectStart": 0.8000000007450581,
+        "secureConnectionStart": 0,
+        "connectEnd": 1.300000000745058,
+        "requestStart": 1.5,
+        "responseStart": 2.7000000029802322,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 2.7000000029802322,
+        "responseEnd": 3.400000002235174,
+        "transferSize": 589,
+        "encodedBodySize": 289,
+        "decodedBodySize": 289,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 10.800000000745058,
+        "domContentLoadedEventStart": 18.600000001490116,
+        "domContentLoadedEventEnd": 18.700000002980232,
+        "domComplete": 22.900000002235174,
+        "loadEventStart": 22.900000002235174,
+        "loadEventEnd": 22.900000002235174,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "resources": [
+        {
+          "name": "/style.css",
+          "encodedBodySize": 439,
+          "decodedBodySize": 439,
+          "duration": 6.800000000745058
+        },
+        {
+          "name": "/velocity-compiled/app.js",
+          "encodedBodySize": 8931,
+          "decodedBodySize": 8931,
+          "duration": 7.400000002235174
+        }
+      ]
+    },
+    {
+      "framework": "vanilla",
+      "round": 0,
+      "readyMs": 13.5,
+      "navigation": {
+        "name": "http://127.0.0.1:37781/vanilla/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 18.5,
+        "navigationId": 2480,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.19999999925494194,
+        "domainLookupStart": 0.6999999992549419,
+        "domainLookupEnd": 0.6999999992549419,
+        "connectStart": 0.6999999992549419,
+        "secureConnectionStart": 0,
+        "connectEnd": 0.8999999985098839,
+        "requestStart": 1,
+        "responseStart": 2.099999997764826,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 2.099999997764826,
+        "responseEnd": 2.699999999254942,
+        "transferSize": 579,
+        "encodedBodySize": 279,
+        "decodedBodySize": 279,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 9.599999997764826,
+        "domContentLoadedEventStart": 13.5,
+        "domContentLoadedEventEnd": 13.699999999254942,
+        "domComplete": 18.399999998509884,
+        "loadEventStart": 18.5,
+        "loadEventEnd": 18.5,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "resources": [
+        {
+          "name": "/style.css",
+          "encodedBodySize": 439,
+          "decodedBodySize": 439,
+          "duration": 5.099999997764826
+        },
+        {
+          "name": "/vanilla/app.js",
+          "encodedBodySize": 4206,
+          "decodedBodySize": 4206,
+          "duration": 5.699999999254942
+        }
+      ]
+    },
+    {
+      "framework": "velocity-compiled",
+      "round": 1,
+      "readyMs": 15.899999998509884,
+      "navigation": {
+        "name": "http://127.0.0.1:37781/velocity-compiled/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 19.599999997764826,
+        "navigationId": 7083,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.09999999776482582,
+        "domainLookupStart": 0.8000000007450581,
+        "domainLookupEnd": 0.8999999985098839,
+        "connectStart": 0.8999999985098839,
+        "secureConnectionStart": 0,
+        "connectEnd": 1.300000000745058,
+        "requestStart": 1.3999999985098839,
+        "responseStart": 2.399999998509884,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 2.399999998509884,
+        "responseEnd": 3,
+        "transferSize": 589,
+        "encodedBodySize": 289,
+        "decodedBodySize": 289,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 10.199999999254942,
+        "domContentLoadedEventStart": 15.899999998509884,
+        "domContentLoadedEventEnd": 16,
+        "domComplete": 19.599999997764826,
+        "loadEventStart": 19.599999997764826,
+        "loadEventEnd": 19.599999997764826,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "name": "/style.css",
+          "encodedBodySize": 439,
+          "decodedBodySize": 439,
+          "duration": 4.800000000745058
+        },
+        {
+          "name": "/velocity-compiled/app.js",
+          "encodedBodySize": 8931,
+          "decodedBodySize": 8931,
+          "duration": 5.5
+        }
+      ]
+    },
+    {
+      "framework": "vanilla",
+      "round": 1,
+      "readyMs": 14,
+      "navigation": {
+        "name": "http://127.0.0.1:37781/vanilla/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 17.599999997764826,
+        "navigationId": 485,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.09999999776482582,
+        "domainLookupStart": 0.6999999992549419,
+        "domainLookupEnd": 0.6999999992549419,
+        "connectStart": 0.6999999992549419,
+        "secureConnectionStart": 0,
+        "connectEnd": 1,
+        "requestStart": 1,
+        "responseStart": 2,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 2,
+        "responseEnd": 2.599999997764826,
+        "transferSize": 579,
+        "encodedBodySize": 279,
+        "decodedBodySize": 279,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 8.199999999254942,
+        "domContentLoadedEventStart": 14,
+        "domContentLoadedEventEnd": 14,
+        "domComplete": 17.599999997764826,
+        "loadEventStart": 17.599999997764826,
+        "loadEventEnd": 17.599999997764826,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "name": "/style.css",
+          "encodedBodySize": 439,
+          "decodedBodySize": 439,
+          "duration": 6
+        },
+        {
+          "name": "/vanilla/app.js",
+          "encodedBodySize": 4206,
+          "decodedBodySize": 4206,
+          "duration": 5.900000002235174
+        }
+      ]
+    },
+    {
+      "framework": "velocity-next",
+      "round": 1,
+      "readyMs": 13.5,
+      "navigation": {
+        "name": "http://127.0.0.1:37781/velocity-next/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 18.300000000745058,
+        "navigationId": 9394,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0,
+        "domainLookupStart": 0.6000000014901161,
+        "domainLookupEnd": 0.8000000007450581,
+        "connectStart": 0.8000000007450581,
+        "secureConnectionStart": 0,
+        "connectEnd": 1,
+        "requestStart": 1,
+        "responseStart": 2,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 2,
+        "responseEnd": 2.699999999254942,
+        "transferSize": 585,
+        "encodedBodySize": 285,
+        "decodedBodySize": 285,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 8.300000000745058,
+        "domContentLoadedEventStart": 13.5,
+        "domContentLoadedEventEnd": 13.5,
+        "domComplete": 18.300000000745058,
+        "loadEventStart": 18.300000000745058,
+        "loadEventEnd": 18.300000000745058,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "name": "/style.css",
+          "encodedBodySize": 439,
+          "decodedBodySize": 439,
+          "duration": 5.399999998509884
+        },
+        {
+          "name": "/velocity-next/app.js",
+          "encodedBodySize": 6624,
+          "decodedBodySize": 6624,
+          "duration": 6
+        }
+      ]
+    },
+    {
+      "framework": "velocity-next",
+      "round": 2,
+      "readyMs": 13.5,
+      "navigation": {
+        "name": "http://127.0.0.1:37781/velocity-next/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 17.400000002235174,
+        "navigationId": 9455,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0,
+        "domainLookupStart": 0.6999999992549419,
+        "domainLookupEnd": 0.6999999992549419,
+        "connectStart": 0.6999999992549419,
+        "secureConnectionStart": 0,
+        "connectEnd": 1,
+        "requestStart": 1.199999999254942,
+        "responseStart": 2.300000000745058,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 2.300000000745058,
+        "responseEnd": 3,
+        "transferSize": 585,
+        "encodedBodySize": 285,
+        "decodedBodySize": 285,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 8.600000001490116,
+        "domContentLoadedEventStart": 13.5,
+        "domContentLoadedEventEnd": 13.5,
+        "domComplete": 17.400000002235174,
+        "loadEventStart": 17.400000002235174,
+        "loadEventEnd": 17.400000002235174,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "resources": [
+        {
+          "name": "/style.css",
+          "encodedBodySize": 439,
+          "decodedBodySize": 439,
+          "duration": 5.199999999254942
+        },
+        {
+          "name": "/velocity-next/app.js",
+          "encodedBodySize": 6624,
+          "decodedBodySize": 6624,
+          "duration": 5.600000001490116
+        }
+      ]
+    },
+    {
+      "framework": "vanilla",
+      "round": 2,
+      "readyMs": 15.899999998509884,
+      "navigation": {
+        "name": "http://127.0.0.1:37781/vanilla/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 19.799999997019768,
+        "navigationId": 9319,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.19999999925494194,
+        "domainLookupStart": 0.8999999985098839,
+        "domainLookupEnd": 0.8999999985098839,
+        "connectStart": 0.8999999985098839,
+        "secureConnectionStart": 0,
+        "connectEnd": 1,
+        "requestStart": 1.2999999970197678,
+        "responseStart": 2.399999998509884,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 2.399999998509884,
+        "responseEnd": 3.099999997764826,
+        "transferSize": 579,
+        "encodedBodySize": 279,
+        "decodedBodySize": 279,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 9.599999997764826,
+        "domContentLoadedEventStart": 15.899999998509884,
+        "domContentLoadedEventEnd": 16,
+        "domComplete": 19.699999999254942,
+        "loadEventStart": 19.799999997019768,
+        "loadEventEnd": 19.799999997019768,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "resources": [
+        {
+          "name": "/style.css",
+          "encodedBodySize": 439,
+          "decodedBodySize": 439,
+          "duration": 6.5
+        },
+        {
+          "name": "/vanilla/app.js",
+          "encodedBodySize": 4206,
+          "decodedBodySize": 4206,
+          "duration": 7.299999997019768
+        }
+      ]
+    },
+    {
+      "framework": "velocity-compiled",
+      "round": 2,
+      "readyMs": 14.700000002980232,
+      "navigation": {
+        "name": "http://127.0.0.1:37781/velocity-compiled/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 18.300000000745058,
+        "navigationId": 7654,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 0.10000000149011612,
+        "domainLookupStart": 0.7000000029802322,
+        "domainLookupEnd": 0.8000000007450581,
+        "connectStart": 0.8000000007450581,
+        "secureConnectionStart": 0,
+        "connectEnd": 1.2000000029802322,
+        "requestStart": 1.300000000745058,
+        "responseStart": 2.2000000029802322,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 2.2000000029802322,
+        "responseEnd": 2.900000002235174,
+        "transferSize": 589,
+        "encodedBodySize": 289,
+        "decodedBodySize": 289,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 8.700000002980232,
+        "domContentLoadedEventStart": 14.800000000745058,
+        "domContentLoadedEventEnd": 14.800000000745058,
+        "domComplete": 18.300000000745058,
+        "loadEventStart": 18.300000000745058,
+        "loadEventEnd": 18.300000000745058,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "name": "/style.css",
+          "encodedBodySize": 439,
+          "decodedBodySize": 439,
+          "duration": 4.700000002980232
+        },
+        {
+          "name": "/velocity-compiled/app.js",
+          "encodedBodySize": 8931,
+          "decodedBodySize": 8931,
+          "duration": 5.199999999254942
+        }
+      ]
+    }
+  ],
+  "memory": [],
+  "animation": [],
+  "failures": []
+}

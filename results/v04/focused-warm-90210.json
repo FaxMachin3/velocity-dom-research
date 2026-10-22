@@ -1,0 +1,2540 @@
+{
+  "meta": {
+    "track": "warm",
+    "seed": 90210,
+    "rounds": 30,
+    "inPageWarmups": 3,
+    "browser": "153.0.8010.0",
+    "timestamp": "2026-10-21T19:59:57.149Z",
+    "artifactHashes": {
+      "velocity-next-clone": "f8370aba8610ae99959c1eccb8055818a0c9ef8195902ccfc5108f410c3d3cab",
+      "velocity-next": "c773efe44f1ae667163d8afcee970052a7abdce7401c445b9796d0b414036582",
+      "velocity-direct-sibling": "b1ea249fe12c67c745dd5a23390647a13545d6455976ef28f3babca7012bec0c",
+      "velocity-delegated-index": "e399fc585984d3c3229d8fbb9c67262860c3fd398398cdec6e18c187068cb244"
+    },
+    "completedAt": "2026-10-21T20:04:41.904Z"
+  },
+  "samples": [
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 0,
+      "commitMs": 8.699999999254942,
+      "commitLayoutMs": 37.599999997764826
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 0,
+      "commitMs": 8.099999997764826,
+      "commitLayoutMs": 38.80000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 0,
+      "commitMs": 9.699999999254942,
+      "commitLayoutMs": 38.79999999701977
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 0,
+      "commitMs": 6.700000002980232,
+      "commitLayoutMs": 35.20000000298023
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 0,
+      "commitMs": 6.199999999254942,
+      "commitLayoutMs": 39.5
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 0,
+      "commitMs": 7.199999999254942,
+      "commitLayoutMs": 42
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 0,
+      "commitMs": 8.800000000745058,
+      "commitLayoutMs": 49
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 0,
+      "commitMs": 7.099999997764826,
+      "commitLayoutMs": 42.5
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 0,
+      "commitMs": 4.5,
+      "commitLayoutMs": 37.19999999925494
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 0,
+      "commitMs": 6.099999997764826,
+      "commitLayoutMs": 46.5
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 0,
+      "commitMs": 4.199999999254942,
+      "commitLayoutMs": 42
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 0,
+      "commitMs": 4.300000000745058,
+      "commitLayoutMs": 39
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 1,
+      "commitMs": 10.199999999254942,
+      "commitLayoutMs": 53.30000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 1,
+      "commitMs": 6,
+      "commitLayoutMs": 38.899999998509884
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 1,
+      "commitMs": 8.100000001490116,
+      "commitLayoutMs": 44.80000000074506
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 1,
+      "commitMs": 9.199999999254942,
+      "commitLayoutMs": 49.600000001490116
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 1,
+      "commitMs": 4,
+      "commitLayoutMs": 47.5
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 1,
+      "commitMs": 4.5,
+      "commitLayoutMs": 40.399999998509884
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 1,
+      "commitMs": 6.5,
+      "commitLayoutMs": 55.20000000298023
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 1,
+      "commitMs": 4.5,
+      "commitLayoutMs": 42.900000002235174
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 1,
+      "commitMs": 9,
+      "commitLayoutMs": 44.400000002235174
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 1,
+      "commitMs": 10.800000000745058,
+      "commitLayoutMs": 49.19999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 1,
+      "commitMs": 9,
+      "commitLayoutMs": 46.399999998509884
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 1,
+      "commitMs": 10.799999997019768,
+      "commitLayoutMs": 53
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 2,
+      "commitMs": 9.899999998509884,
+      "commitLayoutMs": 46.19999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 2,
+      "commitMs": 7.300000000745058,
+      "commitLayoutMs": 46
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 2,
+      "commitMs": 9.600000001490116,
+      "commitLayoutMs": 42.69999999925494
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 2,
+      "commitMs": 9,
+      "commitLayoutMs": 40.5
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 2,
+      "commitMs": 4.800000000745058,
+      "commitLayoutMs": 40.80000000074506
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 2,
+      "commitMs": 3.900000002235174,
+      "commitLayoutMs": 37
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 2,
+      "commitMs": 3.699999999254942,
+      "commitLayoutMs": 37.19999999925494
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 2,
+      "commitMs": 4,
+      "commitLayoutMs": 36.80000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 2,
+      "commitMs": 6.300000000745058,
+      "commitLayoutMs": 36.30000000074506
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 2,
+      "commitMs": 7.800000000745058,
+      "commitLayoutMs": 51
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 2,
+      "commitMs": 7.5,
+      "commitLayoutMs": 41.599999997764826
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 2,
+      "commitMs": 6.600000001490116,
+      "commitLayoutMs": 42.20000000298023
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 3,
+      "commitMs": 7.100000001490116,
+      "commitLayoutMs": 41.69999999925494
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 3,
+      "commitMs": 8,
+      "commitLayoutMs": 38.599999997764826
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 3,
+      "commitMs": 6,
+      "commitLayoutMs": 42
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 3,
+      "commitMs": 6.200000002980232,
+      "commitLayoutMs": 35
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 3,
+      "commitMs": 7.200000002980232,
+      "commitLayoutMs": 39.900000002235174
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 3,
+      "commitMs": 7.800000000745058,
+      "commitLayoutMs": 37.400000002235174
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 3,
+      "commitMs": 8.5,
+      "commitLayoutMs": 38.19999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 3,
+      "commitMs": 9.199999999254942,
+      "commitLayoutMs": 37.5
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 3,
+      "commitMs": 3.399999998509884,
+      "commitLayoutMs": 36.399999998509884
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 3,
+      "commitMs": 3.5,
+      "commitLayoutMs": 36.80000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 3,
+      "commitMs": 4.099999997764826,
+      "commitLayoutMs": 41
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 3,
+      "commitMs": 5,
+      "commitLayoutMs": 42.69999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 4,
+      "commitMs": 4.099999997764826,
+      "commitLayoutMs": 35.599999997764826
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 4,
+      "commitMs": 3.899999998509884,
+      "commitLayoutMs": 36.80000000074506
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 4,
+      "commitMs": 3.699999999254942,
+      "commitLayoutMs": 41
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 4,
+      "commitMs": 3.300000000745058,
+      "commitLayoutMs": 36.5
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 4,
+      "commitMs": 6.300000000745058,
+      "commitLayoutMs": 37.5
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 4,
+      "commitMs": 6.5,
+      "commitLayoutMs": 39.600000001490116
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 4,
+      "commitMs": 6.199999999254942,
+      "commitLayoutMs": 35.19999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 4,
+      "commitMs": 7,
+      "commitLayoutMs": 40.80000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 4,
+      "commitMs": 10.400000002235174,
+      "commitLayoutMs": 43.5
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 4,
+      "commitMs": 9.200000002980232,
+      "commitLayoutMs": 41.400000002235174
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 4,
+      "commitMs": 7.599999997764826,
+      "commitLayoutMs": 38.69999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 4,
+      "commitMs": 7.5,
+      "commitLayoutMs": 36.900000002235174
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 5,
+      "commitMs": 4.400000002235174,
+      "commitLayoutMs": 39.80000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 5,
+      "commitMs": 4.599999997764826,
+      "commitLayoutMs": 38.099999997764826
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 5,
+      "commitMs": 4.899999998509884,
+      "commitLayoutMs": 43.69999999925494
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 5,
+      "commitMs": 6.600000001490116,
+      "commitLayoutMs": 46
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 5,
+      "commitMs": 9,
+      "commitLayoutMs": 43.400000002235174
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 5,
+      "commitMs": 10.800000000745058,
+      "commitLayoutMs": 49
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 5,
+      "commitMs": 8.399999998509884,
+      "commitLayoutMs": 40.599999997764826
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 5,
+      "commitMs": 12.300000000745058,
+      "commitLayoutMs": 51.100000001490116
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 5,
+      "commitMs": 8.399999998509884,
+      "commitLayoutMs": 53.29999999701977
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 5,
+      "commitMs": 6.800000000745058,
+      "commitLayoutMs": 40.900000002235174
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 5,
+      "commitMs": 5.899999998509884,
+      "commitLayoutMs": 38.899999998509884
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 5,
+      "commitMs": 8.599999997764826,
+      "commitLayoutMs": 47.599999997764826
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 6,
+      "commitMs": 8.600000001490116,
+      "commitLayoutMs": 44.5
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 6,
+      "commitMs": 7.300000000745058,
+      "commitLayoutMs": 36.100000001490116
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 6,
+      "commitMs": 9.100000001490116,
+      "commitLayoutMs": 42.600000001490116
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 6,
+      "commitMs": 10.600000001490116,
+      "commitLayoutMs": 43.600000001490116
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 6,
+      "commitMs": 8.300000000745058,
+      "commitLayoutMs": 41.399999998509884
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 6,
+      "commitMs": 10.900000002235174,
+      "commitLayoutMs": 52
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 6,
+      "commitMs": 8.100000001490116,
+      "commitLayoutMs": 41.5
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 6,
+      "commitMs": 10.399999998509884,
+      "commitLayoutMs": 47.80000000074506
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 6,
+      "commitMs": 4.100000001490116,
+      "commitLayoutMs": 40.100000001490116
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 6,
+      "commitMs": 5.400000002235174,
+      "commitLayoutMs": 41.30000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 6,
+      "commitMs": 5.200000002980232,
+      "commitLayoutMs": 46.100000001490116
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 6,
+      "commitMs": 4.599999997764826,
+      "commitLayoutMs": 39.30000000074506
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 7,
+      "commitMs": 4.900000002235174,
+      "commitLayoutMs": 40.5
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 7,
+      "commitMs": 7.5,
+      "commitLayoutMs": 46.69999999925494
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 7,
+      "commitMs": 6.399999998509884,
+      "commitLayoutMs": 42.899999998509884
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 7,
+      "commitMs": 6.800000000745058,
+      "commitLayoutMs": 45.099999997764826
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 7,
+      "commitMs": 5.5,
+      "commitLayoutMs": 51.600000001490116
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 7,
+      "commitMs": 5.300000000745058,
+      "commitLayoutMs": 40.399999998509884
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 7,
+      "commitMs": 5,
+      "commitLayoutMs": 48.19999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 7,
+      "commitMs": 5.099999997764826,
+      "commitLayoutMs": 43.5
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 7,
+      "commitMs": 7.399999998509884,
+      "commitLayoutMs": 39.5
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 7,
+      "commitMs": 8.399999998509884,
+      "commitLayoutMs": 40.5
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 7,
+      "commitMs": 7.5,
+      "commitLayoutMs": 39.600000001490116
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 7,
+      "commitMs": 8.800000000745058,
+      "commitLayoutMs": 40.19999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 8,
+      "commitMs": 10.400000002235174,
+      "commitLayoutMs": 47.30000000074506
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 8,
+      "commitMs": 8.300000000745058,
+      "commitLayoutMs": 39.400000002235174
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 8,
+      "commitMs": 9.199999999254942,
+      "commitLayoutMs": 41.69999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 8,
+      "commitMs": 7.399999998509884,
+      "commitLayoutMs": 40.80000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 8,
+      "commitMs": 5.199999999254942,
+      "commitLayoutMs": 41.099999997764826
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 8,
+      "commitMs": 4.699999999254942,
+      "commitLayoutMs": 39.69999999925494
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 8,
+      "commitMs": 4.400000002235174,
+      "commitLayoutMs": 42.20000000298023
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 8,
+      "commitMs": 3.900000002235174,
+      "commitLayoutMs": 42.100000001490116
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 8,
+      "commitMs": 8.5,
+      "commitLayoutMs": 45.5
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 8,
+      "commitMs": 7.599999997764826,
+      "commitLayoutMs": 41.399999998509884
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 8,
+      "commitMs": 7.699999999254942,
+      "commitLayoutMs": 41.69999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 8,
+      "commitMs": 7.300000000745058,
+      "commitLayoutMs": 44.80000000074506
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 9,
+      "commitMs": 7.900000002235174,
+      "commitLayoutMs": 47.20000000298023
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 9,
+      "commitMs": 7.100000001490116,
+      "commitLayoutMs": 47.30000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 9,
+      "commitMs": 8.699999999254942,
+      "commitLayoutMs": 47.100000001490116
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 9,
+      "commitMs": 7.699999999254942,
+      "commitLayoutMs": 41.79999999701977
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 9,
+      "commitMs": 7.599999997764826,
+      "commitLayoutMs": 41.69999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 9,
+      "commitMs": 11.199999999254942,
+      "commitLayoutMs": 54.80000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 9,
+      "commitMs": 11.299999997019768,
+      "commitLayoutMs": 51.899999998509884
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 9,
+      "commitMs": 8.699999999254942,
+      "commitLayoutMs": 38.899999998509884
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 9,
+      "commitMs": 3.599999997764826,
+      "commitLayoutMs": 43.599999997764826
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 9,
+      "commitMs": 5.199999999254942,
+      "commitLayoutMs": 39.79999999701977
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 9,
+      "commitMs": 5.399999998509884,
+      "commitLayoutMs": 43
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 9,
+      "commitMs": 4.5,
+      "commitLayoutMs": 44
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 10,
+      "commitMs": 4.699999999254942,
+      "commitLayoutMs": 43
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 10,
+      "commitMs": 4,
+      "commitLayoutMs": 40.29999999701977
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 10,
+      "commitMs": 4.5,
+      "commitLayoutMs": 45.19999999925494
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 10,
+      "commitMs": 6.199999999254942,
+      "commitLayoutMs": 51.099999997764826
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 10,
+      "commitMs": 8,
+      "commitLayoutMs": 51.100000001490116
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 10,
+      "commitMs": 6.5,
+      "commitLayoutMs": 43.399999998509884
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 10,
+      "commitMs": 7.600000001490116,
+      "commitLayoutMs": 48.899999998509884
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 10,
+      "commitMs": 7.699999999254942,
+      "commitLayoutMs": 42.399999998509884
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 10,
+      "commitMs": 8.300000000745058,
+      "commitLayoutMs": 38.100000001490116
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 10,
+      "commitMs": 9.100000001490116,
+      "commitLayoutMs": 42.69999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 10,
+      "commitMs": 8.199999999254942,
+      "commitLayoutMs": 39.30000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 10,
+      "commitMs": 8.600000001490116,
+      "commitLayoutMs": 41.600000001490116
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 11,
+      "commitMs": 3.300000000745058,
+      "commitLayoutMs": 37.19999999925494
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 11,
+      "commitMs": 3.7999999970197678,
+      "commitLayoutMs": 37.099999997764826
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 11,
+      "commitMs": 3.699999999254942,
+      "commitLayoutMs": 39.100000001490116
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 11,
+      "commitMs": 4.599999997764826,
+      "commitLayoutMs": 39
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 11,
+      "commitMs": 7.5,
+      "commitLayoutMs": 37.69999999925494
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 11,
+      "commitMs": 10.399999998509884,
+      "commitLayoutMs": 58.19999999925494
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 11,
+      "commitMs": 9.899999998509884,
+      "commitLayoutMs": 52.19999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 11,
+      "commitMs": 11,
+      "commitLayoutMs": 52.100000001490116
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 11,
+      "commitMs": 7.599999997764826,
+      "commitLayoutMs": 47.30000000074506
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 11,
+      "commitMs": 8.899999998509884,
+      "commitLayoutMs": 45.30000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 11,
+      "commitMs": 8.100000001490116,
+      "commitLayoutMs": 44
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 11,
+      "commitMs": 7.800000000745058,
+      "commitLayoutMs": 43.399999998509884
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 12,
+      "commitMs": 8.700000002980232,
+      "commitLayoutMs": 37.70000000298023
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 12,
+      "commitMs": 9.600000001490116,
+      "commitLayoutMs": 42.80000000074506
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 12,
+      "commitMs": 9.699999999254942,
+      "commitLayoutMs": 43
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 12,
+      "commitMs": 9,
+      "commitLayoutMs": 46.19999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 12,
+      "commitMs": 8.599999997764826,
+      "commitLayoutMs": 45.899999998509884
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 12,
+      "commitMs": 11.299999997019768,
+      "commitLayoutMs": 59.099999997764826
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 12,
+      "commitMs": 7.100000001490116,
+      "commitLayoutMs": 42.30000000074506
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 12,
+      "commitMs": 8.199999999254942,
+      "commitLayoutMs": 43.600000001490116
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 12,
+      "commitMs": 5.399999998509884,
+      "commitLayoutMs": 40.80000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 12,
+      "commitMs": 6,
+      "commitLayoutMs": 42.399999998509884
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 12,
+      "commitMs": 5.699999999254942,
+      "commitLayoutMs": 39.29999999701977
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 12,
+      "commitMs": 4.199999999254942,
+      "commitLayoutMs": 42.79999999701977
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 13,
+      "commitMs": 7.199999999254942,
+      "commitLayoutMs": 48.100000001490116
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 13,
+      "commitMs": 6.899999998509884,
+      "commitLayoutMs": 39.099999997764826
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 13,
+      "commitMs": 11.100000001490116,
+      "commitLayoutMs": 42.600000001490116
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 13,
+      "commitMs": 6.799999997019768,
+      "commitLayoutMs": 43.599999997764826
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 13,
+      "commitMs": 6.100000001490116,
+      "commitLayoutMs": 40.5
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 13,
+      "commitMs": 4.399999998509884,
+      "commitLayoutMs": 36.599999997764826
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 13,
+      "commitMs": 3.800000000745058,
+      "commitLayoutMs": 36.5
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 13,
+      "commitMs": 4.5,
+      "commitLayoutMs": 40
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 13,
+      "commitMs": 9.899999998509884,
+      "commitLayoutMs": 44.5
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 13,
+      "commitMs": 14.199999999254942,
+      "commitLayoutMs": 47.5
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 13,
+      "commitMs": 12.899999998509884,
+      "commitLayoutMs": 45.29999999701977
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 13,
+      "commitMs": 7.199999999254942,
+      "commitLayoutMs": 38.80000000074506
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 14,
+      "commitMs": 8.199999999254942,
+      "commitLayoutMs": 43.5
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 14,
+      "commitMs": 6.699999999254942,
+      "commitLayoutMs": 36.899999998509884
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 14,
+      "commitMs": 11.199999999254942,
+      "commitLayoutMs": 52.899999998509884
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 14,
+      "commitMs": 8.600000001490116,
+      "commitLayoutMs": 41.69999999925494
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 14,
+      "commitMs": 5.700000002980232,
+      "commitLayoutMs": 46.20000000298023
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 14,
+      "commitMs": 3.7999999970197678,
+      "commitLayoutMs": 42.29999999701977
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 14,
+      "commitMs": 6.100000001490116,
+      "commitLayoutMs": 56.100000001490116
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 14,
+      "commitMs": 6.399999998509884,
+      "commitLayoutMs": 42.5
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 14,
+      "commitMs": 8.5,
+      "commitLayoutMs": 52.100000001490116
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 14,
+      "commitMs": 8.199999999254942,
+      "commitLayoutMs": 48.69999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 14,
+      "commitMs": 7.299999997019768,
+      "commitLayoutMs": 45.899999998509884
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 14,
+      "commitMs": 7,
+      "commitLayoutMs": 41
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 15,
+      "commitMs": 6.5,
+      "commitLayoutMs": 39.80000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 15,
+      "commitMs": 7.899999998509884,
+      "commitLayoutMs": 45.5
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 15,
+      "commitMs": 6.800000000745058,
+      "commitLayoutMs": 39.80000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 15,
+      "commitMs": 6.600000001490116,
+      "commitLayoutMs": 42.100000001490116
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 15,
+      "commitMs": 9.799999997019768,
+      "commitLayoutMs": 47.29999999701977
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 15,
+      "commitMs": 11.699999999254942,
+      "commitLayoutMs": 45.29999999701977
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 15,
+      "commitMs": 8.699999999254942,
+      "commitLayoutMs": 41.80000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 15,
+      "commitMs": 9.199999999254942,
+      "commitLayoutMs": 42.19999999925494
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 15,
+      "commitMs": 6.400000002235174,
+      "commitLayoutMs": 49.80000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 15,
+      "commitMs": 4.200000002980232,
+      "commitLayoutMs": 39.400000002235174
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 15,
+      "commitMs": 3.300000000745058,
+      "commitLayoutMs": 39.70000000298023
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 15,
+      "commitMs": 5,
+      "commitLayoutMs": 37.399999998509884
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 16,
+      "commitMs": 3.7999999970197678,
+      "commitLayoutMs": 39.099999997764826
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 16,
+      "commitMs": 3.699999999254942,
+      "commitLayoutMs": 37.5
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 16,
+      "commitMs": 4.399999998509884,
+      "commitLayoutMs": 40.30000000074506
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 16,
+      "commitMs": 4.300000000745058,
+      "commitLayoutMs": 83.40000000223517
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 16,
+      "commitMs": 8.5,
+      "commitLayoutMs": 52.19999999925494
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 16,
+      "commitMs": 8.300000000745058,
+      "commitLayoutMs": 61
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 16,
+      "commitMs": 8.599999997764826,
+      "commitLayoutMs": 43
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 16,
+      "commitMs": 7.399999998509884,
+      "commitLayoutMs": 50
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 16,
+      "commitMs": 11.899999998509884,
+      "commitLayoutMs": 52.19999999925494
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 16,
+      "commitMs": 14.700000002980232,
+      "commitLayoutMs": 50.400000002235174
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 16,
+      "commitMs": 11.699999999254942,
+      "commitLayoutMs": 45.69999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 16,
+      "commitMs": 6.699999999254942,
+      "commitLayoutMs": 38
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 17,
+      "commitMs": 4.199999999254942,
+      "commitLayoutMs": 43.19999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 17,
+      "commitMs": 7,
+      "commitLayoutMs": 39.30000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 17,
+      "commitMs": 4.699999999254942,
+      "commitLayoutMs": 40.69999999925494
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 17,
+      "commitMs": 6.299999997019768,
+      "commitLayoutMs": 42.599999997764826
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 17,
+      "commitMs": 7.899999998509884,
+      "commitLayoutMs": 40.899999998509884
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 17,
+      "commitMs": 9.199999999254942,
+      "commitLayoutMs": 57.80000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 17,
+      "commitMs": 9.699999999254942,
+      "commitLayoutMs": 44.099999997764826
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 17,
+      "commitMs": 9.5,
+      "commitLayoutMs": 41.30000000074506
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 17,
+      "commitMs": 6.600000001490116,
+      "commitLayoutMs": 42.70000000298023
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 17,
+      "commitMs": 7,
+      "commitLayoutMs": 45.600000001490116
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 17,
+      "commitMs": 7.200000002980232,
+      "commitLayoutMs": 43.30000000074506
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 17,
+      "commitMs": 7.5,
+      "commitLayoutMs": 46.099999997764826
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 18,
+      "commitMs": 9.199999999254942,
+      "commitLayoutMs": 45.69999999925494
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 18,
+      "commitMs": 9.799999997019768,
+      "commitLayoutMs": 48.19999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 18,
+      "commitMs": 7.600000001490116,
+      "commitLayoutMs": 41
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 18,
+      "commitMs": 10.5,
+      "commitLayoutMs": 50
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 18,
+      "commitMs": 7.300000000745058,
+      "commitLayoutMs": 47.30000000074506
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 18,
+      "commitMs": 7.100000001490116,
+      "commitLayoutMs": 40
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 18,
+      "commitMs": 8.199999999254942,
+      "commitLayoutMs": 47.80000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 18,
+      "commitMs": 7.300000000745058,
+      "commitLayoutMs": 47.5
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 18,
+      "commitMs": 4.900000002235174,
+      "commitLayoutMs": 39.80000000074506
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 18,
+      "commitMs": 4.099999997764826,
+      "commitLayoutMs": 37.599999997764826
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 18,
+      "commitMs": 3.5,
+      "commitLayoutMs": 37.80000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 18,
+      "commitMs": 6.200000002980232,
+      "commitLayoutMs": 44.30000000074506
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 19,
+      "commitMs": 6.299999997019768,
+      "commitLayoutMs": 46.5
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 19,
+      "commitMs": 6.5,
+      "commitLayoutMs": 36.900000002235174
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 19,
+      "commitMs": 7.300000000745058,
+      "commitLayoutMs": 45.80000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 19,
+      "commitMs": 7.899999998509884,
+      "commitLayoutMs": 49.599999997764826
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 19,
+      "commitMs": 3.5,
+      "commitLayoutMs": 41
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 19,
+      "commitMs": 6.5,
+      "commitLayoutMs": 45.399999998509884
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 19,
+      "commitMs": 5.900000002235174,
+      "commitLayoutMs": 46.30000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 19,
+      "commitMs": 4.699999999254942,
+      "commitLayoutMs": 43.80000000074506
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 19,
+      "commitMs": 8.300000000745058,
+      "commitLayoutMs": 42
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 19,
+      "commitMs": 7.100000001490116,
+      "commitLayoutMs": 36.100000001490116
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 19,
+      "commitMs": 11.599999997764826,
+      "commitLayoutMs": 46.599999997764826
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 19,
+      "commitMs": 8.899999998509884,
+      "commitLayoutMs": 49.599999997764826
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 20,
+      "commitMs": 11.300000000745058,
+      "commitLayoutMs": 45.100000001490116
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 20,
+      "commitMs": 8.399999998509884,
+      "commitLayoutMs": 42.19999999925494
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 20,
+      "commitMs": 9.400000002235174,
+      "commitLayoutMs": 45.30000000074506
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 20,
+      "commitMs": 6.700000002980232,
+      "commitLayoutMs": 38.5
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 20,
+      "commitMs": 4,
+      "commitLayoutMs": 37.5
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 20,
+      "commitMs": 5.800000000745058,
+      "commitLayoutMs": 39.600000001490116
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 20,
+      "commitMs": 3.900000002235174,
+      "commitLayoutMs": 39.400000002235174
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 20,
+      "commitMs": 3.899999998509884,
+      "commitLayoutMs": 37.30000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 20,
+      "commitMs": 13.300000000745058,
+      "commitLayoutMs": 53.30000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 20,
+      "commitMs": 8.700000002980232,
+      "commitLayoutMs": 53.100000001490116
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 20,
+      "commitMs": 7.699999999254942,
+      "commitLayoutMs": 42
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 20,
+      "commitMs": 7.5,
+      "commitLayoutMs": 46.5
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 21,
+      "commitMs": 7.700000002980232,
+      "commitLayoutMs": 49.70000000298023
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 21,
+      "commitMs": 8.199999999254942,
+      "commitLayoutMs": 53
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 21,
+      "commitMs": 8.399999998509884,
+      "commitLayoutMs": 42.899999998509884
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 21,
+      "commitMs": 10,
+      "commitLayoutMs": 54
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 21,
+      "commitMs": 8.800000000745058,
+      "commitLayoutMs": 41.69999999925494
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 21,
+      "commitMs": 8.400000002235174,
+      "commitLayoutMs": 41
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 21,
+      "commitMs": 9.199999999254942,
+      "commitLayoutMs": 38.899999998509884
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 21,
+      "commitMs": 8.599999997764826,
+      "commitLayoutMs": 41.69999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 21,
+      "commitMs": 4.100000001490116,
+      "commitLayoutMs": 39.600000001490116
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 21,
+      "commitMs": 3.899999998509884,
+      "commitLayoutMs": 36
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 21,
+      "commitMs": 4.900000002235174,
+      "commitLayoutMs": 37.400000002235174
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 21,
+      "commitMs": 3.900000002235174,
+      "commitLayoutMs": 42.30000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 22,
+      "commitMs": 5.100000001490116,
+      "commitLayoutMs": 43
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 22,
+      "commitMs": 4.199999999254942,
+      "commitLayoutMs": 38
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 22,
+      "commitMs": 4.899999998509884,
+      "commitLayoutMs": 46.69999999925494
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 22,
+      "commitMs": 3.899999998509884,
+      "commitLayoutMs": 42.69999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 22,
+      "commitMs": 7.100000001490116,
+      "commitLayoutMs": 42
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 22,
+      "commitMs": 8,
+      "commitLayoutMs": 48.100000001490116
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 22,
+      "commitMs": 7,
+      "commitLayoutMs": 35.19999999925494
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 22,
+      "commitMs": 7.699999999254942,
+      "commitLayoutMs": 38.80000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 22,
+      "commitMs": 8.699999999254942,
+      "commitLayoutMs": 41.69999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 22,
+      "commitMs": 7.900000002235174,
+      "commitLayoutMs": 39.900000002235174
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 22,
+      "commitMs": 7.199999999254942,
+      "commitLayoutMs": 39.100000001490116
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 22,
+      "commitMs": 7.100000001490116,
+      "commitLayoutMs": 36.900000002235174
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 23,
+      "commitMs": 4.599999997764826,
+      "commitLayoutMs": 41.399999998509884
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 23,
+      "commitMs": 3.800000000745058,
+      "commitLayoutMs": 36.19999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 23,
+      "commitMs": 3.899999998509884,
+      "commitLayoutMs": 41.19999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 23,
+      "commitMs": 5,
+      "commitLayoutMs": 41.400000002235174
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 23,
+      "commitMs": 7.700000002980232,
+      "commitLayoutMs": 39.400000002235174
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 23,
+      "commitMs": 9.199999999254942,
+      "commitLayoutMs": 43.5
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 23,
+      "commitMs": 8.600000001490116,
+      "commitLayoutMs": 53.69999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 23,
+      "commitMs": 9,
+      "commitLayoutMs": 39.399999998509884
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 23,
+      "commitMs": 6.5,
+      "commitLayoutMs": 37.69999999925494
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 23,
+      "commitMs": 7.199999999254942,
+      "commitLayoutMs": 37.5
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 23,
+      "commitMs": 7.5,
+      "commitLayoutMs": 58.099999997764826
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 23,
+      "commitMs": 8,
+      "commitLayoutMs": 48
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 24,
+      "commitMs": 8.800000000745058,
+      "commitLayoutMs": 42.900000002235174
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 24,
+      "commitMs": 8.100000001490116,
+      "commitLayoutMs": 43.900000002235174
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 24,
+      "commitMs": 11.100000001490116,
+      "commitLayoutMs": 47.19999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 24,
+      "commitMs": 7.5,
+      "commitLayoutMs": 38.69999999925494
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 24,
+      "commitMs": 5.699999999254942,
+      "commitLayoutMs": 43.30000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 24,
+      "commitMs": 9,
+      "commitLayoutMs": 48.600000001490116
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 24,
+      "commitMs": 6.700000002980232,
+      "commitLayoutMs": 36.600000001490116
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 24,
+      "commitMs": 6.699999999254942,
+      "commitLayoutMs": 40.400000002235174
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 24,
+      "commitMs": 4.399999998509884,
+      "commitLayoutMs": 43.29999999701977
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 24,
+      "commitMs": 4.199999999254942,
+      "commitLayoutMs": 41.69999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 24,
+      "commitMs": 4.5,
+      "commitLayoutMs": 47
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 24,
+      "commitMs": 5.699999999254942,
+      "commitLayoutMs": 73.30000000074506
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 25,
+      "commitMs": 6.700000002980232,
+      "commitLayoutMs": 42.20000000298023
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 25,
+      "commitMs": 6.899999998509884,
+      "commitLayoutMs": 36.399999998509884
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 25,
+      "commitMs": 7.399999998509884,
+      "commitLayoutMs": 37.100000001490116
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 25,
+      "commitMs": 7.899999998509884,
+      "commitLayoutMs": 44.19999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 25,
+      "commitMs": 4.5,
+      "commitLayoutMs": 39.19999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 25,
+      "commitMs": 4.599999997764826,
+      "commitLayoutMs": 43.79999999701977
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 25,
+      "commitMs": 4.699999999254942,
+      "commitLayoutMs": 41.80000000074506
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 25,
+      "commitMs": 4.399999998509884,
+      "commitLayoutMs": 44.79999999701977
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 25,
+      "commitMs": 6.900000002235174,
+      "commitLayoutMs": 41.69999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 25,
+      "commitMs": 11.799999997019768,
+      "commitLayoutMs": 49.599999997764826
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 25,
+      "commitMs": 10.199999999254942,
+      "commitLayoutMs": 43.29999999701977
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 25,
+      "commitMs": 9,
+      "commitLayoutMs": 45.80000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 26,
+      "commitMs": 10.399999998509884,
+      "commitLayoutMs": 46.099999997764826
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 26,
+      "commitMs": 8,
+      "commitLayoutMs": 38.80000000074506
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 26,
+      "commitMs": 8.5,
+      "commitLayoutMs": 48.70000000298023
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 26,
+      "commitMs": 8.199999999254942,
+      "commitLayoutMs": 39.19999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 26,
+      "commitMs": 6.800000000745058,
+      "commitLayoutMs": 43.600000001490116
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 26,
+      "commitMs": 3.800000000745058,
+      "commitLayoutMs": 38.600000001490116
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 26,
+      "commitMs": 3.7000000029802322,
+      "commitLayoutMs": 41.100000001490116
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 26,
+      "commitMs": 6.199999999254942,
+      "commitLayoutMs": 38.099999997764826
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 26,
+      "commitMs": 7.299999997019768,
+      "commitLayoutMs": 40.099999997764826
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 26,
+      "commitMs": 7.5,
+      "commitLayoutMs": 46.19999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 26,
+      "commitMs": 9.100000001490116,
+      "commitLayoutMs": 49.600000001490116
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 26,
+      "commitMs": 7.399999998509884,
+      "commitLayoutMs": 50.19999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 27,
+      "commitMs": 8.399999998509884,
+      "commitLayoutMs": 46.69999999925494
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 27,
+      "commitMs": 7.5,
+      "commitLayoutMs": 40.600000001490116
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 27,
+      "commitMs": 6.5,
+      "commitLayoutMs": 50.70000000298023
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 27,
+      "commitMs": 6.100000001490116,
+      "commitLayoutMs": 41.30000000074506
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 27,
+      "commitMs": 8.100000001490116,
+      "commitLayoutMs": 37.5
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 27,
+      "commitMs": 8.300000000745058,
+      "commitLayoutMs": 39
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 27,
+      "commitMs": 7.600000001490116,
+      "commitLayoutMs": 37.30000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 27,
+      "commitMs": 8.900000002235174,
+      "commitLayoutMs": 40
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 27,
+      "commitMs": 5,
+      "commitLayoutMs": 38.099999997764826
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 27,
+      "commitMs": 4.299999997019768,
+      "commitLayoutMs": 38.399999998509884
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 27,
+      "commitMs": 4.700000002980232,
+      "commitLayoutMs": 54
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 27,
+      "commitMs": 7,
+      "commitLayoutMs": 43.69999999925494
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 28,
+      "commitMs": 4.800000000745058,
+      "commitLayoutMs": 42
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 28,
+      "commitMs": 5.799999997019768,
+      "commitLayoutMs": 39.5
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 28,
+      "commitMs": 4.299999997019768,
+      "commitLayoutMs": 40.099999997764826
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 28,
+      "commitMs": 4.199999999254942,
+      "commitLayoutMs": 39.600000001490116
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 28,
+      "commitMs": 6.899999998509884,
+      "commitLayoutMs": 37.19999999925494
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 28,
+      "commitMs": 6.699999999254942,
+      "commitLayoutMs": 36.899999998509884
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 28,
+      "commitMs": 7.199999999254942,
+      "commitLayoutMs": 40.5
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 28,
+      "commitMs": 6,
+      "commitLayoutMs": 45.79999999701977
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 28,
+      "commitMs": 9.100000001490116,
+      "commitLayoutMs": 41.400000002235174
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 28,
+      "commitMs": 8.100000001490116,
+      "commitLayoutMs": 40.30000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 28,
+      "commitMs": 8.199999999254942,
+      "commitLayoutMs": 41.19999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 28,
+      "commitMs": 7.199999999254942,
+      "commitLayoutMs": 35.5
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "append-1000",
+      "round": 29,
+      "commitMs": 5.699999999254942,
+      "commitLayoutMs": 43.19999999925494
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "append-1000",
+      "round": 29,
+      "commitMs": 4,
+      "commitLayoutMs": 37.80000000074506
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "append-1000",
+      "round": 29,
+      "commitMs": 4.599999997764826,
+      "commitLayoutMs": 40.79999999701977
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "append-1000",
+      "round": 29,
+      "commitMs": 4.199999999254942,
+      "commitLayoutMs": 39.69999999925494
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "replace-1000",
+      "round": 29,
+      "commitMs": 7.199999999254942,
+      "commitLayoutMs": 38.69999999925494
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "replace-1000",
+      "round": 29,
+      "commitMs": 8.099999997764826,
+      "commitLayoutMs": 39
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "replace-1000",
+      "round": 29,
+      "commitMs": 8.300000000745058,
+      "commitLayoutMs": 38.69999999925494
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "replace-1000",
+      "round": 29,
+      "commitMs": 8.599999997764826,
+      "commitLayoutMs": 40.899999998509884
+    },
+    {
+      "framework": "velocity-next",
+      "scenario": "shuffle-1000",
+      "round": 29,
+      "commitMs": 7.199999999254942,
+      "commitLayoutMs": 48.80000000074506
+    },
+    {
+      "framework": "velocity-delegated-index",
+      "scenario": "shuffle-1000",
+      "round": 29,
+      "commitMs": 5.600000001490116,
+      "commitLayoutMs": 38
+    },
+    {
+      "framework": "velocity-next-clone",
+      "scenario": "shuffle-1000",
+      "round": 29,
+      "commitMs": 7,
+      "commitLayoutMs": 37.30000000074506
+    },
+    {
+      "framework": "velocity-direct-sibling",
+      "scenario": "shuffle-1000",
+      "round": 29,
+      "commitMs": 6.899999998509884,
+      "commitLayoutMs": 39.599999997764826
+    }
+  ],
+  "failures": []
+}

@@ -1,79 +1,63 @@
-# Velocity v0.3: optimized keyed rendering, with measured evidence
+# Velocity v0.4: compiler-generated templates and owned keyed blocks
 
-**Experimental research preview.** APIs remain unstable. No peer review or external independent performance validation is claimed. The independent final batches described below are separate runs by the original experiment author on the same environment, not third-party reproduction. See the [research overview](docs/RESEARCH.md), [contribution guidance](CONTRIBUTING.md), and [release notes](docs/RELEASE-v0.3.0.md). This project is unrelated to the Velocity animation library.
+**Experimental research preview.** APIs remain unstable. No peer review or external independent performance validation is claimed. Separate final batches are author-run replications, not third-party reproduction. See the [research overview](docs/RESEARCH.md), [contribution guidance](CONTRIBUTING.md), and [release notes](docs/RELEASE-v0.4.0.md). This project is unrelated to the Velocity animation library.
 
-This release contains the original POC, two v0.2 controls, three v0.3 variants, handwritten DOM and React/Preact/Vue/Solid/Svelte/Lit adapters. It is an experimental framework/runtime repository, not a claim of universally fastest performance or feature parity with mature frameworks.
+An experimental frontend runtime and benchmark repository. v0.4 connects static-template compilation to the minimal-move keyed renderer, adds owned cleanup, string/number keys and multi-node blocks, and tests normal component-style code against preserved hand-written controls. It is not a universally fastest or production-complete framework.
 
-Start with `results/DECISION.md` for the release decision and regressions, then `results/RELEASE.md` or open `results/release.html` for the independent final comparisons. `results/iterations/LOG.md` records the changes, correctness failure, rejected experiment and selection runs. Earlier results are preserved under `results/v0.1/` and `results/v0.2/`.
+Start with `results/v04/DECISION.md` and `results/v04/report.html`. Raw data, diagnostic traces and machine-readable summaries are under `results/v04/`. Previous release evidence is preserved under `history/v0.3/results/` and older `results/v0.1/`, `results/v0.2/` directories.
 
-## What changed
+## Run the prebuilt examples
 
-- Reusable keyed-list primitive with prefix/suffix matching and LIS-based movement.
-- Two DOM insertions for a distant two-row swap, instead of 997 in the previous renderer.
-- Whole-list clear, retained text-node updates and snapshot fast paths.
-- Focus restoration for a retained node moved by DOM operations.
-- Delegated row events and sibling-pointer binding in the selected candidate.
-- Rust/Wasm identity planner retained as an optional path; DOM and LIS remain JavaScript.
-- Twenty workloads, randomized correctness tests, edge-case text tests, remount checks and independent final batches.
-- Batch HTML construction was implemented and tested, then rejected after regressions. Its sources and results remain available.
+```sh
+python3 -m http.server 4173 --directory dist --bind 127.0.0.1
+```
 
-## Build and inspect
+Open http://127.0.0.1:4173/explorer.html for the benchmark adapters, or http://127.0.0.1:4173/examples.html for an editable form and nested tree. Use HTTP for the fixtures; the standalone results report can be opened directly as a local file.
 
-Requires Node 22+ and Rust via rustup. Dependencies and Rust toolchain are pinned.
+## Build and validate
+
+Node 22+ is required. Dependencies are pinned.
 
 ```sh
 npm ci
-rustup toolchain install 1.85.0 --profile minimal --target wasm32-unknown-unknown
-npm run build
-npm run test:rust
+USE_PREBUILT_WASM=1 npm run build
 npm test
 npx playwright install chromium
 npm run check
+npm run check:runtime
 npm run check:stress
 npm run check:explorer
-npm run serve
 ```
 
-Open http://127.0.0.1:4173/explorer.html. Prebuilt fixtures work without npm/Rust using `python3 -m http.server 4173 --directory dist --bind 127.0.0.1`. Use HTTP, not file://, for the fixtures and Wasm fetches. The report itself is self-contained and can be opened directly.
+`USE_PREBUILT_WASM=1` verifies the recorded SHA-256 and reuses the unchanged Rust binary. To rebuild it instead, install Rust toolchain 1.85.0 and the wasm32-unknown-unknown target, then run `npm run build` without the flag. Native Rust tests are `npm run test:rust`; they were not rerun in the v0.4 environment, where the Rust toolchain was unavailable. The existing compiled Wasm artifact passed the Node oracle tests.
 
-## Reproduce the final experiment
+For the exact Chromium used here on Linux x64, `node scripts/setup-browser.mjs` extracts the pinned npm browser package. Set `BROWSER_EXECUTABLE` to the printed absolute executable path for every browser command. The setup helper does not change additional browser launch flags.
+
+## Reproduce the v0.4 experiment
 
 ```sh
-npm run bench:deep
-npm run bench:planner
+npm run bench:v04
 npm run report
-npm run report:release
+npm run check:release
 ```
 
-`bench:deep` is a long-running sequential experiment: 15 measured rounds with seed 20261017, 15 independent rounds with seed 104729, and 10 rounds with 4× Chromium CPU throttling. Each batch discards three warmups and uses every registered adapter. Do not run other benchmarks/builds concurrently. It overwrites the current final-result files, so preserve a copy if you want to retain the delivered measurements.
+Run sequentially with no other benchmarks/builds active. This is a long experiment and overwrites `results/v04` result files. The protocol is in `docs/V04_PROTOCOL.md`: 30 in-page-warmed and 15 fresh rounds for controlled ablations, 15 full validation rounds for 12 adapters, 15 independent rounds for six selected adapters, separate diagnostic traces, and 30 observations for each of three application workloads. It does not rerun CPU throttling. Historical CPU-throttled results belong to v0.3.
 
-The delivered runs used Chromium 153 through `BROWSER_EXECUTABLE=/absolute/path/to/chromium`; a normal Playwright installation may supply a different version. Always compare recorded browser/host metadata. Firefox downloaded here but its bounded correctness attempt timed out; no Firefox timing result is claimed.
+The existing `bench:deep` command is the older broad experiment and is not the v0.4 release protocol. Use `bench:v04` for this release. Reports verify frozen application fingerprints before accepting data.
 
-If the normal browser download fails on Linux x64, an optional fallback extracts the pinned @sparticuz Chromium package already installed by npm:
+## Public API and source
 
-```sh
-node scripts/setup-browser.mjs
-BROWSER_EXECUTABLE=/absolute/path/printed/by/the/script npm run check
-BROWSER_EXECUTABLE=/absolute/path/printed/by/the/script npm run bench:deep
-```
+- `docs/V04_API.md`: template syntax, lifecycle, key contract and limitations.
+- `src/poc/template-compiler.js`: compiler emitting hoisted templates and shared binding plans.
+- `src/runtime/template.js`: block creation, patching, events, explicit cleanup and component wrapper.
+- `src/runtime/list.js`: keyed single/multi-node reconciliation and ownership.
+- `src/views/benchmark.view.jsx`: benchmark written with the public template language.
+- `src/views/examples.view.jsx`: form, tree and range views.
+- `bench/runtime-check.mjs`: lifecycle, ranges, keys, focus/caret, forms and nested lists.
+- `bench/focused.mjs`: controlled fresh and in-page-warmed experiments.
+- `bench/trace.mjs`: replacement diagnostic traces, separate from performance estimates.
+- `docs/V04_STATUS.md`: implemented scope and remaining work.
 
-This helper is tested separately from performance runs. Extracted browsers stay outside the delivered archive. Other platforms should use their supported Playwright browser installation.
+The compiled v0.4 adapter is JavaScript-only. `velocity-next-wasm` is the preserved v0.3 Rust/Wasm control, not a new compiled-Wasm implementation. Mature framework adapters provide more features than this POC and are not claimed to be globally optimal implementations.
 
-For shorter exploratory runs, use `FRAMEWORKS=velocity-next,velocity-next-wasm,vanilla SAMPLES=5 WARMUPS=2 RESULTS_DIR=results/my-experiment npm run bench`. Such runs are not the independent final batches. The correctness gate must match current JS/Wasm hashes before timing.
-
-## Key files
-
-- `src/poc/keyed-list.js`, `src/poc/lis.js`: reusable reconciliation primitives.
-- `src/adapters/optimized.js`: selected fixture renderer.
-- `src/adapters/optimized-clone.js`: retained i1 control with direct row handlers.
-- `src/planner/`, `rust/planner/`: matching JS and Rust/Wasm identity planners.
-- `bench/check.mjs`, `bench/stress.mjs`: semantic and lifecycle correctness.
-- `bench/run.mjs`, `bench/deep.mjs`: timing and frozen-build replication.
-- `scripts/release-report.mjs`: matrix validation, intervals and interactive report.
-- `docs/V03_EXPERIMENT_PROTOCOL.md`: fairness rules and interpretation limits.
-
-## Scope
-
-Inputs are immutable snapshots with unique unsigned 32-bit keys. The table adapter is specialized to the fixture; the keyed-list primitive is reusable. This release does not provide routing, SSR/hydration, a complete component model, arbitrary keys, a Rust JSX compiler, a public hardened Wasm ABI or production accessibility certification. The comparison keeps full DOM output, including offscreen rows; it does not substitute virtualization or altered CSS.
-
-Package the current checkout with `python3 scripts/manifests.py` and `python3 scripts/archive.py`. Source, prebuilt assets, historical results, experiments and final evidence are included; node_modules and Rust target artifacts are excluded.
+Package using `python3 scripts/manifests.py` followed by `python3 scripts/archive.py`. The archive includes source, prebuilt fixtures and evidence; it excludes dependencies, browser binaries and Rust build caches.

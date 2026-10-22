@@ -1,0 +1,19 @@
+
+> velocity-poc@0.4.0 build
+> node scripts/build.mjs
+
+Using verified unchanged Wasm binary 5fb3f741f338bf1a31a1230d07befbb69944738faab63cfa5738e763b0c15b54
+Built velocity-direct-sibling 6476 bytes
+Built velocity-delegated-index 6625 bytes
+Built velocity-compiled 8931 bytes
+Built velocity-next-clone 6462 bytes
+Built velocity-next 6624 bytes
+Built velocity-next-wasm 6813 bytes
+Built velocity 6892 bytes
+Built velocity-js 5091 bytes
+Built velocity-wasm 5280 bytes
+Built vanilla 4206 bytes
+Built react 226647 bytes
+Built preact 19874 bytes
+Built vue 59140 bytes
+Built solid 22660 bytes

@@ -18,8 +18,10 @@ jobs:
       - run: npm run test:rust
       - run: npm test
       - run: npm run check
+      - run: npm run check:runtime
       - run: npm run check:stress
       - run: npm run check:explorer
+      - run: npm run check:release
       - run: BROWSER=firefox npm run check
       - uses: actions/upload-artifact@v4
         if: always()

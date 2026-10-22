@@ -1,4 +1,4 @@
-export const frameworks=['velocity-next-clone','velocity-next','velocity-next-wasm','velocity','velocity-js','velocity-wasm','vanilla','react','preact','vue','solid','svelte','lit'];
+export const frameworks=['velocity-direct-sibling','velocity-delegated-index','velocity-compiled','velocity-next-clone','velocity-next','velocity-next-wasm','velocity','velocity-js','velocity-wasm','vanilla','react','preact','vue','solid','svelte','lit'];
 export const scenarios=[
  {name:'create-10000',initial:0,action:'create',arg:10000},
  {name:'update-all',initial:1000,action:'update-all'},

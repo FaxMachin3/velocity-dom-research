@@ -3,10 +3,10 @@ import {serve} from '../scripts/server.mjs';
 import {writeFile} from 'node:fs/promises';
 const server=await serve(0),browser=await launch('chromium'),results=[];
 try{
- for(const variant of ['js','wasm']){
+ for(const variant of (process.env.STRESS_VARIANTS||'js,wasm,compiled').split(',')){
   const page=await browser.newPage();await page.goto(`http://127.0.0.1:${server.address().port}/`);
   const report=await page.evaluate(async variant=>{
-   const {mountJS,mountWasm}=await import('/testing.js'),mount=variant==='js'?mountJS:mountWasm;
+   const {mountJS,mountWasm}=await import('/testing.js'),mount=variant==='compiled'?(await import('/compiled-testing.js')).mount:variant==='js'?mountJS:mountWasm;
    const host=document.createElement('div');document.body.append(host);
    let state={rows:[],selected:-1,text:'',cells:Array.from({length:128},(_,i)=>i)};
    const app=mount(host,state,()=>{});let seed=811,nextId=1,checks=0;
